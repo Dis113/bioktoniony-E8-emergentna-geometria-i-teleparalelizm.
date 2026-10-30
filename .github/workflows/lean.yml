@@ -43,6 +43,10 @@ jobs:
           #print axioms POM1.mass_shift_identity
           #print axioms POM1.zero_energy_forces_trivial_field
           #print axioms POM1.channelLoop_witness
+          #print axioms POM1.triangle_frustrated_mode_negative
+          #print axioms POM1.pentad_frustrated_mode_negative
+          #print axioms POM1.pentad_square_completion
+          #print axioms POM1.pentad_lower_bound
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -72,3 +76,4 @@ jobs:
         run: |
           python Simulations/pom1_model.py
           python Simulations/emergent_geometry_probe.py
+          python Simulations/ordered_phase_probe.py
