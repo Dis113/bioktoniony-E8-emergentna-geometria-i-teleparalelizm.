@@ -89,7 +89,35 @@ Reprodukowalny program: Simulations/ordered_phase_probe.py.
 
 - K3: \(\alpha=0.35,K=0.12,\lambda=0.7,\epsilon=0.001,f=1\). Próg \(\alpha_c=0.18\). W ograniczonej zespolonej podalgebrze znaleziono dwa stacjonarne stany o energii około **−0.0311636276** i przeciwnych obiegach **±0.6350112**. To nie jest dowód ich globalnej minimalności w całej algebrze 16D.
 - K5: \(\alpha=0.55,K=0.12,\lambda=0.7,\epsilon=0.001,\gamma=0.01,f=1\). Próg \(\alpha_c=0.42\). Dla \(\epsilon=0\) obie konstrukcje osiągają dokładnie **−0.0644642857**. Po dodaniu E8 ich energie wynoszą około **−0.02429840696** (ranga 2) i **−0.02429840641** (ranga 4). Ponieważ są ujemne, zero nie jest globalnym minimum; nie ustalono jednak globalnego minimum przy \(\epsilon>0\).
-- Dotychczasowy potencjał E8 **nie** jest niezmienniczy względem dowolnego globalnego obrotu zespolonej fazy U(1). Kontrprzykład numeryczny dla obrotu o \(\pi/4\): \(\Delta U\approx0.00047573119\). Zatem nie jest to sam z siebie elektromagnetyczny potencjał cechowania U(1).
+- Dotychczasowy potencjał E8 **nie** jest niezmienniczy względem dowolnego globalnego obrotu zespolonej fazy U(1). Kontrprzykład numeryczny dla obrotu o \(\pi/4\): \(\Delta U\approx0.00047573119\).
+
+Można wykazać złamanie U(1) także **analitycznie**, a nie tylko numerycznie.
+W osi jednego rzeczywistego kierunku pierwiastkowego występuje 28 pierwiastków
+o składowej \(\pm1\) i 128 pierwiastków o składowej \(\pm\tfrac12\).
+Stąd \(\sum_{\alpha}\alpha_1^2=60\) oraz \(\sum_{\alpha}\alpha_1^4=36\).
+Dla \((x,y)=(t e_1,0)\) i obrotu fazy o \(\pi/4\):
+
+\[
+U(t e_1,0)=\epsilon\left(30\frac{t^2}{f^2}
+-\frac32\frac{t^4}{f^4}+O(t^6)\right),
+\]
+
+\[
+U(t e_1/\sqrt2,t e_1/\sqrt2)=
+\epsilon\left(30\frac{t^2}{f^2}
+-\frac34\frac{t^4}{f^4}+O(t^6)\right).
+\]
+
+Dlatego
+
+\[
+\boxed{\Delta U=\frac{3\epsilon}{4}\frac{t^4}{f^4}
++O(t^6)\ne0}
+\]
+
+dla dostatecznie małych niezerowych \(t\) i \(\epsilon>0\). To jest
+**model-specyficzna przeszkoda** w identyfikowaniu tej wersji E8
+z elektromagnetyczną symetrią cechowania. Zatem nie jest to sam z siebie elektromagnetyczny potencjał cechowania U(1).
 
 ## 6. Kryteria następnego etapu
 

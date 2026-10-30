@@ -116,6 +116,8 @@ def pentad_rank_test():
 
 
 def u1_counterexample():
+    assert np.isclose(np.sum(ROOTS[:,0]**2),60)
+    assert np.isclose(np.sum(ROOTS[:,0]**4),36)
     params=dict(alpha=0.,K=0.,lam=0.,eps=.001)
     a=np.zeros((3,16));a[0,0]=.9
     b=np.zeros_like(a)

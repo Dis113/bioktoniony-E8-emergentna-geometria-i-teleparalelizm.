@@ -50,6 +50,6 @@ Szczegóły oraz ograniczenia: [EmergenceBridge.md](EmergenceBridge.md).
 | P204 | Dodatnie epsilon: istnienie niezerowego globalnego minimum | Analityczny próg + ujemne stany próbne; pełny kształt minimum otwarty |
 | P205 | Jednoznaczna selekcja rangi 4 | OPEN |
 | P206 | Fizyczne tetrady z sygnaturą Lorentza | OPEN |
-| P207 | Globalna U(1) potencjału E8 | FALSE: numeryczny kontrprzykład |
+| P207 | Globalna U(1) potencjału E8 | FALSE: analityczne rozwinięcie do czwartego rzędu + niezależny kontrprzykład numeryczny |
 
 Patrz [OrderedVacuum.md](OrderedVacuum.md). Zjawiska frustracji XY są już opisane w recenzowanej literaturze.
