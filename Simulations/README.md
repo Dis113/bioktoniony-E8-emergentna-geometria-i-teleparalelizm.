@@ -45,3 +45,18 @@ sygnatury czasoprzestrzeni. Analiza: [Theory/EmergenceBridge.md](../Theory/Emerg
 Uruchom: python Simulations/ordered_phase_probe.py
 
 Wymaga też biblioteki SciPy. Porównuje model K3 i K5, sprawdza zakresy niestabilności, dwie przeciwne gałęzie obiegu, stany o rangach 2 i 4 oraz brak ciągłej symetrii U(1) potencjału E8. To diagnostyka, nie dowód tetrad ani globalnego minimum pełnego układu przy dodatnim E8.
+
+
+## POM-3 — wybór lokalnej podalgebry
+
+Uruchom: python Simulations/sector_vacuum_probe.py
+
+Skrypt sprawdza 180 losowych stanów C⊗O, jednoznaczny wybór
+podalgebry H przy dodatnim wyznaczniku Grama, zamknięcie i asocjator
+wewnątrz jednego C⊗H, przykłady oddziaływań między sektorami,
+globalną U(1), normę Minkowskiego na realnym wycinku C⊗H,
+dolną granicę potencjału i widmo 16×16 Hessianu w minimum
+(11 płaskich i 5 sztywnych kierunków).
+
+Jest to numeryczny test algebraicznej **kinematyki wewnętrznej**.
+Nie wyprowadza fizycznych tetrad, zegarów, geometrii przestrzennej ani torzji.
