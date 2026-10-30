@@ -31,3 +31,10 @@ Nie „czy w ogóle istnieje biliniowa tetrada” albo „czy torzja da się zdy
 ## Niepowielany wynik o fazach sfrustrowanych XY
 
 Bach, Cicalese, Kreutz, Orlando, *The antiferromagnetic XY model on the triangular lattice: chirality transitions at the surface scaling*, *Calculus of Variations and Partial Differential Equations* 60, 149 (2021), DOI [10.1007/s00526-021-02016-3](https://doi.org/10.1007/s00526-021-02016-3). Znamy już mechanizm 120-stopniowej struktury i dwóch chiralności. POM-2 bada odrębną kwestię: wynik tej konkurencji w konkretnym grafowym hamiltonianie bioktonionowym, po uwzględnieniu E8 i asocjatora.
+
+
+## Octoniony a grupa Weyla E8 — znane fakty i test modelu
+
+- John C. Baez, *The Octonions*, *Bulletin of the American Mathematical Society* 39 (2002), 145–205, DOI [10.1090/S0273-0979-01-00934-X](https://doi.org/10.1090/S0273-0979-01-00934-X). Nie dowodzimy ponownie niełączności ani znanych konstrukcji algebr.
+- *The Action of the Weyl Group on the E8 Root System*, *Graphs and Combinatorics* (2021), DOI [10.1007/s00373-021-02315-8](https://doi.org/10.1007/s00373-021-02315-8). Nie dowodzimy ponownie struktury grupy Weyla.
+- POM-2: własny kontrprzykład sprawdza **brak wspólnej symetrii** pomiędzy składową kosinusową E8 a kwadratową energią asocjatora przy standardowym działaniu odbicia na 8 współrzędnych oktonionów. Nie jest to nowy fakt o samej algebrze E8.

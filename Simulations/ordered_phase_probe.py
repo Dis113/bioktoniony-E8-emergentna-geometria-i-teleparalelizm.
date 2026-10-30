@@ -128,16 +128,41 @@ def u1_counterexample():
     return diff
 
 
+def weyl_reflection_counterexample():
+    """A root reflection preserves U_E8 but not the octonion associator term."""
+    root=np.array([1.,-1.,0.,0.,0.,0.,0.,0.])
+    assert any(np.array_equal(a,root) for a in ROOTS)
+    # Reflection in alpha=e0-e1 swaps octonion components 0 and 1.
+    original=np.zeros((3,16))
+    original[0,1]=1.; original[1,2]=1.; original[2,4]=1.
+    reflected=original.copy()
+    reflected[:,:8]=original[:,:8][:,[1,0,2,3,4,5,6,7]]
+    aa=np.linalg.norm(bioassociator(*original))**2
+    bb=np.linalg.norm(bioassociator(*reflected))**2
+    assert np.isclose(aa,4.) and np.isclose(bb,0.)
+    base=dict(alpha=0.,K=0.,lam=0.,eps=.001)
+    a_e8=lattice_energy(original,**base)
+    b_e8=lattice_energy(reflected,**base)
+    assert np.isclose(a_e8,b_e8,atol=1e-12)
+    gamma=.01
+    a_total=lattice_energy(original,**base,gamma=gamma)
+    b_total=lattice_energy(reflected,**base,gamma=gamma)
+    assert np.isclose(a_total-b_total,4*gamma,atol=1e-12)
+    return aa,bb,a_total-b_total
+
+
 def main():
     critical,negative,uniform,branches=triangle_test()
     ground,cases,critical5=pentad_rank_test()
     delta=u1_counterexample()
+    before,after,weyl_gap=weyl_reflection_counterexample()
     print("POM-2: ordered phase diagnostic (NOT emergence of gravity)")
     print("K3 critical alpha:",critical,"Hessian modes:",negative,uniform)
     print("K3 opposite chiral branches (energy,J):",branches)
     print("K5 critical alpha:",critical5,"exact epsilon=0 ground energy:",ground)
     print("K5 cases (rank, epsilon=0 energy, epsilon>0 energy):",cases)
     print("E8 potential global U(1) rotation delta:",delta)
+    print("Weyl-reflection associator norm squares:",before,after,"full energy gap:",weyl_gap)
     print("OPEN: unique 4D rank, Lorentz signature, tetrads, torsion and TEGR.")
 
 

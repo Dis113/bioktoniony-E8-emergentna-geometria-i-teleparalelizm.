@@ -53,3 +53,6 @@ Szczegóły oraz ograniczenia: [EmergenceBridge.md](EmergenceBridge.md).
 | P207 | Globalna U(1) potencjału E8 | FALSE: analityczne rozwinięcie do czwartego rzędu + niezależny kontrprzykład numeryczny |
 
 Patrz [OrderedVacuum.md](OrderedVacuum.md). Zjawiska frustracji XY są już opisane w recenzowanej literaturze.
+
+
+| P208 | Pełna symetria Weyla E8 przy dodatnim sprzężeniu asocjatora | FALSE dla zastosowanego działania R8: jawny kontrprzykład e1,e2,e4; obliczenie Python, opisana różnica energii 0.04 przy gamma=0.01 |

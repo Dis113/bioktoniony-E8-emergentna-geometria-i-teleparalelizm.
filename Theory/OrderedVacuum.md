@@ -130,3 +130,22 @@ Nie powtarzamy recenzowanych dowodów znanych mechanizmów chiralności ani tele
 5. Zgodność widma z obserwowaną propagacją i brak dodatkowych, wykluczonych polaryzacji.
 
 **Wniosek:** POM-2 ma niezerowy stan podstawowy, ale nie wykazał dotąd fizycznej emergencji czasoprzestrzeni. Degeneracja rang 2/4 jest nowym ograniczeniem tej konkretnej konstrukcji.
+
+
+## 7. Dodatkowy test: pełny hamiltonian nie zachowuje działania grupy Weyla E8
+
+To nie jest nowe twierdzenie o oktonionach lub grupach Weyla: ich ogólne własności są znane (Baez 2002, DOI 10.1090/S0273-0979-01-00934-X; badanie działania grupy Weyla na E8, DOI 10.1007/s00373-021-02315-8).
+
+Testujemy **konkretne połączenie składników POM-2**. W standardowej ośmiowymiarowej reprezentacji pierwiastków korzeń \(\alpha=e_0-e_1\) generuje odbicie \(s_\alpha\) zamieniające składowe 0 i 1. Potencjał sumowany po 240 pierwiastkach jest pod tym odbiciem niezmienniczy.
+
+Dla trzech realnych oktonionów \((e_1,e_2,e_4)\), w konwencji Cayleya–Dicksona wykorzystywanej przez kod:
+
+\[
+\|\mathcal A(e_1,e_2,e_4)\|^2=4,\qquad
+\|\mathcal A(s_\alpha e_1,s_\alpha e_2,s_\alpha e_4)\|^2
+=\|\mathcal A(e_0,e_2,e_4)\|^2=0.
+\]
+
+Przy \(\gamma=0.01\) daje to **dokładną zmianę energii asocjatora o 0.04**, bez zmiany części E8. Wynik powtarza skrypt ordered_phase_probe.py.
+
+**Wniosek ograniczony do jawnie zastosowanego działania Weyla na składniki R8:** pełny hamiltonian z \(\gamma>0\) nie jest pod nim niezmienniczy. Sama obecność potencjału pierwiastków nie czyni całości teorią o pełnej symetrii E8. Nie jest to dowód wykluczający *inne* realizacje E8 z odmiennym działaniem na stany i połączenia.
