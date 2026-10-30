@@ -134,3 +134,10 @@ E8 pozostaje kandydatem do organizacji dyskretnych stanów lub struktur reprezen
 - Uzgodnić E8 i lokalne symetrie oraz znaleźć falsyfikowalne obserwable.
 
 **Kryterium STOP:** jeśli powstaje jedynie wewnętrzna geometria kwaternionowa bez propagacji i uniwersalnej grawitacji, POM-3 jest modelem wewnętrznych sektorów, nie teorią czasoprzestrzeni.
+
+
+## 8. Test dynamiki sektorów, a nie tylko stanów statycznych
+
+[sector_motion_probe.py](../Simulations/sector_motion_probe.py) realizuje **nowy** hamiltonian sieci z potencjałem V3, dodatnim sprzężeniem sąsiednim K i karą za asocjator z gamma>0. Startuje z pięciu różnych sektorów generowanych przez u,v, nie z narzuconego pola tetrad. 50 kroków metody symplektycznej leapfrog pokazuje zmianę ortogonalnych projektorów na lokalne kwaternionowe podalgebry. W sprawdzonym biegu: odległości Frobeniusa projektorów po ewolucji wynosiły około 0.035–0.058, a względny dryf energii około 3.05×10⁻⁹; gradient zweryfikowano przez różnice centralne.
+
+**Interpretacja ograniczona:** jest to ruch *wewnętrznego sektora* przy założonym grafie i zewnętrznym parametrze aktualizacji. Nie daje jeszcze fizycznej prędkości c, czasu własnego, metryki propagacji ani torzji. Liczby są wynikami deterministycznego testu, nie pomiarami fizycznymi.
