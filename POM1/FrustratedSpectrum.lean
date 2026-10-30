@@ -80,37 +80,37 @@ theorem pentad_frustrated_mode_negative (mE8 α K : ℝ)
 
 /- The variables uᵢ represent squared norms; Q is the squared norm of
 the collective field sum. Its nonnegativity is a separate hypothesis. -/
-noncomputable def pentadReducedEnergy (α λ K u₀ u₁ u₂ u₃ u₄ Q : ℝ) : ℝ :=
+noncomputable def pentadReducedEnergy (α lam K u₀ u₁ u₂ u₃ u₄ Q : ℝ) : ℝ :=
   (3*K-α)/2 * (u₀+u₁+u₂+u₃+u₄) +
-  λ/4 * (u₀^2+u₁^2+u₂^2+u₃^2+u₄^2) + K/2*Q
+  lam/4 * (u₀^2+u₁^2+u₂^2+u₃^2+u₄^2) + K/2*Q
 
-theorem pentad_square_completion (λ K rSquared u₀ u₁ u₂ u₃ u₄ Q : ℝ) :
-    pentadReducedEnergy (3*K+λ*rSquared) λ K u₀ u₁ u₂ u₃ u₄ Q =
-    λ/4 * ((u₀-rSquared)^2+(u₁-rSquared)^2+(u₂-rSquared)^2+
+theorem pentad_square_completion (lam K rSquared u₀ u₁ u₂ u₃ u₄ Q : ℝ) :
+    pentadReducedEnergy (3*K+lam*rSquared) lam K u₀ u₁ u₂ u₃ u₄ Q =
+    lam/4 * ((u₀-rSquared)^2+(u₁-rSquared)^2+(u₂-rSquared)^2+
       (u₃-rSquared)^2+(u₄-rSquared)^2) + K/2*Q -
-    5*λ/4*rSquared^2 := by
+    5*lam/4*rSquared^2 := by
   unfold pentadReducedEnergy
   ring
 
-theorem pentad_lower_bound (λ K rSquared u₀ u₁ u₂ u₃ u₄ Q : ℝ)
-    (hλ : 0 ≤ λ) (hK : 0 ≤ K) (hQ : 0 ≤ Q) :
-    -(5*λ/4*rSquared^2) ≤
-      pentadReducedEnergy (3*K+λ*rSquared) λ K u₀ u₁ u₂ u₃ u₄ Q := by
+theorem pentad_lower_bound (lam K rSquared u₀ u₁ u₂ u₃ u₄ Q : ℝ)
+    (hlam : 0 ≤ lam) (hK : 0 ≤ K) (hQ : 0 ≤ Q) :
+    -(5*lam/4*rSquared^2) ≤
+      pentadReducedEnergy (3*K+lam*rSquared) lam K u₀ u₁ u₂ u₃ u₄ Q := by
   rw [pentad_square_completion]
   have hsq : 0 ≤
       (u₀-rSquared)^2+(u₁-rSquared)^2+(u₂-rSquared)^2+
       (u₃-rSquared)^2+(u₄-rSquared)^2 := by positivity
-  have h1 : 0 ≤ λ/4 *
+  have h1 : 0 ≤ lam/4 *
       ((u₀-rSquared)^2+(u₁-rSquared)^2+(u₂-rSquared)^2+
        (u₃-rSquared)^2+(u₄-rSquared)^2) :=
     mul_nonneg (by positivity) hsq
   have h2 : 0 ≤ K/2*Q := mul_nonneg (by positivity) hQ
   linarith
 
-theorem pentad_bound_saturated (λ K rSquared : ℝ) :
-    pentadReducedEnergy (3*K+λ*rSquared) λ K
+theorem pentad_bound_saturated (lam K rSquared : ℝ) :
+    pentadReducedEnergy (3*K+lam*rSquared) lam K
       rSquared rSquared rSquared rSquared rSquared 0 =
-      -(5*λ/4*rSquared^2) := by
+      -(5*lam/4*rSquared^2) := by
   rw [pentad_square_completion]
   ring
 
