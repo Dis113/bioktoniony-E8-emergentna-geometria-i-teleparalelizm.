@@ -52,6 +52,7 @@ jobs:
           #print axioms POM1.sector_potential_witness
           #print axioms POM1.sector_witness_positive_area
           #print axioms POM1.sector_gap_zero_conditions
+          #print axioms POM1.sector_minimum_forces_ordering
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
