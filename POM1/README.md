@@ -37,3 +37,14 @@ Szczegółowe warunki sukcesu: [Theory/ProofObligations.md](../Theory/ProofOblig
 ## POM-2: progi niestabilności
 
 Moduł FrustratedSpectrum.lean formalizuje kwadratowe formy K3/K5, ich znaki oraz dolną granicę energii dla pięciu węzłów. Parametr mE8 to jawna dana wejściowa; pełny rachunek różniczkowy E8 nie jest tutaj formalizowany. Kompilacja nie dowodzi emergencji metryki czy torzji.
+
+
+## POM-3 — dynamika wyboru sektora
+
+Moduł SectorVacuum.lean formalizuje dolną granicę i dopełnienie kwadratów
+dla konkretnego potencjału modelu POM-3. Nie powiela twierdzenia Artina
+ani klasyfikacji podalgebr oktonionowych.
+
+Znany rezultat Artina jest **założonym faktem z literatury**,
+potrzebnym do interpretacji Δ>0 jako wyboru H przez bioktonion.
+Sama formalizacja Lean dowodzi tylko nierówności nad liczbami rzeczywistymi.

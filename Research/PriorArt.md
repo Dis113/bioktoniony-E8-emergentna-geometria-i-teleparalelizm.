@@ -38,3 +38,17 @@ Bach, Cicalese, Kreutz, Orlando, *The antiferromagnetic XY model on the triangul
 - John C. Baez, *The Octonions*, *Bulletin of the American Mathematical Society* 39 (2002), 145–205, DOI [10.1090/S0273-0979-01-00934-X](https://doi.org/10.1090/S0273-0979-01-00934-X). Nie dowodzimy ponownie niełączności ani znanych konstrukcji algebr.
 - *The Action of the Weyl Group on the E8 Root System*, *Graphs and Combinatorics* (2021), DOI [10.1007/s00373-021-02315-8](https://doi.org/10.1007/s00373-021-02315-8). Nie dowodzimy ponownie struktury grupy Weyla.
 - POM-2: własny kontrprzykład sprawdza **brak wspólnej symetrii** pomiędzy składową kosinusową E8 a kwadratową energią asocjatora przy standardowym działaniu odbicia na 8 współrzędnych oktonionów. Nie jest to nowy fakt o samej algebrze E8.
+
+
+## POM-3: wyniki, których nie dublujemy (2026-10-31)
+
+- **Artin, alternatywność i oktoniony:** John C. Baez, *The Octonions*, Bull. Amer. Math. Soc. 39 (2002) 145–205, DOI [10.1090/S0273-0979-01-00934-X](https://doi.org/10.1090/S0273-0979-01-00934-X). Znany rezultat: dowolne dwa rzeczywiste oktoniony generują łączną podalgebrę.
+- **Istnienie i klasyfikacja podalgebr:** Norbert Knarr i Markus J. Stroppel, *Subalgebras of octonion algebras*, J. Algebra 664 (2025) 42–74, DOI [10.1016/j.jalgebra.2024.10.004](https://doi.org/10.1016/j.jalgebra.2024.10.004).
+- **Geometria G2 i kwaternionowe sektory:** Chemtov i Karigiannis, *Observations about the Lie algebra g2⊂so(7), associative 3-planes, and so(4) subalgebras*, Experimental Mathematics, DOI [10.1016/j.exmath.2022.10.004](https://doi.org/10.1016/j.exmath.2022.10.004). Przestrzeń kwaternionowych podalgebr jest typu G2/SO(4).
+- **Bikwaterniony i macierze:** Sangwine, Ell, Le Bihan, *Fundamental Representations and Algebraic Properties of Biquaternions or Complexified Quaternions*, Advances in Applied Clifford Algebras 21 (2011) 607–636, DOI [10.1007/s00006-010-0263-3](https://doi.org/10.1007/s00006-010-0263-3). Nie dowodzimy ponownie C⊗H ≅ M₂(C) ani standardowej normy/determinantu.
+- **Kwaterniony i grupa Lorentza:** Morita, *Quaternions, Lorentz Group and the Dirac Theory*, Progress of Theoretical Physics 117 (2007) 501–532, DOI [10.1143/PTP.117.501](https://doi.org/10.1143/PTP.117.501).
+
+**Oryginalny test dla POM-3:** czy energia (-\alpha s/2+\lambda s^2/4-\eta\Delta)
+może wymusić niezdegenerowany, wybrany przez sam stan kwaternionowy sektor,
+bez umieszczania tetrady i bez arbitralnego wyboru czterech współrzędnych.
+Zapisane dowody dotyczą tego potencjału i jego warunków, nie powyższych znanych twierdzeń.
