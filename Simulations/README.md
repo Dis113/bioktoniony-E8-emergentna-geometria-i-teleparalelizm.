@@ -60,3 +60,9 @@ dolną granicę potencjału i widmo 16×16 Hessianu w minimum
 
 Jest to numeryczny test algebraicznej **kinematyki wewnętrznej**.
 Nie wyprowadza fizycznych tetrad, zegarów, geometrii przestrzennej ani torzji.
+
+## Dynamika sektorów POM-3
+
+Uruchom: python Simulations/sector_motion_probe.py
+
+Test rozwija stan na pięcioelementowym grafie przy nowym potencjale V3 i bada zmiany wyznaczonych z niego lokalnych projektorów kwaternionowych. Używa symplektycznej aktualizacji i sprawdza zachowanie energii oraz gradient. Zmiany projektora są zjawiskiem modelowym, a nie wyprowadzonym ruchem fizycznym lub torzją.
