@@ -82,3 +82,4 @@ jobs:
           python Simulations/pom1_model.py
           python Simulations/emergent_geometry_probe.py
           python Simulations/ordered_phase_probe.py
+          python Simulations/sector_vacuum_probe.py
