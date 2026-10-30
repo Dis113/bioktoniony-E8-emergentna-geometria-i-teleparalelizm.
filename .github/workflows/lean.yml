@@ -53,6 +53,13 @@ jobs:
           #print axioms POM1.sector_witness_positive_area
           #print axioms POM1.sector_gap_zero_conditions
           #print axioms POM1.sector_minimum_forces_ordering
+          #print axioms POM1.coefficient_boundary
+          #print axioms POM1.ordered_when
+          #print axioms POM1.trivial_when
+          #print axioms POM1.coexistence_nonneg
+          #print axioms POM1.ordered_slope_factor
+          #print axioms POM1.metastable_slope_factor
+          #print axioms POM1.metastable_barrier_above_local_min
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -85,3 +92,4 @@ jobs:
           python Simulations/ordered_phase_probe.py
           python Simulations/sector_vacuum_probe.py
           python Simulations/sector_motion_probe.py
+          python Simulations/emgr_metastability_probe.py

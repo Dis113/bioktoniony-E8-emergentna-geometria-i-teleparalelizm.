@@ -92,3 +92,14 @@ podalgebrę kwaternionową H, a wzbudzenia można opisywać w C⊗H.
 
 **Ostrzeżenie:** czterowymiarowy wycinek z normą Lorentza jest przestrzenią
 wewnętrzną. Fizyczna czasoprzestrzeń, czas, tetrady i TEGR nie są jeszcze wyprowadzone.
+
+
+## POM-4 — stabilność wzorców EM–GR (gałąź eksperymentalna)
+
+Bikwaternionowa algebra C⊗H pozwala reprezentować sektory spinorowe oraz bosonowe operatory, ale nie przypisuje automatycznie statystyki fermionowej. Model POM-4 testuje *fenomenologiczną* zmianę lokalnych minimów energii wzorca przy zmianie niezmienników pola EM i skalaru torzji GR.
+
+- [Theory/EMGRMetastablePatterns.md](Theory/EMGRMetastablePatterns.md) — ścisła analiza fazowa i ograniczenia fizyczne.
+- [POM1/CoupledMetastability.lean](POM1/CoupledMetastability.lean) — model-specyficzne algebraiczne certyfikaty potencjału i jego barier.
+- [Simulations/emgr_metastability_probe.py](Simulations/emgr_metastability_probe.py) — testy sprzężenia, CAR i 441 punktów diagramu fazowego.
+
+Nie wyprowadzono jeszcze spektrum znanych cząstek, czasu ich życia, elektromagnetyzmu i grawitacji z mikrosieci.

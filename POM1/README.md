@@ -48,3 +48,8 @@ ani klasyfikacji podalgebr oktonionowych.
 Znany rezultat Artina jest **założonym faktem z literatury**,
 potrzebnym do interpretacji Δ>0 jako wyboru H przez bioktonion.
 Sama formalizacja Lean dowodzi tylko nierówności nad liczbami rzeczywistymi.
+
+
+## POM-4 — exact conditional pattern potential
+
+CoupledMetastability.lean formalizes only the **model-specific** coefficient a(E,G), a sixth-order scalar pattern potential and exact rational local extrema/energies. It does **not** reproduce Pauli spin-statistics theorem, prove physical particles, or derive the dynamical EM/GR fields.

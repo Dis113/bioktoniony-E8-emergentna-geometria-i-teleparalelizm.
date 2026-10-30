@@ -66,3 +66,10 @@ Nie wyprowadza fizycznych tetrad, zegarów, geometrii przestrzennej ani torzji.
 Uruchom: python Simulations/sector_motion_probe.py
 
 Test rozwija stan na pięcioelementowym grafie przy nowym potencjale V3 i bada zmiany wyznaczonych z niego lokalnych projektorów kwaternionowych. Używa symplektycznej aktualizacji i sprawdza zachowanie energii oraz gradient. Zmiany projektora są zjawiskiem modelowym, a nie wyprowadzonym ruchem fizycznym lub torzją.
+
+
+## POM-4 — Metastability of an EM/GR-coupled pattern
+
+Run: python Simulations/emgr_metastability_probe.py
+
+The script verifies the H_C ≅ M₂(C) representation in one chosen local sector, textbook two-mode CAR identities, 3 exact rational phase examples and 441 points on the prescribed dimensionless EM–GR parameter grid. It explicitly demonstrates that the chosen EM scalar invariants vanish on an ideal null wave. The script does not establish fermionic particle spectra or physical metastable lifetimes.

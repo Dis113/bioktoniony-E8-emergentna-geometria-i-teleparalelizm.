@@ -56,3 +56,20 @@ Patrz [OrderedVacuum.md](OrderedVacuum.md). Zjawiska frustracji XY są już opis
 
 
 | P208 | Pełna symetria Weyla E8 przy dodatnim sprzężeniu asocjatora | FALSE dla zastosowanego działania R8: jawny kontrprzykład e1,e2,e4; obliczenie Python, opisana różnica energii 0.04 przy gamma=0.01 |
+
+
+## POM-4 — coupled EM–GR pattern stability
+
+| ID | Test | Status |
+|---|---|---|
+| P401 | Exact coexistence and rational barrier energies for V(s)=as−s²+s³ | LEAN: CoupledMetastability.lean (mathematical toy potential) |
+| P402 | Mixed coefficient a(E,G), transition boundary 12G+3EG=20E | LEAN algebra; coefficients are inputs, not predictions |
+| P403 | 441-grid-point phase consistency | CHECKED via Python, not continuous physical data |
+| P404 | Biquaternion matrix representation and fermionic CAR in finite example | KNOWN; numerical consistency check, NOT new spin-statistics proof |
+| P405 | Derive bosonic spectrum and spinor bound states for stable patterns | OPEN |
+| P406 | Quantify decay lifetime including spatial profiles and tunneling | OPEN |
+| P407 | Derive EM field, TEGR tetrad, transport and mixed couplings from microscopic graph | OPEN |
+| P408 | Gauge covariance, backreaction, local Lorentz symmetry and conservation laws | OPEN |
+| P409 | EM null-wave response without additional preferred frame | OPEN — present scalar proxy blind to null EM waves |
+
+See [EMGRMetastablePatterns.md](EMGRMetastablePatterns.md). Known spin–statistics, Jackiw–Rebbi, Q-balls, and covariant scalar–torsion results are cited, not reproved.
