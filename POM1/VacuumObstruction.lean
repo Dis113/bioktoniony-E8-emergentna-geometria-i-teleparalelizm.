@@ -43,7 +43,7 @@ theorem fieldNormSq_zero_implies_field_zero {n : ℕ}
 
 /-- Abstract form of the original positive-mass Hamiltonian:
     remainder includes the kinetic term and all other nonnegative terms. -/
-def abstractEnergy {n : ℕ} (μ2 : ℝ) (ψ : Fin n → Fin 16 → ℝ)
+noncomputable def abstractEnergy {n : ℕ} (μ2 : ℝ) (ψ : Fin n → Fin 16 → ℝ)
     (remainder : ℝ) : ℝ := μ2 / 2 * fieldNormSq ψ + remainder
 
 /-- Model-specific obstruction: with μ²>0, nonnegative remaining energy and
