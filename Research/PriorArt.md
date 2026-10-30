@@ -52,3 +52,13 @@ Bach, Cicalese, Kreutz, Orlando, *The antiferromagnetic XY model on the triangul
 może wymusić niezdegenerowany, wybrany przez sam stan kwaternionowy sektor,
 bez umieszczania tetrady i bez arbitralnego wyboru czterech współrzędnych.
 Zapisane dowody dotyczą tego potencjału i jego warunków, nie powyższych znanych twierdzeń.
+
+
+## POM-4 — previously peer-reviewed, not re-proven
+
+- Pauli, *The Connection Between Spin and Statistics*, Physical Review **58**, 716 (1940), DOI [10.1103/PhysRev.58.716](https://doi.org/10.1103/PhysRev.58.716). Fermionic vs bosonic quantum statistics requires physical spin/covariance/locality assumptions and does not follow from 'being a biquaternion'.
+- Jackiw and Rebbi, *Solitons with fermion number ½*, Physical Review D **13**, 3398 (1976), DOI [10.1103/PhysRevD.13.3398](https://doi.org/10.1103/PhysRevD.13.3398). Known existence of appropriate fermionic modes in certain soliton backgrounds; not generic to every scalar potential.
+- Coleman, *Q-balls*, Nuclear Physics B **262**, 263 (1985), DOI [10.1016/0550-3213(85)90286-X](https://doi.org/10.1016/0550-3213(85)90286-X). Known stability mechanisms for charged field configurations; no need to re-prove general Q-ball theorem.
+- Hohmann, Järv, Ualikhanova, *Covariant formulation of scalar-torsion gravity*, Physical Review D **97**, 104011 (2018), DOI [10.1103/PhysRevD.97.104011](https://doi.org/10.1103/PhysRevD.97.104011). Known scalar–torsion covariance; POM-4 must instead derive its OWN micro-to-macro coupling and check equations.
+
+**Our specific POM-4 test:** a(E,G)=1/4−5E/48+G/16+EG/64 and V(s)=as−s²+s³. The phase diagram is mathematical, not an observational claim. The E and G inputs are nondimensionalized invariants of external fields, not derived from the bi-octonionic graph.
