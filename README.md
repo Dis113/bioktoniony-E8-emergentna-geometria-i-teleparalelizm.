@@ -2,7 +2,7 @@
 
 **Bioktoniony · E₈ · emergentna geometria · teleparalelizm**
 
-Repozytorium niezależnego projektu badawczego POM-1, oddzielone od prac nad procesem Breita–Wheelera.
+Repozytorium projektu badawczego POM-1, poświęconego wyłącznie bioktonionom, geometrii E₈, emergencji czasoprzestrzeni i teleparalelizmowi.
 
 ## Cel
 
@@ -20,7 +20,8 @@ strukturach; nie są dowodem istnienia fizycznego „oceanu próżni”.
 - `POM1.lean` — moduł główny biblioteki Lean.
 - `Theory/Model.md` — założenia, mikroskopowy hamiltonian i granica efektywna.
 - `Theory/ProofObligations.md` — otwarte zadania dowodowe i fizyczne.
-- `.github/workflows/lean.yml` — sprawdzanie Lean 4 w GitHub Actions.
+- `.github/workflows/lean.yml` — niezależna kompilacja i kontrola dowodów Lean 4.
+- `POM1/README.md` — opis zakresu formalizacji i jej ograniczeń.
 
 ## Matematyczne fakty wyjściowe
 
