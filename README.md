@@ -21,7 +21,9 @@ strukturach; nie są dowodem istnienia fizycznego „oceanu próżni”.
 - `Theory/Model.md` — założenia, mikroskopowy hamiltonian i granica efektywna.
 - `Theory/ProofObligations.md` — otwarte zadania dowodowe i fizyczne.
 - `.github/workflows/lean.yml` — niezależna kompilacja i kontrola dowodów Lean 4.
-- `POM1/README.md` — opis zakresu formalizacji i jej ograniczeń.
+- `POM1/README.md` — zakres formalizacji i jej ograniczenia.
+- `Simulations/pom1_model.py` — numeryczny demonstrator bioktonionowego hamiltonianu.
+- `Simulations/README.md` — instrukcja uruchomienia i interpretacja testów.
 
 ## Matematyczne fakty wyjściowe
 
@@ -45,7 +47,14 @@ lake exe cache get
 lake build
 ```
 
-Wyniki kompilacji sprawdzaj w zakładce **Actions**. 
+Symulację numeryczną można uruchomić poleceniami:
+
+```bash
+python -m pip install -r Simulations/requirements.txt
+python Simulations/pom1_model.py
+```
+
+Wyniki kompilacji Lean i testów Pythona sprawdzaj w zakładce **Actions**. 
 W części skończonych certyfikatów użyto `native_decide`, co polega na zaufaniu
 do kompilatora Lean; docelowo chcemy przejść na małe dowody kernelowe.
 
