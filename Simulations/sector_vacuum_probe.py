@@ -52,6 +52,29 @@ def norm_13(time, space, basis):
     return float(product[0])
 
 
+def onsite_gradient(psi, alpha=.45, lam=.8, eta=.2):
+    """Analytic gradient of -alpha*s/2+lam*s²/4-eta*Delta."""
+    x,y=psi[:8],psi[8:]
+    u,v=x[1:],y[1:]
+    a,b,c=float(u@u),float(v@v),float(u@v)
+    s=float(psi@psi)
+    g=(-alpha+lam*s)*psi.copy()
+    g[1:8]-=eta*(2*b*u-2*c*v)
+    g[9:16]-=eta*(2*a*v-2*c*u)
+    return g
+
+
+def onsite_hessian_spectrum(psi, alpha=.45, lam=.8, eta=.2):
+    """16 eigenvalues at an ordered vacuum; internal modes ≠ spacetime modes."""
+    eye=np.eye(16)
+    h=1e-5
+    H=np.column_stack([
+        (onsite_gradient(psi+h*eye[j],alpha,lam,eta)-
+         onsite_gradient(psi-h*eye[j],alpha,lam,eta))/(2*h)
+        for j in range(16)])
+    return np.linalg.eigvalsh((H+H.T)/2)
+
+
 def test():
     rng=np.random.default_rng(20261031)
     alpha, lam, eta=.45,.8,.2
@@ -62,6 +85,10 @@ def test():
     bound=-alpha**2/(4*(lam-eta))
     assert np.isclose(vacuum_potential(psi,alpha,lam,eta),bound)
     B=quaternion_sector(psi)
+    assert np.linalg.norm(onsite_gradient(psi,alpha,lam,eta))<1e-11
+    eig=onsite_hessian_spectrum(psi,alpha,lam,eta)
+    predicted=np.r_[np.zeros(11), [eta*r2]*2,[2*eta*r2]*2, [2*alpha]]
+    assert np.allclose(eig,predicted,atol=1e-8)
     assert np.isclose(invariants(psi)[1],r2**2/4)
     for k in range(180):
         p=rng.normal(size=16)
@@ -111,6 +138,8 @@ def test():
     print("POM-3: exact vacuum bound and global U(1) covariance PASS")
     print(f"Ground energy={bound:.9f}; rho²={r2:.9f}")
     print("POM-3: intrinsic Minkowski quadratic form on Hermitian subspace PASS")
+    print("Ordered vacuum Hessian spectrum:", np.round(eig,8).tolist())
+    print("11 internal flat directions; NOT yet propagating physical fields")
     print(f"Cross-sector associator norm={across:.6f}; projector separation={sep:.6f}")
     print("LIMITATION: no physical clock, tetrad, spin connection, or TEGR derived.")
 
