@@ -23,3 +23,18 @@ Statusy: **PROVED** = sprawdzane kompilacją Lean; **CHECKED** = obliczenia licz
 **Ograniczenie interpretacji:** potwierdzenie M01–M03 nie rozstrzyga D01–D06.
 W szczególności nie dowodzi istnienia komórek próżni ani automatycznej
 unifikacji z Modelu Standardowym.
+
+
+## Wyniki audytu emergencji (2026-10-30)
+
+| ID | Test | Status |
+|---|---|---|
+| V01 | Przy μ²>0 i pozostałej energii ≥0 zerowy stan podstawowy wymusza Ψ=0 | PROVED: warunkowy dowód `POM1/VacuumObstruction.lean`; pełnego H nie formalizowano |
+| V02 | W takim stanie każdy biliniowy prąd Ψ_iΨ_j znika | CHECKED algebraicznie; obserwabla zbudowana w symulacji |
+| V03 | W części liniowej masy są jednakowe w 16 kanałach, a człon asocjatora nie wnosi wkładu | DERIVED perturbacyjnie; CHECKED różnicami skończonymi |
+| V04 | Prądy mogą wytworzyć niezerowy obieg na trójkącie | PROVED świadek w łącznej płaszczyźnie; CHECKED numerycznie na bioktonionach |
+| V05 | Nieosobliwa 4D tetrada w stanie próżni bez arbitralnej projekcji i narzuconej sygnatury | OPEN |
+| V06 | Fizyczna torzja zgodna z lokalną symetrią Lorentza | OPEN |
+| V07 | Działanie TEGR z limitu mikroskopowego | OPEN |
+
+Szczegóły oraz ograniczenia: [EmergenceBridge.md](EmergenceBridge.md).
