@@ -1,0 +1,57 @@
+name: POM-1 Lean 4 verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install elan
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch Lean and mathlib
+        shell: bash
+        run: |
+          lean --version
+          lake --version
+          lake update
+          lake exe cache get
+
+      - name: Compile POM-1 proofs
+        run: lake build
+
+      - name: Inspect proof axioms
+        shell: bash
+        run: |
+          cat > POM1AxiomAudit.lean <<'EOF'
+          import POM1
+          #print axioms POM1.doubledRoot_norm_sq
+          #print axioms POM1.doubledRoot_second_moment
+          #print axioms POM1.root_second_moment
+          #print axioms POM1.rootPotential_nonneg
+          #print axioms POM1.mass_shift_identity
+          EOF
+          lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
+          if grep -q 'sorryAx' POM1AxiomAudit.log; then
+            echo "Unexpected sorryAx detected"
+            exit 1
+          fi
+
+      - name: Reject unproven placeholders
+        shell: bash
+        run: |
+          if grep -R -nE '(^|[[:space:]])(sorry|admit)([[:space:]]|$)' POM1 POM1.lean; then
+            echo "Admitted Lean proof detected"
+            exit 1
+          fi
