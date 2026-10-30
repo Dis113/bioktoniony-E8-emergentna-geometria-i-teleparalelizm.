@@ -38,3 +38,18 @@ unifikacji z Modelu Standardowym.
 | V07 | Działanie TEGR z limitu mikroskopowego | OPEN |
 
 Szczegóły oraz ograniczenia: [EmergenceBridge.md](EmergenceBridge.md).
+
+
+## POM-2 (2026-10-30)
+
+| ID | Problem | Status |
+|---|---|---|
+| P201 | Formy kwadratowe K3/K5 i próg α_c | Formalizacja Lean, identyfikacja mE8 z Hessego pozostaje poza modułem |
+| P202 | Ukończenie kwadratów i dolne ograniczenie energii K5 | Formalizacja Lean |
+| P203 | Równa energia stanów rangi 2 i 4 dla epsilon=0 | Dowód algebraiczny + test Python; ranki nie są jeszcze udowodnione w Lean |
+| P204 | Dodatnie epsilon: istnienie niezerowego globalnego minimum | Analityczny próg + ujemne stany próbne; pełny kształt minimum otwarty |
+| P205 | Jednoznaczna selekcja rangi 4 | OPEN |
+| P206 | Fizyczne tetrady z sygnaturą Lorentza | OPEN |
+| P207 | Globalna U(1) potencjału E8 | FALSE: numeryczny kontrprzykład |
+
+Patrz [OrderedVacuum.md](OrderedVacuum.md). Zjawiska frustracji XY są już opisane w recenzowanej literaturze.

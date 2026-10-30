@@ -32,3 +32,8 @@ lake build
 ```
 
 Szczegółowe warunki sukcesu: [Theory/ProofObligations.md](../Theory/ProofObligations.md).
+
+
+## POM-2: progi niestabilności
+
+Moduł FrustratedSpectrum.lean formalizuje kwadratowe formy K3/K5, ich znaki oraz dolną granicę energii dla pięciu węzłów. Parametr mE8 to jawna dana wejściowa; pełny rachunek różniczkowy E8 nie jest tutaj formalizowany. Kompilacja nie dowodzi emergencji metryki czy torzji.

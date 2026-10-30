@@ -38,3 +38,10 @@ python Simulations/emergent_geometry_probe.py
 To nie jest jeszcze tetrada teleparalelna: brakuje lokalnej symetrii
 Lorentza, płaskiej koneksji spinowej oraz fizycznego wyprowadzenia
 sygnatury czasoprzestrzeni. Analiza: [Theory/EmergenceBridge.md](../Theory/EmergenceBridge.md).
+
+
+## POM-2: badanie uporządkowanej próżni
+
+Uruchom: python Simulations/ordered_phase_probe.py
+
+Wymaga też biblioteki SciPy. Porównuje model K3 i K5, sprawdza zakresy niestabilności, dwie przeciwne gałęzie obiegu, stany o rangach 2 i 4 oraz brak ciągłej symetrii U(1) potencjału E8. To diagnostyka, nie dowód tetrad ani globalnego minimum pełnego układu przy dodatnim E8.

@@ -170,3 +170,8 @@ realizacja POM-1 nie jest emergentną teorią grawitacji.
 
 **Nie należy utożsamiać wykazania obiegu biliniowego prądu z dowodem
 teleparalelizmu.**
+
+
+## Kontynuacja: POM-2
+
+Warunek zerowego pola z POM-1 można obejść przez zmianę dynamiki, nie przez deklarowanie tetrady. Zobacz [OrderedVacuum.md](OrderedVacuum.md). Powstaje niezerowy stan, lecz próżnie rangi 2 i 4 mogą być energetycznie zdegenerowane. Nie otrzymano jeszcze fizycznej sygnatury −+++ ani koneksji teleparalelnej.

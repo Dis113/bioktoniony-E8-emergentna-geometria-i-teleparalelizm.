@@ -26,3 +26,8 @@ Nie „czy w ogóle istnieje biliniowa tetrada” albo „czy torzja da się zdy
 - Biliniowy prąd nie jest jeszcze tetradą, a obieg prądu nie jest automatycznie tensorową torzją teleparalelną.
 - Poprawne widmo fal z efektywnym stożkiem przyczynowym nie dowodzi równań Einsteina.
 - W POM-1 należy testować **własne założenia i mapy mikro→makro**, a stare twierdzenia wykorzystywać jako cytowane rezultaty.
+
+
+## Niepowielany wynik o fazach sfrustrowanych XY
+
+Bach, Cicalese, Kreutz, Orlando, *The antiferromagnetic XY model on the triangular lattice: chirality transitions at the surface scaling*, *Calculus of Variations and Partial Differential Equations* 60, 149 (2021), DOI [10.1007/s00526-021-02016-3](https://doi.org/10.1007/s00526-021-02016-3). Znamy już mechanizm 120-stopniowej struktury i dwóch chiralności. POM-2 bada odrębną kwestię: wynik tej konkurencji w konkretnym grafowym hamiltonianie bioktonionowym, po uwzględnieniu E8 i asocjatora.

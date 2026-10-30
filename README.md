@@ -68,3 +68,12 @@ lokalnych tetrad i skalaru torzji z dynamiki sieci, a także Modelu
 Standardowego, uwięzienia koloru i obserwacyjnie dopasowanego ciemnego sektora.
 
 Wszystkie te zagadnienia pozostają jawnymi zadaniami, nie twierdzeniami.
+
+
+## POM-2: faza uporządkowana i degeneracja rangi
+
+- [Teoria i wyniki](Theory/OrderedVacuum.md): zmodyfikowany hamiltonian, dokładne dolne ograniczenie energii i otwarte ograniczenia.
+- [Formalne twierdzenia Lean](POM1/FrustratedSpectrum.lean): specyficzne dla POM-2 formy kwadratowe K3/K5 i dolna granica energii.
+- [Eksperyment Python](Simulations/ordered_phase_probe.py): przeciwne chiralności i dwa równoważne energetycznie stany rangi 2 i 4.
+
+Ranga 4 w przestrzeni stanów NIE oznacza wyprowadzenia fizycznej tetrady czy sygnatury Lorentza.
