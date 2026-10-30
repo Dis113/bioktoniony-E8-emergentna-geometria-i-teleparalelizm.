@@ -20,6 +20,8 @@ strukturach; nie są dowodem istnienia fizycznego „oceanu próżni”.
 - `POM1.lean` — moduł główny biblioteki Lean.
 - `Theory/Model.md` — założenia, mikroskopowy hamiltonian i granica efektywna.
 - `Theory/ProofObligations.md` — otwarte zadania dowodowe i fizyczne.
+- `Theory/EmergenceBridge.md` — krytyczny test wyprowadzania geometrii z sieci.
+- `Research/PriorArt.md` — recenzowana literatura; **bez dublowania znanych dowodów**.
 - `.github/workflows/lean.yml` — niezależna kompilacja i kontrola dowodów Lean 4.
 - `POM1/README.md` — zakres formalizacji i jej ograniczenia.
 - `Simulations/pom1_model.py` — numeryczny demonstrator bioktonionowego hamiltonianu.
@@ -52,6 +54,7 @@ Symulację numeryczną można uruchomić poleceniami:
 ```bash
 python -m pip install -r Simulations/requirements.txt
 python Simulations/pom1_model.py
+python Simulations/emergent_geometry_probe.py
 ```
 
 Wyniki kompilacji Lean i testów Pythona sprawdzaj w zakładce **Actions**. 
