@@ -22,3 +22,19 @@ python Simulations/pom1_model.py
 Standardowego, grawitacji ani prędkości światła z tego hamiltonianu.
 Parametry i liczby kosmologiczne są ilustracyjne. Testy numeryczne nie są
 dowodami Lean.
+
+## Test emergencji krawędziowej (nie dowód grawitacji)
+
+`emergent_geometry_probe.py` buduje z bioktonionowych prądów kandydat na
+ramę krawędziową na **założonym** pięciowęzłowym grafie i śledzi jej
+zmiany podczas dynamiki hamiltonianu. Sprawdza zanik prądów w stanie
+zerowym, niezerowy obieg w stanach wzbudzonych i niejednoznaczność
+wyboru czterech osi wewnętrznych.
+
+```bash
+python Simulations/emergent_geometry_probe.py
+```
+
+To nie jest jeszcze tetrada teleparalelna: brakuje lokalnej symetrii
+Lorentza, płaskiej koneksji spinowej oraz fizycznego wyprowadzenia
+sygnatury czasoprzestrzeni. Analiza: [Theory/EmergenceBridge.md](../Theory/EmergenceBridge.md).
