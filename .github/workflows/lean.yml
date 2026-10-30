@@ -41,6 +41,8 @@ jobs:
           #print axioms POM1.root_second_moment
           #print axioms POM1.rootPotential_nonneg
           #print axioms POM1.mass_shift_identity
+          #print axioms POM1.zero_energy_forces_trivial_field
+          #print axioms POM1.channelLoop_witness
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
