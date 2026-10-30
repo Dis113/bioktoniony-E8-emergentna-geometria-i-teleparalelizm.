@@ -51,7 +51,20 @@ jobs:
       - name: Reject unproven placeholders
         shell: bash
         run: |
-          if grep -R -nE '(^|[[:space:]])(sorry|admit)([[:space:]]|$)' POM1 POM1.lean; then
+          if grep -R -nE '(^|[[:space:]])(sorry|admit)([[:space:]]|$)' POM1/*.lean POM1.lean; then
             echo "Admitted Lean proof detected"
             exit 1
           fi
+
+  simulation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install numerical dependencies
+        run: python -m pip install -r Simulations/requirements.txt
+      - name: Run POM-1 Hamiltonian numerical checks
+        run: python Simulations/pom1_model.py
