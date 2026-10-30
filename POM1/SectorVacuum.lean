@@ -88,4 +88,44 @@ theorem sector_gap_zero_conditions (t a b c : ℝ)
   · nlinarith [sq_nonneg t, sq_nonneg c, sq_nonneg (a-b)]
   · nlinarith [sq_nonneg t, sq_nonneg (a-b), sq_nonneg c]
 
+/-- A minimizer of the ordered-vacuum potential has no scalar part,
+    equal squared imaginary norms, orthogonal imaginary components,
+    and the prescribed total squared norm. -/
+theorem sector_minimum_forces_ordering (lam eta r t a b c : ℝ)
+    (h_eta : 0 < eta) (h_lam : eta < lam)
+    (ht : 0 ≤ t) (ha : 0 ≤ a) (hb : 0 ≤ b)
+    (hmin : sectorPotential ((lam-eta)*r) lam eta
+      (t+a+b) (a*b-c^2) = -(lam-eta)/4*r^2) :
+    t = 0 ∧ a = b ∧ c = 0 ∧ t+a+b = r := by
+  have hgap := sector_gap_nonneg t a b c ht ha hb
+  have hsq : 0 ≤ (t+a+b-r)^2 := sq_nonneg _
+  have hp : 0 < (lam-eta)/4 := by linarith
+  have he : 0 < eta/4 := by linarith
+  have hterm1 :
+      0 ≤ (lam-eta)/4*(t+a+b-r)^2 :=
+    mul_nonneg (le_of_lt hp) hsq
+  have hterm2 :
+      0 ≤ eta/4*((t+a+b)^2-4*(a*b-c^2)) :=
+    mul_nonneg (le_of_lt he) hgap
+  have hid := sector_potential_completion lam eta r t a b c
+  have hsum :
+      (lam-eta)/4*(t+a+b-r)^2+
+      eta/4*((t+a+b)^2-4*(a*b-c^2))=0 := by
+    linarith
+  have hgap0 : (t+a+b)^2-4*(a*b-c^2)=0 := by
+    by_contra hn
+    have hh : 0 < (t+a+b)^2-4*(a*b-c^2) :=
+      lt_of_le_of_ne hgap (Ne.symm hn)
+    have hm := mul_pos he hh
+    linarith
+  have hsq0 : (t+a+b-r)^2=0 := by
+    by_contra hn
+    have hh : 0 < (t+a+b-r)^2 :=
+      lt_of_le_of_ne hsq (Ne.symm hn)
+    have hm := mul_pos hp hh
+    linarith
+  have hcoordinates := sector_gap_zero_conditions t a b c ht ha hb hgap0
+  have htotal : t+a+b=r := by nlinarith [hsq0]
+  exact ⟨hcoordinates.1, hcoordinates.2.1, hcoordinates.2.2, htotal⟩
+
 end POM1
