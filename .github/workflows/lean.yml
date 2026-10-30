@@ -69,4 +69,6 @@ jobs:
       - name: Install numerical dependencies
         run: python -m pip install -r Simulations/requirements.txt
       - name: Run POM-1 Hamiltonian numerical checks
-        run: python Simulations/pom1_model.py
+        run: |
+          python Simulations/pom1_model.py
+          python Simulations/emergent_geometry_probe.py
