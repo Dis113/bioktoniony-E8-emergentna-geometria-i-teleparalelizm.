@@ -1,0 +1,11 @@
+name = "POM1VacuumTheory"
+version = "0.1.0"
+defaultTargets = ["POM1"]
+
+[[lean_lib]]
+name = "POM1"
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
