@@ -77,3 +77,18 @@ Wszystkie te zagadnienia pozostają jawnymi zadaniami, nie twierdzeniami.
 - [Eksperyment Python](Simulations/ordered_phase_probe.py): przeciwne chiralności i dwa równoważne energetycznie stany rangi 2 i 4.
 
 Ranga 4 w przestrzeni stanów NIE oznacza wyprowadzenia fizycznej tetrady czy sygnatury Lorentza.
+
+
+## POM-3 (eksperymentalna gałąź): próżnia sektorów bikwaternionowych
+
+**Nowy postulat:** bioktonionowy stan próżni nie jest tetradą ani cząstką.
+Dla generycznego stanu x+Iy wybiera z własnych części urojonych lokalną
+podalgebrę kwaternionową H, a wzbudzenia można opisywać w C⊗H.
+
+- [Theory/BiquaternionSectorVacuum.md](Theory/BiquaternionSectorVacuum.md) — pełna definicja, ścisły warunek minimum, ograniczenia fizyczne i literatura.
+- [POM1/SectorVacuum.lean](POM1/SectorVacuum.lean) — dowody specyficznego dla POM-3 potencjału, nie dowody znanego twierdzenia Artina.
+- [Simulations/sector_vacuum_probe.py](Simulations/sector_vacuum_probe.py) — wybór sektora z x,y, norma Minkowskiego, U(1) i Hessian.
+- [Research/PriorArt.md](Research/PriorArt.md) — recenzowane wyniki, których **nie powielamy**.
+
+**Ostrzeżenie:** czterowymiarowy wycinek z normą Lorentza jest przestrzenią
+wewnętrzną. Fizyczna czasoprzestrzeń, czas, tetrady i TEGR nie są jeszcze wyprowadzone.
