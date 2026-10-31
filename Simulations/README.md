@@ -73,3 +73,15 @@ Test rozwija stan na pięcioelementowym grafie przy nowym potencjale V3 i bada z
 Run: python Simulations/emgr_metastability_probe.py
 
 The script verifies the H_C ≅ M₂(C) representation in one chosen local sector, textbook two-mode CAR identities, 3 exact rational phase examples and 441 points on the prescribed dimensionless EM–GR parameter grid. It explicitly demonstrates that the chosen EM scalar invariants vanish on an ideal null wave. The script does not establish fermionic particle spectra or physical metastable lifetimes.
+
+
+## POM-5: truncated Rac/Di-like channels
+
+Run from the repository root:
+
+    python Simulations/singleton_channel_probe.py
+    python Simulations/singleton_sector_transport.py
+
+The first script uses two bosonic oscillator modes per site at a finite cutoff to test a number-conserving link and an SU2-singlet pairing source. It verifies global parity, absence of mixed even-odd sectors from an even initial vacuum, and nonzero simultaneous odd-odd local excitations. Physical pair creation rates have NOT been computed. Finite matrices necessarily fail exact canonical commutation relations.
+
+The second script constructs closest-SO3 overlap transport between the quaternionic frames selected in POM-3 and verifies the SU2 spin lift. This transport is a *postulate* selected from an overlap metric, not a derived physical Lorentz or Sp(4,R) connection.

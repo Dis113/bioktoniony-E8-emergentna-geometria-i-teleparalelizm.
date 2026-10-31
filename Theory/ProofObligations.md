@@ -73,3 +73,25 @@ Patrz [OrderedVacuum.md](OrderedVacuum.md). Zjawiska frustracji XY są już opis
 | P409 | EM null-wave response without additional preferred frame | OPEN — present scalar proxy blind to null EM waves |
 
 See [EMGRMetastablePatterns.md](EMGRMetastablePatterns.md). Known spin–statistics, Jackiw–Rebbi, Q-balls, and covariant scalar–torsion results are cited, not reproved.
+
+
+## POM-5 — Di/Rac singleton channel gates (2026-10-31)
+
+| ID | Statement / obligation | Current status |
+|---|---|---|
+| P501 | Published Rac⊗Rac, Di⊗Di, Rac⊗Di decomposition | REVIEWED, not re-proved |
+| P502 | Published even/odd metaplectic Fock decomposition into Rac/Di | REVIEWED, not re-proved |
+| P503 | Global parity of POM-5 two-site hopping and SU2-singlet pair source | Lean arithmetic selection + finite matrix test |
+| P504 | A globally even state has no single mixed local Rac–Di sector under even evolution | Lean and Python conditional result |
+| P505 | Finite biquaternion M2(C) is not an exact two-oscillator Fock representation | Known finite-dimensional CCR trace obstruction, numerically shown |
+| P506 | Choose internal SU2 link from two POM-3 sector frames by Procrustes | CHECKED numerically, choice is POSTULATED |
+| P507 | Derive intersite transport with a COMMON full Sp(4,R) action | OPEN |
+| P508 | Derive the oscillator CCR and energy grading from the graph Hamiltonian | OPEN |
+| P509 | Derive AdS4 curvature/scale or a valid alternative to apply singleton theorems | OPEN |
+| P510 | Distinguish odd oscillator occupation from physical fermionic CAR | OPEN, not assumed |
+| P511 | Photon/electron/graviton existence, production rates and lifetimes | OPEN |
+| P512 | Derive EM/GR-dependent pair coupling and backreaction | OPEN |
+
+See [SingletonChannelBridge.md](SingletonChannelBridge.md) for exact scope and links to reviewed literature. POM5 computations do not prove the creation of Standard Model particles.
+
+| P513 | SU2-singlet pair from two local Di doublets has E0=2, total spin0 and is annihilated by diagonal lowering operators (finite low-level witness) | CHECKED numerically; published Di⊗Di contains D(2,0). Not a proof of full module or physical scalar |

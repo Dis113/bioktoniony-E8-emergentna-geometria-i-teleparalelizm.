@@ -60,6 +60,11 @@ jobs:
           #print axioms POM1.ordered_slope_factor
           #print axioms POM1.metastable_slope_factor
           #print axioms POM1.metastable_barrier_above_local_min
+          #print axioms POM1.even_total_iff_equal_site_parity
+          #print axioms POM1.mixed_singleton_forbidden_in_even_sector
+          #print axioms POM1.pair_source_preserves_total_parity
+          #print axioms POM1.single_hop_preserves_total_parity
+          #print axioms POM1.odd_total_iff_mixed_parity
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -93,3 +98,5 @@ jobs:
           python Simulations/sector_vacuum_probe.py
           python Simulations/sector_motion_probe.py
           python Simulations/emgr_metastability_probe.py
+          python Simulations/singleton_channel_probe.py
+          python Simulations/singleton_sector_transport.py
