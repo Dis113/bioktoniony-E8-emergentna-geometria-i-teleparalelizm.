@@ -103,3 +103,16 @@ Bikwaternionowa algebra C⊗H pozwala reprezentować sektory spinorowe oraz boso
 - [Simulations/emgr_metastability_probe.py](Simulations/emgr_metastability_probe.py) — testy sprzężenia, CAR i 441 punktów diagramu fazowego.
 
 Nie wyprowadzono jeszcze spektrum znanych cząstek, czasu ich życia, elektromagnetyzmu i grawitacji z mikrosieci.
+
+
+## POM-5 — Rac/Di and Flato–Fronsdal channels (draft)
+
+**Research target:** can a bi-octonion-selected biquaternion sector support a locally transported two-mode oscillator Fock representation, from which published Rac/Di tensor-product rules can be *applied*? The theorem itself is known and is NOT re-proven.
+
+- [Theory/SingletonChannelBridge.md](Theory/SingletonChannelBridge.md) — reviewed SO(3,2) singleton rules, admissible bosonic/fermionic towers, representation vs physical production, exact limitations.
+- [POM1/SingletonSectorSelection.lean](POM1/SingletonSectorSelection.lean) — POM-5-specific parity selection constraints, not an alternative to Flato–Fronsdal.
+- [Simulations/singleton_channel_probe.py](Simulations/singleton_channel_probe.py) — finite-truncation pair excitation and hopping between Rac-like/Di-like parity sectors.
+- [Simulations/singleton_sector_transport.py](Simulations/singleton_sector_transport.py) — **postulated** compact SU2 intersector transport from the state-selected quaternion frames.
+- [Research/PriorArt.md](Research/PriorArt.md) — peer-reviewed prior theorems and variations.
+
+**Do not conflate:** a finite biquaternion M2(C), the infinite-dimensional Rac/Di singleton Hilbert spaces, actual fermionic CAR, an AdS4 physical vacuum, or photon/electron creation. All these are distinct obligations.

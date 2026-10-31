@@ -53,3 +53,8 @@ Sama formalizacja Lean dowodzi tylko nierówności nad liczbami rzeczywistymi.
 ## POM-4 — exact conditional pattern potential
 
 CoupledMetastability.lean formalizes only the **model-specific** coefficient a(E,G), a sixth-order scalar pattern potential and exact rational local extrema/energies. It does **not** reproduce Pauli spin-statistics theorem, prove physical particles, or derive the dynamical EM/GR fields.
+
+
+## POM-5: singleton-sector selection, not the singleton theorem
+
+SingletonSectorSelection.lean certifies only arithmetic parity constraints for the proposed two-site, quadratic oscillator couplings. It does not recreate the published Flato–Fronsdal decomposition or the metaplectic construction of the so(3,2) singletons. The physical existence of such oscillator Fock fibers in POM is still an unproved assumption.

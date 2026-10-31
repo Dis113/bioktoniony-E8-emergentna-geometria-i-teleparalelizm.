@@ -62,3 +62,17 @@ Zapisane dowody dotyczą tego potencjału i jego warunków, nie powyższych znan
 - Hohmann, Järv, Ualikhanova, *Covariant formulation of scalar-torsion gravity*, Physical Review D **97**, 104011 (2018), DOI [10.1103/PhysRevD.97.104011](https://doi.org/10.1103/PhysRevD.97.104011). Known scalar–torsion covariance; POM-4 must instead derive its OWN micro-to-macro coupling and check equations.
 
 **Our specific POM-4 test:** a(E,G)=1/4−5E/48+G/16+EG/64 and V(s)=as−s²+s³. The phase diagram is mathematical, not an observational claim. The E and G inputs are nondimensionalized invariants of external fields, not derived from the bi-octonionic graph.
+
+
+## POM-5 — Dirac singleton literature (reviewed results, do not duplicate)
+
+1. **Original Flato–Fronsdal:** Flato & Fronsdal, *One massless particle equals two Dirac singletons*, Lett. Math. Phys. 2, 421 (1978), DOI [10.1007/BF00400170](https://doi.org/10.1007/BF00400170). The Rac⊗Rac, Di⊗Di and Rac⊗Di decompositions are a theorem about AdS4 representation modules, not physical particle production.
+2. **Singletons and massless fields:** Angelopoulos, Flato, Fronsdal, Sternheimer, *Massless particles, conformal group, and de Sitter universe*, Phys. Rev. D 23, 1278 (1981), DOI [10.1103/PhysRevD.23.1278](https://doi.org/10.1103/PhysRevD.23.1278).
+3. **Supersingletons (Rac⊕Di):** Fronsdal, *Dirac supermultiplet*, Phys. Rev. D 26, 1988 (1982), DOI [10.1103/PhysRevD.26.1988](https://doi.org/10.1103/PhysRevD.26.1988).
+4. **Higher-order variations and partially-massless channels:** Basile, Bekaert, Boulanger, *Flato–Fronsdal theorem for higher-order singletons*, JHEP 11 (2014) 131, DOI [10.1007/JHEP11(2014)131](https://doi.org/10.1007/JHEP11(2014)131). Some higher-order modules lack unitarity; not automatic stable particles.
+5. **Higher-rank singleton fields:** Gelfond & Vasiliev, *Higher-rank fields and currents*, JHEP 10 (2016) 067, DOI [10.1007/JHEP10(2016)067](https://doi.org/10.1007/JHEP10(2016)067). Generalized multilinear Fock singleton products are already studied.
+6. **Supersymmetric higher-spin spectrum:** Pang, Sezgin, Zhu, *One-loop tests of the supersymmetric higher spin AdS4/CFT3 correspondence*, Phys. Rev. D 95, 026008 (2017), DOI [10.1103/PhysRevD.95.026008](https://doi.org/10.1103/PhysRevD.95.026008).
+7. **Metaplectic even Rac / odd Di:** Basile, Bekaert, Joung, *Twisted Flato–Fronsdal theorem for higher-spin algebras*, JHEP 07 (2018) 009, DOI [10.1007/JHEP07(2018)009](https://doi.org/10.1007/JHEP07(2018)009). The oscillator representation already identifies Rac/Di with even/odd number Fock subspaces.
+8. **Well-known SU2 singlet bond pair:** Zhang, Lamas, Arlego & Brenig, *Quantum phase diagram of a frustrated antiferromagnet on the bilayer honeycomb lattice*, Phys. Rev. B 93, 235150 (2016), DOI [10.1103/PhysRevB.93.235150](https://doi.org/10.1103/PhysRevB.93.235150). The Schwinger-boson singlet pair and hopping operators are not POM inventions.
+
+**POM-specific open bridge:** derive two physical oscillator channels, a shared diagonal Sp(4,R) action, inter-fiber transport and the interaction coefficients from the bi-octonionic graph. Without that, parity channels remain a toy analogy.
