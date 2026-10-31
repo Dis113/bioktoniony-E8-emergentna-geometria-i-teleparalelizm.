@@ -84,7 +84,7 @@ def spinor_chain(edges):
     assert np.allclose(H,H.conj().T)
     gamma=np.kron(np.diag([1. if j%2==0 else -1. for j in range(n)]),
                   np.eye(2))
-    assert np.linalg.norm(gamma@H@ ~gamma if False else gamma@H+H@gamma)<1e-10
+    assert np.linalg.norm(gamma@H+H@gamma)<1e-10
     return H
 
 
