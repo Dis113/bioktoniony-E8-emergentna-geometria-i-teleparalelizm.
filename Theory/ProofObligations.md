@@ -118,3 +118,23 @@ Read [SpectralTopologicalBridge.md](SpectralTopologicalBridge.md) before interpr
 
 | P612 | \(\pi_2(V_2(\mathbb R^7))=0\) vs \(\pi_2(G_2/SO(4))\cong\mathbb Z_2\) | REVIEWED published topology; no duplicate proof |
 | P613 | Derive local SO3 gauge redundancy so the physical vacuum is the quotient, or find alternative defect protection | OPEN; see [VacuumTopologyAudit.md](VacuumTopologyAudit.md) |
+
+
+## POM-7 — spontaneous-sector-ordering gates (2026-10-31)
+
+| ID | Task | Status |
+|---|---|---|
+| P701 | Old H3 with K>0 and gamma≥0 forces uniform global ground state | Analytical H3 proof; Lean conditional positive-link lemma |
+| P702 | J1–J2 ANNNI period-four antiphase at J2>J1/2 | REVIEWED known result, do NOT re-prove |
+| P703 | POM-3 projector overlap mapped to binary Ising labels | Lean model-specific identity |
+| P704 | New projector frustration has 4 degenerate phases on N=8,12,40 rings | Exact enumeration + min-plus DP; not real-time dynamics |
+| P705 | Two terminal spectra among four equal-energy ground translations | Python test of known SSH edge spectrum, 2 topological and 2 trivial |
+| P706 | Sector C (q_AC=1/2) has lower trial energy than old B (q_AB=5/8) | Lean exact counterexample |
+| P707 | A rational pair of continuous sector orientations has q=178369/390625 | Exact Fraction octonion calculation in Python |
+| P708 | Global optimum on full continuous POM-3 vacuum manifold | OPEN: restricted 1-angle optimization not enough |
+| P709 | Derive competing projector coupling and 1D graph from microscopic dynamics | OPEN |
+| P710 | True 3+1D Lorentzian fermionic spectrum and universal TEGR dynamics | OPEN |
+| P711 | Finite positive-temperature order of the 1D short-range model | Not supported; standard absence of finite-T ordering |
+| P712 | Select a unique physical boundary termination and gauge transport | OPEN |
+
+[Theory/SpontaneousSectorOrdering.md](SpontaneousSectorOrdering.md) contains the analysis and strict distinctions between mathematical tests and physical interpretations.
