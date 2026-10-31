@@ -99,3 +99,4 @@ jobs:
           python Simulations/sector_motion_probe.py
           python Simulations/emgr_metastability_probe.py
           python Simulations/singleton_channel_probe.py
+          python Simulations/singleton_sector_transport.py
