@@ -113,3 +113,4 @@ jobs:
           python Simulations/spectral_topological_probe.py
           python Simulations/spontaneous_ordering_probe.py
           python Simulations/continuous_sector_frustration.py
+          python Simulations/full_vacuum_ordering_probe.py
