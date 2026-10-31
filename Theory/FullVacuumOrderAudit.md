@@ -111,3 +111,17 @@ Przy dodatnim \(\gamma\) nie wykonano pełnej globalnej minimalizacji wszystkich
 Wynik POM-8 oznacza, że przed szukaniem chronionych fermionów trzeba znaleźć w pełnym modelu **mechanizm wyboru wymiaru, sąsiedztwa i rodzaju porządku**, nie tylko dopasować kolejne parametry przy zadanym łańcuchu.
 
 **Pierwszy test falsyfikacyjny:** czy na dynamicznie tworzonych grafach 3D/4D i w pełnej przestrzeni sektorów istnieje stabilna faza z uniwersalnym stożkiem propagacji oraz fizycznie poprawnym spektrum? Jeśli nie, obecny program jest zbiorem analogowych modeli, a nie unifikacją.
+
+
+## POM-9 follow-up: the Fibonacci word is not a minimum found by POM-8
+
+POM-9 uses continued-fraction convergents to CREATE a prescribed
+quasiperiodic arrangement of two quaternion sector projectors and
+adds an external Peierls flux alpha=ePhi/h. It tests whether a
+resulting gapped Hofstadter phase is robust, and it is.
+
+However, the POM-8 counterexample still stands: the full
+bi-octonionic vacuum model has not dynamically selected A/B,
+the Fibonacci word, the 2D graph or an EM field.
+This must not be advertised as spontaneous Planck-scale matter
+creation. See [PlanckContinuedFractions.md](PlanckContinuedFractions.md).
