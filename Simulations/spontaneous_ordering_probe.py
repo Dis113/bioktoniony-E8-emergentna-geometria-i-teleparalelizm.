@@ -137,9 +137,28 @@ def spectral_termination(spins,p0,p1,offset=.1,stiffness=.9):
                 edge_weight=edge_weight,first_two=hoppings[:2])
 
 
+def finite_temperature_dimer_mean(n=8,beta=2):
+    """Full thermal finite-ring ensemble keeps translation symmetry.
+    This does not demonstrate infinite-volume symmetry breaking.
+    """
+    total=0.
+    numerator=0.
+    for pattern in product([-1,1],repeat=n):
+        energy=ising_ring_energy(pattern)
+        weight=np.exp(-beta*(energy+n))
+        # normalized projector overlap difference q01-q12 for qAB=5/8:
+        dimer=(3/16)*(pattern[0]*pattern[1] -
+                       pattern[1]*pattern[2])
+        total+=weight
+        numerator+=weight*dimer
+    return numerator/total
+
+
 def run():
     assert exact_ring_minimizers(8)[0]==-8
     assert exact_ring_minimizers(12)[0]==-12
+    assert abs(finite_temperature_dimer_mean(8))<1e-12
+    assert abs(finite_temperature_dimer_mean(12))<1e-12
     solutions=exact_transfer_minimizers(40)
     states,projectors_,q=projectors()
     pa,pb,pc=projectors_
@@ -192,6 +211,7 @@ def run():
                   "winding",sp["winding"],"edge |E|",sp["minabs"],
                   "edge weight",sp["edge_weight"])
     print("POM-7: topology depends on boundary termination, not just bulk order")
+    print("POM-7: finite-ring thermal mean dimer order is zero without branch selection")
     print("POM-7: C is energetically preferable to B in test frustration,")
     print("so POM-6 choice B was NOT dynamically selected.")
     print("LIMIT: 1D graph, two-sector restriction, competing J1/J2 and")
