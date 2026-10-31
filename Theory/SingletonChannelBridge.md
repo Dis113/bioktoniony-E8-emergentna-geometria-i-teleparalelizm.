@@ -90,6 +90,20 @@ H_{\rm pair}&=\kappa(\mathcal I_{\rm EM},\mathcal I_{\rm GR})
 
 The antisymmetric pairing is a compact SU(2) spin singlet and the number-conserving hopping respects a *common* SU(2) frame rotation. This corrects a noncovariant same-channel pairing ansatz. These singlet bond operators are already familiar from the Schwinger-boson literature, not a new POM theorem (e.g. Phys. Rev. B 93, 235150 (2016), DOI 10.1103/PhysRevB.93.235150). The link above uses an **identified oscillator basis**; a model with varying \(\mathbb H_i\) needs an additional unitary transport matrix \(U_{ij}\). The function \(\kappa\) is **not** derived from E8 or teleparallel gravity. It is a controlled proxy for potential environmental dependence.
 
+### Selection of a particular channel, not the entire Di⊗Di tower
+
+The **SU2 singlet pair operator** acting on two local Fock vacua creates
+
+\[
+|\Phi_{ij}\rangle\ \propto\
+(a^\dagger_{i1}a^\dagger_{j2}
+-a^\dagger_{i2}a^\dagger_{j1})|0_i0_j\rangle.
+\]
+
+In the **standard, already published** two-oscillator realization, each Di lowest-weight doublet has \(E_i=1\), hence this pair has total \(E_0=2\). The antisymmetric spin contraction is a total spin-zero state and all diagonal quadratic AdS lowering generators annihilate it. That is precisely the lowest-weight label \(\boxed{D(2,0)}\), which occurs in the published Di⊗Di decomposition. The POM-5 numerical test merely verifies that the **chosen pair coupling** projects onto the corresponding low-level state; it does **not** prove the Flato–Fronsdal theorem.
+
+Consequently, the present source is **not automatically a photon generator**: a spin-one channel requires a different spin projection and physical gauge/interaction structure. A spin-zero representation label by itself also does not provide a physical stable scalar particle.
+
 The parity operator \(\Pi=(-1)^{N_i+N_j}\) commutes with each of these quadratic terms. This implies the model-specific rules:
 
 - Even–even initial sectors can become odd–odd under hopping or pair excitation; the *total* parity is unchanged.
