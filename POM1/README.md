@@ -58,3 +58,10 @@ CoupledMetastability.lean formalizes only the **model-specific** coefficient a(E
 ## POM-5: singleton-sector selection, not the singleton theorem
 
 SingletonSectorSelection.lean certifies only arithmetic parity constraints for the proposed two-site, quadratic oscillator couplings. It does not recreate the published Flato–Fronsdal decomposition or the metaplectic construction of the so(3,2) singletons. The physical existence of such oscillator Fock fibers in POM is still an unproved assumption.
+
+
+## POM-6: spectral-link lemmas
+
+The SpectralLink.lean module proves the specific rational overlap of two explicit quaternion projectors and the induced contrast of *assumed* scalar hopping amplitudes. It also shows that an everywhere identical sector gives equal hoppings and cannot dimerize using overlaps alone.
+
+The published SSH bulk-edge theorem, Connes spectral action and Nielsen–Ninomiya no-go theorem are NOT re-proven. The result is conditional on a 1D bipartite graph, not a physical 3+1-dimensional spectral geometry.

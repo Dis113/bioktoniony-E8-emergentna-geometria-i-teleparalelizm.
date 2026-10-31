@@ -85,3 +85,10 @@ Run from the repository root:
 The first script uses two bosonic oscillator modes per site at a finite cutoff to test a number-conserving link and an SU2-singlet pairing source. It verifies global parity, absence of mixed even-odd sectors from an even initial vacuum, and nonzero simultaneous odd-odd local excitations. Physical pair creation rates have NOT been computed. Finite matrices necessarily fail exact canonical commutation relations.
 
 The second script constructs closest-SO3 overlap transport between the quaternionic frames selected in POM-3 and verifies the SU2 spin lift. This transport is a *postulate* selected from an overlap metric, not a derived physical Lorentz or Sp(4,R) connection.
+
+
+## POM-6 — spectral graph diagnostic
+
+    python Simulations/spectral_topological_probe.py
+
+Two quaternion subalgebras are reconstructed from POM-3 bi-octonion states. Their normalized projector overlap q_AB=5/8 fixes a link strength t=t0+kappa*q. A **stipulated** 1D chain is arranged in two different sector orderings. The script checks the known SSH winding rule, chiral operator, nearly zero edge spectrum, chosen SU2 spin lifts, U1 phase covariance, positive bosonic graph Laplacian and a postulated strain switching threshold. These tests do NOT establish fermion spin-statistics, photons, spacetime dimension or teleparallel gravity.

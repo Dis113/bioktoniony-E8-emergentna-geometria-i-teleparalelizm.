@@ -95,3 +95,22 @@ See [EMGRMetastablePatterns.md](EMGRMetastablePatterns.md). Known spin–statist
 See [SingletonChannelBridge.md](SingletonChannelBridge.md) for exact scope and links to reviewed literature. POM5 computations do not prove the creation of Standard Model particles.
 
 | P513 | SU2-singlet pair from two local Di doublets has E0=2, total spin0 and is annihilated by diagonal lowering operators (finite low-level witness) | CHECKED numerically; published Di⊗Di contains D(2,0). Not a proof of full module or physical scalar |
+
+
+## POM-6 — spectral/topological bridge, 2026-10-31
+
+| ID | Mathematical/physical task | State |
+|---|---|---|
+| P601 | Exact overlap q_AB=5/8 of two explicit quaternion sectors (diagonal projector data) | Lean rational certificate + Python Cayley-Dickson check |
+| P602 | Parameter-dependent bond contrast, vanishing contrast for uniform sector | Lean POM-specific algebra |
+| P603 | SSH winding/edge-mode theorem and topology | REVIEWED published mathematics, NOT re-proved |
+| P604 | Two finite-size spectral phases, edge localization and bulk gaps | Python numerical test on stipulated 1D chain |
+| P605 | Local SU2 spin lift and U1 phase covariance | Python conditional test; connection chosen by overlap Procrustes |
+| P606 | Nonnegative bosonic graph Laplacian | KNOWN math, checked numerically; no photons yet |
+| P607 | Emergence of local 3+1D graph, chirality and Lorentzian propagation from Psi | OPEN |
+| P608 | Fully dynamical Dirac and gauge transport from bi-octonion Hamiltonian, not chosen link rule | OPEN |
+| P609 | Local gauge spinor CAR, correct SM charges and anomaly cancellation | OPEN |
+| P610 | TEGR, torsion and tetrad action from continuum limit | OPEN |
+| P611 | Prove overlap dimerization is selected by a global vacuum energy, not manually prepared sectors | OPEN |
+
+Read [SpectralTopologicalBridge.md](SpectralTopologicalBridge.md) before interpreting the 1D results as physical matter.
