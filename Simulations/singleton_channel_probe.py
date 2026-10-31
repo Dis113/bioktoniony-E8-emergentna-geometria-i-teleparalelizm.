@@ -53,10 +53,34 @@ def hamiltonian(m, *, omega=0.6, hop=0.05, pair=0.12):
     H = omega*m["N"].copy()
     for ai,bj in zip(m["A"],m["B"]):
         H += -hop*(ai.conj().T@bj + bj.conj().T@ai)
-        H += pair*(ai.conj().T@bj.conj().T + ai@bj)
+    # Antisymmetric SU(2)-singlet pair. The earlier same-channel
+    # pairing was NOT frame-covariant under general SU(2).
+    ai0,ai1=m["A"]
+    bj0,bj1=m["B"]
+    pair_op=ai0.conj().T@bj1.conj().T - ai1.conj().T@bj0.conj().T
+    H += pair*(pair_op+pair_op.conj().T)
     assert np.allclose(H,H.conj().T)
     assert np.linalg.norm(H@m["P"]-m["P"]@H)<1e-11
     return H
+
+
+def test_su2_singlet_covariance(m):
+    """Check two-channel scalar hopping and epsilon-singlet pair invariance."""
+    theta=.61
+    U=np.array([[np.cos(theta), np.sin(theta)],
+                [-np.sin(theta), np.cos(theta)]],dtype=complex)
+    assert np.allclose(U.conj().T@U,np.eye(2))
+    def rotate(A):
+        return [sum(U[i,j]*A[j] for j in range(2)) for i in range(2)]
+    a,b=m["A"],m["B"]
+    ar,br=rotate(a),rotate(b)
+    def hopping(A,B):
+        return sum(x.conj().T@y for x,y in zip(A,B))
+    def singlet(A,B):
+        return (A[0].conj().T@B[1].conj().T -
+                A[1].conj().T@B[0].conj().T)
+    assert np.allclose(hopping(a,b),hopping(ar,br),atol=1e-11)
+    assert np.allclose(singlet(a,b),singlet(ar,br),atol=1e-11)
 
 
 def rate_proxy(em, gr, kappa0=.12):
@@ -120,6 +144,7 @@ def run():
     defect=verify_finite_cutoff_obstruction()
     d=3
     m=model_matrices(d)
+    test_su2_singlet_covariance(m)
     v=vacuum_vector(d)
     assert np.isclose(np.trace(m["RR"]+m["DD"]+m["MIXED"]),d**4)
     assert np.isclose(probabilities(v,m)["RR"],1.)
@@ -150,7 +175,7 @@ def run():
     p1=probabilities(evolve(Hno,occupied,.75),m)
     assert p1["DD"]>0.001 and p1["mixed"]<1e-12
 
-    print("POM-5 singleton parity channel diagnostics PASS")
+    print("POM-5 SU(2)-singlet pair and parity selection diagnostics PASS")
     print("Published Rac/Di spin tower bookkeeping:",spins)
     print("Finite oscillator CCR cutoff error:",round(defect,8))
     print("POM-5 even vacuum -> Di_i x Di_j probabilities:",phases)
