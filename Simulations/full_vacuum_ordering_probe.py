@@ -205,9 +205,14 @@ def spectral_test(raw):
     low = np.argsort(abs(values))[:2]
     edge = [sum(abs(vectors[:2,k])**2)+sum(abs(vectors[-2:,k])**2)
             for k in low]
+    # Uniform open-chain low modes are EXTENDED, with edge occupancy
+    # close to 4/40 (four measured edge sites out of forty).
+    # This should not be mistaken for the localized SSH edge occupancy >0.55.
+    ipr = [float(np.sum(abs(vectors[:,k])**4)) for k in low]
     assert np.max(abs(values[low])) > .05
-    assert max(edge) < .025
-    return float(np.max(abs(values[low]))),float(max(edge))
+    assert .07 < min(edge) < max(edge)+1e-8 < .13
+    assert max(ipr) < .06
+    return float(np.max(abs(values[low]))),float(max(edge)),float(max(ipr))
 
 
 def check_gradient():
@@ -269,9 +274,9 @@ def run():
     p4=period_four_test(rng)
     assert abs(p4+12)<1e-4
     print("POM-8 period-4-restricted numerical best:",p4)
-    gap,edge=spectral_test(best8)
+    gap,edge,ipr=spectral_test(best8)
     print("POM-8 non-dimerized repeat-40 chain low mode |E|:",gap,
-          "edge weight",edge)
+          "edge weight",edge,"inverse participation ratio",ipr)
     e,cost,total=associator_trial()
     print("POM-8 explicit gamma=10 trial: link E=",e,
           "associator cost=",cost,"total=",total)
