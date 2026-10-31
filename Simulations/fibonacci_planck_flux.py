@@ -60,8 +60,11 @@ def sector_bonds(p,q,kappa=.2):
     assert np.allclose(local_overlap,
                        np.where(word==np.roll(word,-1),1,5/8))
     hopping=1 + kappa*(local_overlap-1)
-    assert np.allclose(np.unique(np.round(hopping,12)),[37/40,1.])
-    assert sum(abs(hopping-37/40)<1e-10)==2*(q-p)
+    if kappa>0:
+        assert np.allclose(np.unique(np.round(hopping,12)),[37/40,1.])
+        assert sum(abs(hopping-37/40)<1e-10)==2*(q-p)
+    else:
+        assert np.allclose(hopping,1.)
     return word,local_overlap,hopping
 
 
