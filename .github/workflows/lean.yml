@@ -65,6 +65,10 @@ jobs:
           #print axioms POM1.pair_source_preserves_total_parity
           #print axioms POM1.single_hop_preserves_total_parity
           #print axioms POM1.odd_total_iff_mixed_parity
+          #print axioms POM1.quaternionOverlapAB_five_eighths
+          #print axioms POM1.aligned_bond_stronger
+          #print axioms POM1.two_sector_bulk_gap
+          #print axioms POM1.overlap_contrast_needed
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -100,3 +104,4 @@ jobs:
           python Simulations/emgr_metastability_probe.py
           python Simulations/singleton_channel_probe.py
           python Simulations/singleton_sector_transport.py
+          python Simulations/spectral_topological_probe.py

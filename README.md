@@ -116,3 +116,20 @@ Nie wyprowadzono jeszcze spektrum znanych cząstek, czasu ich życia, elektromag
 - [Research/PriorArt.md](Research/PriorArt.md) — peer-reviewed prior theorems and variations.
 
 **Do not conflate:** a finite biquaternion M2(C), the infinite-dimensional Rac/Di singleton Hilbert spaces, actual fermionic CAR, an AdS4 physical vacuum, or photon/electron creation. All these are distinct obligations.
+
+
+## POM-6 — spectral/topological test (draft)
+
+POM-6 asks a more directly falsifiable question than the singleton-label program: can the **quaternionic-sector projectors selected in POM-3** determine a selfadjoint graph Dirac operator, with distinct fermionic low-energy and bosonic collective modes?
+
+- [Theory/SpectralTopologicalBridge.md](Theory/SpectralTopologicalBridge.md) — the exact POM-specific overlap coupling, 1D test results and physical limitations.
+- [POM1/SpectralLink.lean](POM1/SpectralLink.lean) — projector-overlap and gap-contrast identities. Known SSH index theorems are **not** re-proven.
+- [Simulations/spectral_topological_probe.py](Simulations/spectral_topological_probe.py) — numerical topological/trivial chain, SU2 spin-frame overlap and gauge-covariance checks.
+- [Research/PriorArt.md](Research/PriorArt.md) — Su–Schrieffer–Heeger, Ryu–Hatsugai, Teo–Kane, Connes–Chamseddine and Nielsen–Ninomiya.
+
+**Scope warning:** dimerization, one-dimensional graph and the SU2 lift are chosen for the toy test. No 3+1 Lorentz geometry, physical fermionic statistics, Maxwell photons, E8 particle assignments or teleparallel torsion have been derived.
+
+
+## POM-6 — necessary topology warning
+
+[POM-6 vacuum topology audit](Theory/VacuumTopologyAudit.md) compares the **full** POM-3 order-parameter manifold \(V_2(\mathbb R^7)\) to the quotient \(G_2/SO(4)\) of quaternionic sectors. Their \(\pi_2\) differs, so the quotient's possible \(\mathbb Z_2\) point-defect charge does not automatically protect an actual full bi-octonion vacuum configuration. Published homotopy facts are cited rather than reproved.
