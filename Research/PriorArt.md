@@ -76,3 +76,11 @@ Zapisane dowody dotyczą tego potencjału i jego warunków, nie powyższych znan
 8. **Well-known SU2 singlet bond pair:** Zhang, Lamas, Arlego & Brenig, *Quantum phase diagram of a frustrated antiferromagnet on the bilayer honeycomb lattice*, Phys. Rev. B 93, 235150 (2016), DOI [10.1103/PhysRevB.93.235150](https://doi.org/10.1103/PhysRevB.93.235150). The Schwinger-boson singlet pair and hopping operators are not POM inventions.
 
 **POM-specific open bridge:** derive two physical oscillator channels, a shared diagonal Sp(4,R) action, inter-fiber transport and the interaction coefficients from the bi-octonionic graph. Without that, parity channels remain a toy analogy.
+
+
+### Singleton proposals directly relevant to POM's original confinement metaphor
+
+- Flato and Fronsdal, *Quarks or singletons?*, Phys. Lett. B 172 (1986), 412–416, DOI [10.1016/0370-2693(86)90280-7](https://doi.org/10.1016/0370-2693(86)90280-7). A historically proposed conceptual association; **not** a QCD confinement derivation.
+- Flato and Fronsdal, *Parastatistics, highest weight osp(N,∞) modules, singleton statistics and confinement*, Journal of Geometry and Physics 6 (1989), 293–309, DOI [10.1016/0393-0440(89)90018-1](https://doi.org/10.1016/0393-0440(89)90018-1). It discusses para-Fock constructions and *kinematical confinement*. We do **not** claim that this equals color confinement of SU(3), nor recapitulate the published proofs.
+
+POM-specific question remains: does the concrete bi-octonion graph Hamiltonian produce the stated module/gauge structure, unitary dynamics and measured particle spectra, rather than merely rebranding prior singleton constructions?
