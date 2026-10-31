@@ -111,3 +111,4 @@ jobs:
           python Simulations/singleton_sector_transport.py
           python Simulations/spectral_topological_probe.py
           python Simulations/spontaneous_ordering_probe.py
+          python Simulations/continuous_sector_frustration.py
