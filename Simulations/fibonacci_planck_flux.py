@@ -62,7 +62,7 @@ def sector_bonds(p,q,kappa=.2):
     hopping=1 + kappa*(local_overlap-1)
     if kappa>0:
         assert np.allclose(np.unique(np.round(hopping,12)),[37/40,1.])
-        assert sum(abs(hopping-37/40)<1e-10)==2*(q-p)
+        assert sum(abs(hopping-37/40)<1e-10)==2*min(p,q-p)
     else:
         assert np.allclose(hopping,1.)
     return word,local_overlap,hopping
@@ -145,16 +145,28 @@ def test_stability():
         assert base["conservative_BZ_gap"]-2*EPSILON_PERTURB>.55
         assert base["weak_links"]==2*(q-p)
         stats.append((base,perturbed))
+    # Independent irrational control: the silver mean [0;2,2,2,...]
+    # is also badly approximable, and yields robust Chern gaps. Golden
+    # ratio is NOT uniquely selected by this phenomenological model.
+    silver=[]
+    silver_alpha=math.sqrt(2)-1
+    for p,q in [(2,5),(5,12),(12,29)]:
+        assert abs(p/q-silver_alpha)<1/q**2
+        check=spectral_certification(p,q)
+        assert check["chern"]==-1
+        assert check["conservative_BZ_gap"]>.69
+        assert check["weak_links"]==2*p
+        silver.append(check)
     # Crucial negative control: with *no bi-octonion overlap modulation*
     # the external Hofstadter magnetic field still produces the SAME Chern
     # number. Thus this topological index is NOT an emergent POM invariant.
     control=spectral_certification(8,13,kappa=0.)
     assert control["chern"]==-1 and control["conservative_BZ_gap"]>.7
-    return stats,control
+    return stats,control,silver
 
 
 def main():
-    data,control=test_stability()
+    data,control,silver=test_stability()
     print("POM-9: Planck quantum flux + continued-fraction approximants")
     print("golden alpha=(sqrt5-1)/2:",ALPHA_GOLD)
     print("Chern sign is orientation-dependent in the chosen Bloch basis.")
@@ -167,6 +179,10 @@ def main():
               f'       {b["chern"]:>3d}')
     print("Uniform-bond negative control: Chern",control["chern"],
           "min gap bound",control["conservative_BZ_gap"])
+    print("Silver-ratio control (NOT Fibonacci-golden specific):")
+    for b in silver:
+        print(f' {b["p"]}/{b["q"]}: Chern {b["chern"]},'
+              f' conservative gap {b["conservative_BZ_gap"]:.6f}')
     print("KNOWN theory: Hofstadter flux, TKNN invariant, FHS discretization,")
     print("continued-fraction convergents and gap homotopy are not re-proved.")
     print("LIMIT: 2D lattice, flux, fibonacci sector pattern, hopping rule")
