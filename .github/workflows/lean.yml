@@ -75,6 +75,7 @@ jobs:
           #print axioms POM1.positive_bond_forces_equal_fields
           #print axioms POM1.periodFourLocal_saturation_iff_opposite
           #print axioms POM1.trial_full_vacuum_beats_binary_period_four
+          #print axioms POM1.trial_frame_orthonormal
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
