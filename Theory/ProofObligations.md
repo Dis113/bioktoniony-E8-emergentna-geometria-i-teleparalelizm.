@@ -93,3 +93,5 @@ See [EMGRMetastablePatterns.md](EMGRMetastablePatterns.md). Known spin–statist
 | P512 | Derive EM/GR-dependent pair coupling and backreaction | OPEN |
 
 See [SingletonChannelBridge.md](SingletonChannelBridge.md) for exact scope and links to reviewed literature. POM5 computations do not prove the creation of Standard Model particles.
+
+| P513 | SU2-singlet pair from two local Di doublets has E0=2, total spin0 and is annihilated by diagonal lowering operators (finite low-level witness) | CHECKED numerically; published Di⊗Di contains D(2,0). Not a proof of full module or physical scalar |
