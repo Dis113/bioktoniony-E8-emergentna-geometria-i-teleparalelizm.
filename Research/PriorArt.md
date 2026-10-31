@@ -135,3 +135,17 @@ does the projector-overlap energy retain the binary ANNNI period-four
 ground state? POM-8 supplies a negative finite **rational witness** and
 independent continuous-orientation local optimizations. The known
 helical-spin, ANNNI and SSH theorems are used, not re-proven.
+
+
+## POM-9 — Planck quantum phase, continued fractions, Hofstadter and Chern gaps
+
+These are ALREADY established results. Do not duplicate their general proofs in Lean:
+
+1. Hofstadter, *Energy levels and wave functions of Bloch electrons in rational and irrational magnetic fields*, Phys. Rev. B 14, 2239 (1976), DOI [10.1103/PhysRevB.14.2239](https://doi.org/10.1103/PhysRevB.14.2239). Rational/irrational magnetic flux in units h/e, continued-fraction structure and fractal spectrum.
+2. Thouless, Kohmoto, Nightingale and den Nijs, *Quantized Hall Conductance in a Two-Dimensional Periodic Potential*, Phys. Rev. Lett. 49, 405 (1982), DOI [10.1103/PhysRevLett.49.405](https://doi.org/10.1103/PhysRevLett.49.405). Chern/TKNN invariants and stable gapped Hall response.
+3. Fukui, Hatsugai and Suzuki, *Chern Numbers in Discretized Brillouin Zone*, J. Phys. Soc. Jpn. 74, 1674 (2005), DOI [10.1143/JPSJ.74.1674](https://doi.org/10.1143/JPSJ.74.1674). Published discrete gauge-invariant Chern algorithm used in the POM test.
+4. Kraus and Zilberberg, *Topological Equivalence between the Fibonacci Quasicrystal and the Harper Model*, Phys. Rev. Lett. 109, 116404 (2012), DOI [10.1103/PhysRevLett.109.116404](https://doi.org/10.1103/PhysRevLett.109.116404). Quasiperiodic hopping/onsite structures and topological equivalences.
+5. Jitomirskaya and Liu, *Universal hierarchical structure of quasiperiodic eigenfunctions*, Annals of Mathematics 187, 721 (2018), DOI [10.4007/annals.2018.187.3.3](https://doi.org/10.4007/annals.2018.187.3.3). Continued-fraction arithmetic controls hierarchical spectral structure in known quasiperiodic operators.
+6. Avila and Jitomirskaya, *The Ten Martini Problem*, Annals of Mathematics 170, 303 (2009), DOI [10.4007/annals.2009.170.303](https://doi.org/10.4007/annals.2009.170.303). Cantor spectra for almost Mathieu operators under the stated hypotheses; not a physical Planck-lattice discovery.
+
+**POM-9 NEW question**: whether the particular quaternion-projector overlap rule modifies, preserves or destroys these known gapped properties AND whether the Fibonacci sector word can be selected by an actual POM vacuum Hamiltonian. Negative controls (silver ratio, zero projector contrast) refute a claim that golden ratio or quaternion overlap is necessary for the observed Chern index. No value of h is derived.

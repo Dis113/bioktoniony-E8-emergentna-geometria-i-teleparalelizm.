@@ -133,3 +133,24 @@ and tests an explicit small-associator trial even at gamma=10.
 The graph, distance-two neighbors and projector energy are chosen
 toy-model ingredients; the reported optima are local numerical results,
 except for the rational witness's explicit strict inequality.
+
+
+## POM-9 — Fibonacci/Planck-flux test
+
+From the repository root:
+
+    python Simulations/fibonacci_planck_flux.py
+
+The script uses the POM-3 bi-octonion-selected quaternion sectors A/B
+to create scalar hopping in {37/40,1} on a GIVEN 2D Hofstadter
+magnetic unit cell with flux p/q in units h/e. Its 25x25
+magnetic-momentum mesh measures the numerical Chern number
+(Fukui–Hatsugai–Suzuki algorithm) and spectral gaps for five
+Fibonacci approximants; a standard matrix perturbation bound yields
+a conservative mesh-to-full-torus gap estimate. Independent
+controls confirm that a uniform-bond Hofstadter model already
+has the same Chern and that silver-mean approximants do too.
+
+The 2D graph, magnetic flux, charge, Fibonacci sector word and
+hopping law are externally set, NOT derived from POM's vacuum.
+Samples are floating-point, not interval-certified exact eigenvalues.

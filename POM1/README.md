@@ -92,3 +92,14 @@ checks the eight three-dimensional imaginary bases. This is a
 `native_decide`-based finite certificate (compiler trust). These
 theorems do **not** prove a global minimum, republish known ANNNI
 or SSH theory, or establish physical fermionic particles.
+
+
+## POM-9 — finite exact Fibonacci-sector link certificates
+
+FibonacciFluxLinks.lean imports the previously certified POM-6
+qAB=5/8 and defines an ASSUMED hopping t=1+(overlap-1)/5. It proves
+tAB=37/40 and tAA=1. Finite native_decide-based calculations verify
+the five chosen convergents' weak-link counts 4,6,10,16,26.
+This uses the compiler's native evaluator and is NOT a full kernel-
+reduced certificate for those counts. General continued-fraction,
+Hofstadter, TKNN and Chern theorems are NOT re-proved.
