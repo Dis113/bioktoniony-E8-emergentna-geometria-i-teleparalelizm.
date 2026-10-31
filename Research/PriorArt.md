@@ -103,3 +103,12 @@ POM-specific question remains: does the concrete bi-octonion graph Hamiltonian p
 - Akbulut & Kalafat, *Algebraic topology of G2 manifolds*, Expositiones Math. 34 (2016) 106–129, DOI [10.1016/j.exmath.2015.03.004](https://doi.org/10.1016/j.exmath.2015.03.004). Established topological results, including Stiefel spaces.
 
 **Our conditional inference:** POM-3 minimizes a potential on \(V_2(\mathbb R^7)\) with \(\pi_2=0\), whereas the quotient of quaternion subalgebras \(G_2/SO(4)\) has \(\pi_2=\mathbb Z_2\). Consequently nontrivial 3D point-defect charge cannot be read off from the quotient while a globally continuous pair \((u,v)\) still exists. See [Theory/VacuumTopologyAudit.md](../Theory/VacuumTopologyAudit.md). The proofs of the published homotopy statements are NOT duplicated in Lean.
+
+
+## POM-7 — known periodic order in competing interactions; no duplicate proofs
+
+- Stephenson and Betts, *Ising Model with Antiferromagnetic Next-Nearest-Neighbor Coupling. II. Ground States and Phase Diagrams*, Physical Review B **2**, 2702 (1970), DOI [10.1103/PhysRevB.2.2702](https://doi.org/10.1103/PhysRevB.2.2702). Competing interactions and their ground-state ordering are prior work.
+- Hu and Charbonneau, *Numerical transfer matrix study of frustrated next-nearest-neighbor Ising models on square lattices*, Physical Review B **104**, 144429 (2021), DOI [10.1103/PhysRevB.104.144429](https://doi.org/10.1103/PhysRevB.104.144429). ANNNI period-four antiphase above J2/J1=1/2 and finite-temperature aspects are known; we do not reproduce their published theorems.
+- Su, Schrieffer and Heeger (1979), Ryu and Hatsugai (2002) and Teo–Kane (2010) are already cited above. Their SSH winding, edge-mode and defect-classification results are used as existing results, not re-proven.
+
+**Our conditional tests:** (1) old POM-3 positive-link vacuum cannot spontaneously dimerize; (2) a NEW projector frustration reduces to ANNNI on a manually restricted two-sector subset, (3) actual quaternionic projector overlaps change the energy and invalidate a previously privileged sector B, and (4) distinct periodic translates of the same ground energy have different open-chain terminal spectra. The 1D spatial graph and two-sector truncation are hypotheses, not derived dynamics.

@@ -65,3 +65,16 @@ SingletonSectorSelection.lean certifies only arithmetic parity constraints for t
 The SpectralLink.lean module proves the specific rational overlap of two explicit quaternion projectors and the induced contrast of *assumed* scalar hopping amplitudes. It also shows that an everywhere identical sector gives equal hoppings and cannot dimerize using overlaps alone.
 
 The published SSH bulk-edge theorem, Connes spectral action and Nielsen–Ninomiya no-go theorem are NOT re-proven. The result is conditional on a 1D bipartite graph, not a physical 3+1-dimensional spectral geometry.
+
+
+## POM-7: sector-overlap and uniform-vacuum certificates
+
+SpontaneousOrdering.lean (importing the already established POM1.SpectralLink
+module) certifies the two-sector projector/Ising identity, a new exact
+quaternion projector overlap q_AC=1/2, the lower trial energy of sector C
+compared with the previously chosen sector B, and the positive-bond
+constraint explaining why H3 cannot spontaneously dimerize.
+
+Known ANNNI period-four antiphase, SSH index, and Ising phase diagrams
+are cited rather than re-proved. The Lean lemmas are only finite
+model-specific algebra, not 3+1D gravity or elementary particles.

@@ -92,3 +92,26 @@ The second script constructs closest-SO3 overlap transport between the quaternio
     python Simulations/spectral_topological_probe.py
 
 Two quaternion subalgebras are reconstructed from POM-3 bi-octonion states. Their normalized projector overlap q_AB=5/8 fixes a link strength t=t0+kappa*q. A **stipulated** 1D chain is arranged in two different sector orderings. The script checks the known SSH winding rule, chiral operator, nearly zero edge spectrum, chosen SU2 spin lifts, U1 phase covariance, positive bosonic graph Laplacian and a postulated strain switching threshold. These tests do NOT establish fermion spin-statistics, photons, spacetime dimension or teleparallel gravity.
+
+
+## POM-7: does a sector pattern emerge from a proposed energy?
+
+Run from the repository root:
+
+    python Simulations/spontaneous_ordering_probe.py
+    python Simulations/continuous_sector_frustration.py
+
+The first script finds all 4 period-four ground states for N=8,12 by
+exact enumeration, and for a 40-site periodic ring by exact min-plus
+dynamic programming. It then maps each state to quaternionic projectors
+and tests the known 1D SSH boundary modes under the link t=t0+kappa*q.
+The FOUR bulk-ground phases have two topological and two trivial
+open-chain terminations. It also verifies the original positive K
+Hamiltonian favors a uniform sector and that symmetric thermal
+averaging produces no selected dimer.
+
+The second script produces an exact rational witness q=178369/390625
+for two other valid quaternion sectors and numerically relaxes a small
+continuous angle subfamily. It demonstrates that old A/B and A/C
+sector choices are not uniquely preferred. No global minimization
+over the full V2(R7) vacuum, physical particle, or spacetime follows.

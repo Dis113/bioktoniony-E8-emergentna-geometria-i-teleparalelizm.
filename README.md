@@ -133,3 +133,29 @@ POM-6 asks a more directly falsifiable question than the singleton-label program
 ## POM-6 — necessary topology warning
 
 [POM-6 vacuum topology audit](Theory/VacuumTopologyAudit.md) compares the **full** POM-3 order-parameter manifold \(V_2(\mathbb R^7)\) to the quotient \(G_2/SO(4)\) of quaternionic sectors. Their \(\pi_2\) differs, so the quotient's possible \(\mathbb Z_2\) point-defect charge does not automatically protect an actual full bi-octonion vacuum configuration. Published homotopy facts are cited rather than reproved.
+
+
+## POM-7 — can the bi-octonion vacuum select its own coupling pattern?
+
+This draft extends POM-6 with a CONDITIONAL mechanism for spontaneous
+sector ordering; it does not silently import an already alternating chain.
+
+- [Theory/SpontaneousSectorOrdering.md](Theory/SpontaneousSectorOrdering.md):
+  no-dimerization result for the old positive-link H3, known ANNNI
+  frustration, exact finite energy tests, and the limitation caused by
+  additional quaternion sector orientations.
+- [POM1/SpontaneousOrdering.lean](POM1/SpontaneousOrdering.lean):
+  model-specific projector overlaps and a counterexample to the
+  prior A/B sector-selection assumption. The published general ANNNI
+  ground-state theorem and SSH bulk-edge theorem are not re-proven.
+- [Simulations/spontaneous_ordering_probe.py](Simulations/spontaneous_ordering_probe.py):
+  exact enumeration of 8 and 12 sector-label configurations, dynamic
+  programming for 40, projector-derived spectral phases and finite-T check.
+- [Simulations/continuous_sector_frustration.py](Simulations/continuous_sector_frustration.py):
+  rational Cayley–Dickson counterexample and restricted continuous
+  orientation minimization.
+
+**Limit:** 1D graph, nearest/next-nearest energy and binary sector
+restriction are still assumed. Topological edge states appear only
+for a boundary termination selected relative to the ordered phase.
+No physical 3+1D matter or TEGR is derived.

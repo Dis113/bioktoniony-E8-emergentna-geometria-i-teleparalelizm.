@@ -69,6 +69,11 @@ jobs:
           #print axioms POM1.aligned_bond_stronger
           #print axioms POM1.two_sector_bulk_gap
           #print axioms POM1.overlap_contrast_needed
+          #print axioms POM1.quaternionOverlapAC_half
+          #print axioms POM1.binary_overlap_is_ising
+          #print axioms POM1.POM6_B_not_minimal_for_projector_frustration
+          #print axioms POM1.positive_bond_forces_equal_fields
+          #print axioms POM1.periodFourLocal_saturation_iff_opposite
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -105,3 +110,5 @@ jobs:
           python Simulations/singleton_channel_probe.py
           python Simulations/singleton_sector_transport.py
           python Simulations/spectral_topological_probe.py
+          python Simulations/spontaneous_ordering_probe.py
+          python Simulations/continuous_sector_frustration.py

@@ -5,3 +5,4 @@ import POM1.SectorVacuum
 import POM1.CoupledMetastability
 import POM1.SingletonSectorSelection
 import POM1.SpectralLink
+import POM1.SpontaneousOrdering

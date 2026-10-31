@@ -204,3 +204,22 @@ Nie wolno utożsamiać tych dwóch fizycznych przestrzeni stanów bez
 wyprowadzenia lokalnej symetrii ramy. Ta przeszkoda nie znosi
 jednowymiarowego testu SSH, ale ogranicza jego interpretację jako źródła
 stabilnych cząstek w 3+1D.
+
+
+## 10. Follow-up: the vacuum does not automatically select this graph
+
+The separately tested POM-7 model explicitly addresses two open
+points of the present spectral-chain construction:
+
+1. The original POM-3 positive nearest-neighbor Hamiltonian favors
+   *uniform* sector projectors, so it cannot generate the alternating
+   q_i pattern used above as a ground state.
+2. A newly POSTULATED competing first-/second-neighbor projector
+   interaction has a period-four ground pattern on a chosen 1D
+   two-sector subspace, but leaves four translated terminations
+   degenerate; two display SSH edge states and two do not.
+3. Relaxing the restricted sector orientations produces lower-energy
+   test configurations, so the previous B sector was not dynamically
+   selected.
+
+Details and strict limitations: [SpontaneousSectorOrdering.md](SpontaneousSectorOrdering.md).
