@@ -159,3 +159,21 @@ sector ordering; it does not silently import an already alternating chain.
 restriction are still assumed. Topological edge states appear only
 for a boundary termination selected relative to the ordered phase.
 No physical 3+1D matter or TEGR is derived.
+
+
+## POM-8 — pełna ciągła przestrzeń sektorów próżni (robocze)
+
+Wariant POM-8 usuwa *binarne* ograniczenie A/B z POM-7 i testuje na
+zadanym pierścieniu pełną lokalną rozmaitość V₂(R⁷) bioktonionowych minimów V3.
+Wynik dla N=8: znaleziony niedimerowy stan ma energię około −12.875806,
+poniżej najlepszego znalezionego stanu okresu czterech (−12).
+Istnieje także **dokładny wymierny kontrprzykład** z energią −12.092447…,
+sprawdzony w Lean 4. Obliczenia pozostają warunkowe względem założonego grafu.
+
+- [Theory/FullVacuumOrderAudit.md](Theory/FullVacuumOrderAudit.md) — wyprowadzenie, dokładny certyfikat, optymalizacja i ograniczenia.
+- [POM1/FullVacuumCounterexample.lean](POM1/FullVacuumCounterexample.lean) — ośmiowęzłowa wymierna konfiguracja oktonionowa, kontrola ortonormalności i ścisła nierówność energii.
+- [Simulations/full_vacuum_ordering_probe.py](Simulations/full_vacuum_ordering_probe.py) — pełne orientacje, gradient analityczny, dokładny rachunek Fraction, gamma i widmo.
+- [Research/PriorArt.md](Research/PriorArt.md) — już opublikowane wyniki o helisach w sfrustrowanych układach; bez ich dublowania.
+
+**Nie jest to powstanie elektronów ani teleparalizmu.** Nie wyprowadzono
+grafu 3+1, dynamiki Lorentza, transportu spinorowego czy działania TEGR.

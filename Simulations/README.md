@@ -115,3 +115,21 @@ for two other valid quaternion sectors and numerically relaxes a small
 continuous angle subfamily. It demonstrates that old A/B and A/C
 sector choices are not uniquely preferred. No global minimization
 over the full V2(R7) vacuum, physical particle, or spacetime follows.
+
+
+## POM-8 — unrestricted POM-3 vacuum order parameter
+
+Run: `python Simulations/full_vacuum_ordering_probe.py`.
+
+The deterministic test uses the full local Stiefel V₂(R⁷) of ordered
+orthonormal imaginary octonion pairs and their actual octonion product,
+rather than predefined A/B projector labels.
+It validates its analytic 7D gradient, optimizes N=8/12/16 rings
+with several random starts, compares to period-four-restricted states,
+verifies an exact rational eight-sector witness with Python Fraction,
+computes a finite open-chain extended spectral mode (including IPR),
+and tests an explicit small-associator trial even at gamma=10.
+
+The graph, distance-two neighbors and projector energy are chosen
+toy-model ingredients; the reported optima are local numerical results,
+except for the rational witness's explicit strict inequality.

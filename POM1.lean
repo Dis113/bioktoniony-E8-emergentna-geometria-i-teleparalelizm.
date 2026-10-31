@@ -6,3 +6,4 @@ import POM1.CoupledMetastability
 import POM1.SingletonSectorSelection
 import POM1.SpectralLink
 import POM1.SpontaneousOrdering
+import POM1.FullVacuumCounterexample

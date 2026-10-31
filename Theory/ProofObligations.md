@@ -138,3 +138,21 @@ Read [SpectralTopologicalBridge.md](SpectralTopologicalBridge.md) before interpr
 | P712 | Select a unique physical boundary termination and gauge transport | OPEN |
 
 [Theory/SpontaneousSectorOrdering.md](SpontaneousSectorOrdering.md) contains the analysis and strict distinctions between mathematical tests and physical interpretations.
+
+
+## POM-8 — pełna przestrzeń orientacji i certyfikat energii (2026-10-31)
+
+| ID | Test | Status |
+|---|---|---|
+| P801 | Zredukować minimalizację H8 z gamma=0 do pełnego V₂(R⁷) bez wyboru A/B | ANALITYCZNY argument zastępowania stanu reprezentantem minimum V3; Lean OPEN |
+| P802 | Ośmiowęzłowy dokładny wymierny świadek E<-12 | LEAN native_decide (compiler trust) + Fraction Python |
+| P803 | Wykazać, że osiem ramek wymiernych jest ortonormalnych | LEAN native_decide + dokładna kontrola Fraction |
+| P804 | Wielostartowa optymalizacja pełnego V₂(R⁷), N=8/12/16 | CHECKED numerycznie, nie globalny dowód |
+| P805 | Test ograniczenia okresu czterech, N=8 | CHECKED numerycznie E≈−12; globalny dowód dla klasy okres4 OPEN |
+| P806 | Niezdimerowany operator spektralny: mody rozciągnięte czy brzegowe | CHECKED energia, waga brzegowa i IPR |
+| P807 | Wpływ gamma>0 na wybór sektora; jawny próbny stan gamma=10 | CHECKED modelowo, pełne minimum z gamma OPEN |
+| P808 | Wyprowadzenie grafu, J1/J2 i overlap linków z mikrodynamiki | OPEN |
+| P809 | Właściwe pola fermionowe, bozonowe, 3+1, EM i TEGR | OPEN |
+| P810 | Termodynamiczny limit i dynamika przejść między konfiguracjami | OPEN |
+
+Pełne szczegóły: [FullVacuumOrderAudit.md](FullVacuumOrderAudit.md).

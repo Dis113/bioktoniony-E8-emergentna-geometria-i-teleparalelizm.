@@ -112,3 +112,26 @@ POM-specific question remains: does the concrete bi-octonion graph Hamiltonian p
 - Su, Schrieffer and Heeger (1979), Ryu and Hatsugai (2002) and Teo–Kane (2010) are already cited above. Their SSH winding, edge-mode and defect-classification results are used as existing results, not re-proven.
 
 **Our conditional tests:** (1) old POM-3 positive-link vacuum cannot spontaneously dimerize; (2) a NEW projector frustration reduces to ANNNI on a manually restricted two-sector subset, (3) actual quaternionic projector overlaps change the energy and invalidate a previously privileged sector B, and (4) distinct periodic translates of the same ground energy have different open-chain terminal spectra. The 1D spatial graph and two-sector truncation are hypotheses, not derived dynamics.
+
+
+## POM-8 — continuous frustrated orientation and spiral phases: prior art
+
+- De Raedt and De Raedt, *Static and dynamic properties of helical spin chains*,
+  Physical Review B **19**, 2595–2603 (1979),
+  DOI [10.1103/PhysRevB.19.2595](https://doi.org/10.1103/PhysRevB.19.2595).
+  It is already known that nearest- and next-nearest-neighbor competing
+  interactions in classical continuous-spin systems can yield helices.
+  **POM-8 does not claim to discover generic helical ordering.**
+- Zinke, Richter, Drechsler, *Spiral correlations in frustrated one-dimensional
+  spin-1/2 Heisenberg J1–J2–J3 ferromagnets*,
+  Journal of Physics: Condensed Matter **22**, 446002 (2010),
+  DOI [10.1088/0953-8984/22/44/446002](https://doi.org/10.1088/0953-8984/22/44/446002).
+  These results describe related frustrated magnetic chains, not the
+  bi-octonionic model's physical spacetime.
+
+**Model-specific question not answered by these papers:** once each site
+carries a quaternion sector dynamically selected by a bi-octonion state,
+does the projector-overlap energy retain the binary ANNNI period-four
+ground state? POM-8 supplies a negative finite **rational witness** and
+independent continuous-orientation local optimizations. The known
+helical-spin, ANNNI and SSH theorems are used, not re-proven.

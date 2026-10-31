@@ -185,3 +185,19 @@ w granicy termodynamicznej (znana fizyka statystyczna).
 **Kryterium STOP:** bez punktów 1–5 model pozostaje poprawnym
 warunkowym mostem od projektorów do znanych modów SSH,
 a nie emergentną teorią materii lub grawitacji.
+
+
+## Aktualizacja POM-8: ograniczenie do dwóch sektorów zmienia wynik
+
+[POM-8](FullVacuumOrderAudit.md) usuwa ręcznie narzuconą
+redukcję do A/B i dopuszcza **wszystkie** lokalne orientacje
+V₂(R⁷) w minimum pojedynczej komórki POM-3. W ośmiowęzłowym
+pierścieniu znajduje stan o energii −12.875805666, poniżej
+numerycznie najlepszego stanu okresu 4 z energią −12.
+Istnieje także ścisły **wymierny świadek** E<−12,
+sprawdzony przez Lean 4.
+
+To falsyfikuje utożsamianie binarnego porządku (++--)
+z wybranym globalnym stanem całej próżni. Nie dowodzi jednak
+globalnego minimum nowej klasy ani niemożliwości
+dimerizacji w innym hamiltonianie.

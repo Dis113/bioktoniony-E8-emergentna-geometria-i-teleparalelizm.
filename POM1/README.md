@@ -78,3 +78,17 @@ constraint explaining why H3 cannot spontaneously dimerize.
 Known ANNNI period-four antiphase, SSH index, and Ising phase diagrams
 are cited rather than re-proved. The Lean lemmas are only finite
 model-specific algebra, not 3+1D gravity or elementary particles.
+
+
+## POM-8 — exact finite quaternion-sector counterexample
+
+FullVacuumCounterexample.lean uses **eight exact rational Householder frames**
+in imaginary octonion coordinates and the Cayley–Dickson cross-product
+coefficient table. The theorem
+`trial_full_vacuum_beats_binary_period_four` verifies a strict
+model-specific inequality for the eight-site projector energy:
+`E_trial < -12`. The separate theorem `trial_frame_orthonormal`
+checks the eight three-dimensional imaginary bases. This is a
+`native_decide`-based finite certificate (compiler trust). These
+theorems do **not** prove a global minimum, republish known ANNNI
+or SSH theory, or establish physical fermionic particles.
