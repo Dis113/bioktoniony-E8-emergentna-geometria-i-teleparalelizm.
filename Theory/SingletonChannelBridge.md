@@ -81,14 +81,14 @@ As a first *postulate*, a number-preserving link and an even pair source are
 \begin{aligned}
 H_{\rm link}&=-t\sum_{\alpha}
 (a^\dagger_{i\alpha}a_{j\alpha}+a^\dagger_{j\alpha}a_{i\alpha}),\\
+A_{ij}^\dagger&=
+a^\dagger_{i1}a^\dagger_{j2}-a^\dagger_{i2}a^\dagger_{j1},\\
 H_{\rm pair}&=\kappa(\mathcal I_{\rm EM},\mathcal I_{\rm GR})
-\sum_{\alpha}
-(a^\dagger_{i\alpha}a^\dagger_{j\alpha}
-+a_{i\alpha}a_{j\alpha}).
+(A_{ij}^\dagger+A_{ij}).
 \end{aligned}
 \]
 
-The link above uses an **identified oscillator basis**; a model with varying \(\mathbb H_i\) needs an additional unitary transport matrix \(U_{ij}\). The function \(\kappa\) is **not** derived from E8 or teleparallel gravity. It is a controlled proxy for potential environmental dependence.
+The antisymmetric pairing is a compact SU(2) spin singlet and the number-conserving hopping respects a *common* SU(2) frame rotation. This corrects a noncovariant same-channel pairing ansatz. These singlet bond operators are already familiar from the Schwinger-boson literature, not a new POM theorem (e.g. Phys. Rev. B 93, 235150 (2016), DOI 10.1103/PhysRevB.93.235150). The link above uses an **identified oscillator basis**; a model with varying \(\mathbb H_i\) needs an additional unitary transport matrix \(U_{ij}\). The function \(\kappa\) is **not** derived from E8 or teleparallel gravity. It is a controlled proxy for potential environmental dependence.
 
 The parity operator \(\Pi=(-1)^{N_i+N_j}\) commutes with each of these quadratic terms. This implies the model-specific rules:
 
@@ -97,7 +97,7 @@ The parity operator \(\Pi=(-1)^{N_i+N_j}\) commutes with each of these quadratic
 - An initially empty state is unaffected by number-conserving hopping; a pair source can populate odd–odd local sectors.
 - A physically fermionic bulk field in the mixed Rac⊗Di tower therefore needs a suitable parity-odd initial source/sector or more elaborate supermultiplet coupling; the elementary source cannot be inferred from an EM/GR scalar invariant alone.
 
-This parity bookkeeping is *specific to the proposed coupling*. We do not re-prove the metaplectic construction, the Flato–Fronsdal theorem, or the physical spin–statistics theorem. See POM1/SingletonSectorSelection.lean.
+This parity bookkeeping is *specific to the proposed coupling*. We do not re-prove the metaplectic construction, the Flato–Fronsdal theorem, or the physical spin–statistics theorem. See POM1/SingletonSectorSelection.lean. The spin-singlet pair preserves global parity and is explicitly checked against common SU(2) frame rotations in Simulations/singleton_channel_probe.py.
 
 **Important limitation:** an odd–odd pair of bosonic-oscillator Fock sectors is *not* evidence of actual production of physical fermion pairs. The relevant quantum field/BRST constraints have not been built.
 
