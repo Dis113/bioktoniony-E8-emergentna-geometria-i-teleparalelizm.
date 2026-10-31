@@ -35,13 +35,14 @@ def quaternionOverlapAB : ℚ :=
 
 theorem quaternionOverlapAB_five_eighths :
     quaternionOverlapAB = (5/8 : ℚ) := by
-  decide
+  norm_num [quaternionOverlapAB, Fin.sum_univ_succ,
+    quaternionProjectorA, quaternionProjectorB]
 
 /-- Every sector projector overlaps itself with normalized trace 1. -/
 theorem quaternionOverlapAA_one :
     (∑ i : Fin 8, quaternionProjectorA i * quaternionProjectorA i) / 4 =
     (1 : ℚ) := by
-  decide
+  norm_num [Fin.sum_univ_succ, quaternionProjectorA]
 
 /-- Phenomenological, positive link strength from scalar sector overlap. -/
 noncomputable def spectralLink (offset stiffness overlap : ℝ) : ℝ :=
