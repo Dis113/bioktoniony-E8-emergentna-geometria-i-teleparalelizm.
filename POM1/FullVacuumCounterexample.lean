@@ -102,6 +102,16 @@ def trialImaginaryFrame (s : Fin 8) (a : Fin 3) (k : Fin 7) : ℚ :=
   else if a.val = 1 then trialV s k
   else trialW s k
 
+/-- Exact Gram identity verifies that each of the eight rational
+imaginary quaternion bases is orthonormal, not just a triple of random
+vectors. The quaternion-product relation w=u*v is definitional. -/
+theorem trial_frame_orthonormal :
+    ∀ s : Fin 8, ∀ a b : Fin 3,
+      (∑ k : Fin 7,
+        trialImaginaryFrame s a k * trialImaginaryFrame s b k) =
+        if a = b then (1 : ℚ) else 0 := by
+  native_decide
+
 /-- Orthogonal projector trace for the 4-real-dimensional quaternion sectors.
 Each basis shares the scalar 1 and three orthonormal imaginary vectors. -/
 def trialOverlap (i j : Fin 8) : ℚ :=
