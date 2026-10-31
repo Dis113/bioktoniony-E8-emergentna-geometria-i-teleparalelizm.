@@ -143,7 +143,7 @@ def run():
     solutions=exact_transfer_minimizers(40)
     states,projectors_,q=projectors()
     pa,pb,pc=projectors_
-    assert q==(5/8,1/2)
+    assert np.allclose(q,(5/8,1/2),atol=1e-12)
 
     counts={}
     modes={}
