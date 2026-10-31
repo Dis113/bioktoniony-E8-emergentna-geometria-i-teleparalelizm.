@@ -76,6 +76,11 @@ jobs:
           #print axioms POM1.periodFourLocal_saturation_iff_opposite
           #print axioms POM1.trial_full_vacuum_beats_binary_period_four
           #print axioms POM1.trial_frame_orthonormal
+          #print axioms POM1.equal_sector_bond
+          #print axioms POM1.different_sector_bond
+          #print axioms POM1.fibonacci_weak_count_8_13
+          #print axioms POM1.fibonacci_weak_count_21_34
+          #print axioms POM1.uniform_sector_no_bond_modulation
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -115,3 +120,4 @@ jobs:
           python Simulations/spontaneous_ordering_probe.py
           python Simulations/continuous_sector_frustration.py
           python Simulations/full_vacuum_ordering_probe.py
+          python Simulations/fibonacci_planck_flux.py
