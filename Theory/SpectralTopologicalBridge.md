@@ -191,3 +191,16 @@ ani fizycznej sygnatury Lorentza z obecnego skończonego grafu.
 5. Porównać nowe przewidywania ze skalami rzeczywistymi i obserwacjami.
 
 **Kryterium STOP:** jeśli tylko 1D SSH pozostaje uzyskiwany po wstawieniu grafu i dimerizacji, POM-6 jest modelem topologicznych analogów, nie teorią elementarnych cząstek.
+
+
+## 9. Ważna przeszkoda w topologicznej stabilności defektów przestrzennych
+
+Odpowiedź na pytanie, czy na podstawie samych sektorów H wolno wyprowadzić
+stabilne trójwymiarowe defekty, znajduje się w
+[VacuumTopologyAudit.md](VacuumTopologyAudit.md). W POM-3 pełna
+rozmaitość minimów to \(V_2(\mathbb R^7)\), o \(\pi_2=0\), choć przestrzeń
+samych sektorów kwaternionowych \(G_2/SO(4)\) ma \(\pi_2=\mathbb Z_2\).
+Nie wolno utożsamiać tych dwóch fizycznych przestrzeni stanów bez
+wyprowadzenia lokalnej symetrii ramy. Ta przeszkoda nie znosi
+jednowymiarowego testu SSH, ale ogranicza jego interpretację jako źródła
+stabilnych cząstek w 3+1D.

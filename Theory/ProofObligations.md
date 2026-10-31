@@ -114,3 +114,7 @@ See [SingletonChannelBridge.md](SingletonChannelBridge.md) for exact scope and l
 | P611 | Prove overlap dimerization is selected by a global vacuum energy, not manually prepared sectors | OPEN |
 
 Read [SpectralTopologicalBridge.md](SpectralTopologicalBridge.md) before interpreting the 1D results as physical matter.
+
+
+| P612 | \(\pi_2(V_2(\mathbb R^7))=0\) vs \(\pi_2(G_2/SO(4))\cong\mathbb Z_2\) | REVIEWED published topology; no duplicate proof |
+| P613 | Derive local SO3 gauge redundancy so the physical vacuum is the quotient, or find alternative defect protection | OPEN; see [VacuumTopologyAudit.md](VacuumTopologyAudit.md) |

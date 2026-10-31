@@ -128,3 +128,8 @@ POM-6 asks a more directly falsifiable question than the singleton-label program
 - [Research/PriorArt.md](Research/PriorArt.md) — Su–Schrieffer–Heeger, Ryu–Hatsugai, Teo–Kane, Connes–Chamseddine and Nielsen–Ninomiya.
 
 **Scope warning:** dimerization, one-dimensional graph and the SU2 lift are chosen for the toy test. No 3+1 Lorentz geometry, physical fermionic statistics, Maxwell photons, E8 particle assignments or teleparallel torsion have been derived.
+
+
+## POM-6 — necessary topology warning
+
+[POM-6 vacuum topology audit](Theory/VacuumTopologyAudit.md) compares the **full** POM-3 order-parameter manifold \(V_2(\mathbb R^7)\) to the quotient \(G_2/SO(4)\) of quaternionic sectors. Their \(\pi_2\) differs, so the quotient's possible \(\mathbb Z_2\) point-defect charge does not automatically protect an actual full bi-octonion vacuum configuration. Published homotopy facts are cited rather than reproved.
