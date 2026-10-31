@@ -83,6 +83,36 @@ def test_su2_singlet_covariance(m):
     assert np.allclose(singlet(a,b),singlet(ar,br),atol=1e-11)
 
 
+def test_di_di_scalar_lowest_weight(m, v):
+    """Verify the pair singlet has E0=2, J=0 and vanishing AdS lowering
+    generator action on low-occupation vectors of the TRUNCATED Fock space.
+    This is a channel witness, NOT a proof of the full tensor-product theorem.
+    """
+    ai0,ai1=m["A"]
+    bj0,bj1=m["B"]
+    pair=ai0.conj().T@bj1.conj().T - ai1.conj().T@bj0.conj().T
+    state=pair@v
+    assert np.linalg.norm(state)>1e-8
+    state/=np.linalg.norm(state)
+    dim=state.size
+    eye=np.eye(dim,dtype=complex)
+    energy=(m["N"]+2*eye)/2
+    Jz=(ai0.conj().T@ai0-ai1.conj().T@ai1+
+        bj0.conj().T@bj0-bj1.conj().T@bj1)/2
+    Jp=ai0.conj().T@ai1 + bj0.conj().T@bj1
+    lowering=[
+        (ai0@ai0+ai1@ai1+bj0@bj0+bj1@bj1)/2,
+        -0.5j*(ai0@ai0-ai1@ai1+bj0@bj0-bj1@bj1),
+        ai0@ai1+bj0@bj1
+    ]
+    assert np.linalg.norm((energy-2*eye)@state)<1e-11
+    assert np.linalg.norm(Jz@state)<1e-11
+    assert np.linalg.norm(Jp@state)<1e-11
+    assert np.linalg.norm(Jp.conj().T@state)<1e-11
+    assert all(np.linalg.norm(L@state)<1e-11 for L in lowering)
+    return float(np.real(np.vdot(state,energy@state)))
+
+
 def rate_proxy(em, gr, kappa0=.12):
     """External EM–GR toy drive, not a measured pair-production rate."""
     return kappa0*(1+0.3*em+0.15*gr+0.1*em*gr)
@@ -146,6 +176,7 @@ def run():
     m=model_matrices(d)
     test_su2_singlet_covariance(m)
     v=vacuum_vector(d)
+    scalar_weight=test_di_di_scalar_lowest_weight(m,v)
     assert np.isclose(np.trace(m["RR"]+m["DD"]+m["MIXED"]),d**4)
     assert np.isclose(probabilities(v,m)["RR"],1.)
 
@@ -177,6 +208,7 @@ def run():
 
     print("POM-5 SU(2)-singlet pair and parity selection diagnostics PASS")
     print("Published Rac/Di spin tower bookkeeping:",spins)
+    print("SU(2)-singlet DiDi source lowest weight: E0=",scalar_weight,"spin=0")
     print("Finite oscillator CCR cutoff error:",round(defect,8))
     print("POM-5 even vacuum -> Di_i x Di_j probabilities:",phases)
     print("Hopping from local Rac(Rac) occupation -> DiDi probability:",p1["DD"])
