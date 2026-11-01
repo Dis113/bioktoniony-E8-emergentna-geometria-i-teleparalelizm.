@@ -81,6 +81,13 @@ jobs:
           #print axioms POM1.fibonacci_weak_count_8_13
           #print axioms POM1.fibonacci_weak_count_21_34
           #print axioms POM1.uniform_sector_no_bond_modulation
+          #print axioms POM1.loop_is_energetically_selected
+          #print axioms POM1.loop_preference_robust
+          #print axioms POM1.spiral_selected_cosine
+          #print axioms POM1.irrational_chosen_twist
+          #print axioms POM1.irrational_berry_flux
+          #print axioms POM1.qwz_gap_lower_bound
+          #print axioms POM1.qwz_selected_chiral_gap
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -121,3 +128,4 @@ jobs:
           python Simulations/continuous_sector_frustration.py
           python Simulations/full_vacuum_ordering_probe.py
           python Simulations/fibonacci_planck_flux.py
+          python Simulations/self_generated_flux_probe.py
