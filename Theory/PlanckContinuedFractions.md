@@ -168,3 +168,17 @@ Nie formalizujemy ponownie tych twierdzeń.
 organizują pewne kwantowe widma oraz odporne luki.
 Nie dowodzą jednak same w sobie Planckowskiej próżni,
 ani nie generują fundamentalnej stałej h.
+
+
+## POM-10 update: no externally prescribed flux in the conditional toy
+
+[POM-10](SelfGeneratedIrrationalFlux.md) takes a different route:
+an ASSUMED chiral octonion-triangle energy chooses a closed graph and
+two opposite chiral vacua. Their gauge-invariant spinor Bargmann
+phase is ±atan(1/2), irrational relative to 2π by the published Niven
+theorem. It uses no external magnetic Peierls flux, unlike POM-9.
+
+This is NOT a retroactive derivation of the POM-9 2D Hofstadter
+operator: the separate QWZ 2D response in POM-10 is itself postulated,
+and the chiral 3-node toy works within a common quaternion sector.
+Neither produces the value of hbar or a Planck-length physical network.

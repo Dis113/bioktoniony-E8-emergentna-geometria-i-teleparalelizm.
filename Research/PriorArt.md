@@ -149,3 +149,21 @@ These are ALREADY established results. Do not duplicate their general proofs in 
 6. Avila and Jitomirskaya, *The Ten Martini Problem*, Annals of Mathematics 170, 303 (2009), DOI [10.4007/annals.2009.170.303](https://doi.org/10.4007/annals.2009.170.303). Cantor spectra for almost Mathieu operators under the stated hypotheses; not a physical Planck-lattice discovery.
 
 **POM-9 NEW question**: whether the particular quaternion-projector overlap rule modifies, preserves or destroys these known gapped properties AND whether the Fibonacci sector word can be selected by an actual POM vacuum Hamiltonian. Negative controls (silver ratio, zero projector contrast) refute a claim that golden ratio or quaternion overlap is necessary for the observed Chern index. No value of h is derived.
+
+
+## POM-10 — strictly avoid duplicating reviewed mathematical physics
+
+- **Niven theorem:** Panraksa, Samart and Sriwongsa, *A Dynamical System Proof of Niven's Theorem and Its Extensions*, Bull. Aust. Math. Soc. (2023), plus the existing Mathlib.NumberTheory.Niven proof. POM merely invokes Niven to infer irrational phase ratios from cos(2φ)=3/5.
+- **G2 associative calibration:** Harvey–Lawson (1982) and reviewed G2 calibration geometry, e.g. [On G2 Manifolds with Cohomogeneity Two Symmetry](https://doi.org/10.1007/s00220-024-05052-0). The inequality χ²≤1−c² for unit imaginary octonions is ASSUMED for the POM-10 Lean bound.
+- **Chiral Berry flux:** Ohgushi, Murakami and Nagaosa, *Spin Anisotropy and Quantum Hall Effect in the Kagomé Lattice*, Phys. Rev. B 62, R6065 (2000), DOI [10.1103/PhysRevB.62.R6065](https://doi.org/10.1103/PhysRevB.62.R6065). A noncoplanar spinor triple gives a geometric loop phase; this is known.
+- **Zero-external-field topological bands:** Haldane, Phys. Rev. Lett. 61, 2015 (1988), DOI [10.1103/PhysRevLett.61.2015](https://doi.org/10.1103/PhysRevLett.61.2015). The general mechanism is already published.
+- **Interaction-induced chiral topology:** Raghu, Qi, Honerkamp and Zhang, *Topological Mott Insulators*, Phys. Rev. Lett. 100, 156401 (2008), DOI [10.1103/PhysRevLett.100.156401](https://doi.org/10.1103/PhysRevLett.100.156401).
+- **Standard 2D two-band response:** Qi, Wu and Zhang, *Topological quantization of the spin Hall effect in two-dimensional paramagnetic semiconductors*, Phys. Rev. B 74, 085308 (2006), DOI [10.1103/PhysRevB.74.085308](https://doi.org/10.1103/PhysRevB.74.085308).
+- **Incommensurate competition:** Aubry, *The twist map, the extended Frenkel-Kontorova model and the devil's staircase*, Physica D 7, 240 (1983), DOI [10.1016/0167-2789(83)90129-X](https://doi.org/10.1016/0167-2789(83)90129-X).
+
+**New POM-specific target:** can the FULL microscopic bi-octonion vacuum
+select a 3-cycle with a chiral state, generate a spinor connection,
+and the physical 2D/3+1D kinetic operators, rather than having them
+inserted by hand? The toy three-edge inequalities and their exact
+octonion witnesses are model-specific; prior Berry/Chern theorems are
+cited, not reproduced.
