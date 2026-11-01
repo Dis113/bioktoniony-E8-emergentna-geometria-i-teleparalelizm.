@@ -218,3 +218,14 @@ from mathlib). No external Peierls magnetic field is supplied.
 ASSUMED; the 3-node graph does not itself have a 2D bulk Chern band.
 This construction works inside a common quaternion H, therefore
 octonions are not yet demonstrably necessary.
+
+
+## POM-11 — Exact spectral gap of the SAME self-selected triangle
+
+POM-11 removes the need for the separately postulated QWZ 2D operator when verifying a *finite* spectral gap for the closed 3-node chiral loop from POM-10. Exact rational link invariants determine its cubic characteristic polynomial; Lean proves root ordering, an exact lower gap >47/100, and a conditional robustness margin >7/100 under Hermitian operator perturbations of norm <=1/5. Known general Weyl results are cited, not reproved.
+
+- [Theory/ExactLoopSpectrum.md](Theory/ExactLoopSpectrum.md) — full mathematical derivation and scope limits
+- [POM1/LoopSpectrum.lean](POM1/LoopSpectrum.lean) — Lean polynomial roots and quantitative gap
+- [Simulations/exact_loop_spectrum.py](Simulations/exact_loop_spectrum.py) — exact Gaussian-rational matrix invariants, local gauge tests, perturbation samples
+
+The result remains a finite graph spacing, NOT an electron, a 2D topological band or TEGR.

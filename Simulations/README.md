@@ -175,3 +175,10 @@ Numerical QWZ Chern does NOT prove that the 3-node network generates
 a 2D lattice, that the phase is physical Maxwell magnetic flux, or
 that real fermionic particles exist. Spinor coherent-state
 quantization and QWZ kinetic terms remain external hypotheses.
+
+
+## POM-11 — exact three-node Hermitian loop
+
+Run: python Simulations/exact_loop_spectrum.py
+
+Verifies the exact Gaussian-rational 3-cycle Wilson invariant B=(2+i)/5 and characteristic polynomial (lambda+1)(lambda^2-lambda-4/5). The exact smallest level spacing (15-sqrt(105))/10 exceeds 0.47. Eighty independent node gauge rephasings preserve Wilson phase and eigenvalues; 160 Hermitian perturbations of norm 0.2 respect the known Weyl margin >0.07. This does NOT construct a bulk gap in 2D/3D.

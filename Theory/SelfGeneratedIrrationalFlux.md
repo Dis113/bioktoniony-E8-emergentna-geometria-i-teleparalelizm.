@@ -228,3 +228,8 @@ matematycznie spełnić bez zewnętrznego strumienia na
 minimalnym modelu. Jednak oryginalne POM-3/8/9 nie
 wyprowadzają jeszcze tej dynamiki. To program badań,
 nie potwierdzona teoria fundamentalnej próżni.
+
+
+## POM-11 correction: exact spectral certificate for this SAME triangle
+
+[ExactLoopSpectrum.md](ExactLoopSpectrum.md) now provides an independent exact Gaussian-rational calculation of the Hermitian 3-node triangle charpoly, and formal Lean polynomial-root and lower-gap inequalities. The exact spacing >0.47 survives Hermitian perturbations of norm <=0.2 with margin >0.07 (conditional on the classical Weyl theorem). This is a stronger result than the earlier numerical finite-spectrum test, but it is STILL a finite-loop level spacing, not a 2D bulk Chern gap or physical electron.
