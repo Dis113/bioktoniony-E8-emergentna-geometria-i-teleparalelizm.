@@ -103,3 +103,17 @@ the five chosen convergents' weak-link counts 4,6,10,16,26.
 This uses the compiler's native evaluator and is NOT a full kernel-
 reduced certificate for those counts. General continued-fraction,
 Hofstadter, TKNN and Chern theorems are NOT re-proved.
+
+
+## POM-10 — conditional graph and chiral-flux bounds
+
+SelfGeneratedFlux.lean proves POM-specific real-polynomial bounds on
+closed versus open 3-edge graphs, a controlled energy-preference margin,
+a known J1/J2-style rational selected cosine, and a quadratic lower
+bound for the separately POSTULATED Qi-Wu-Zhang two-band response.
+
+The octonion calibration inequality χ²≤1−c² is a hypothesis,
+NOT formally reproven; a concrete octonion witness is tested
+independently in Python. The irrational angle follows by invoking
+the ALREADY EXISTING mathlib Niven theorem, not re-formalizing it.
+No physical electromagnetic field or fermion Hilbert space is derived.

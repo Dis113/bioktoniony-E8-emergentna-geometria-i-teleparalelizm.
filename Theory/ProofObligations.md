@@ -177,3 +177,23 @@ Pełne szczegóły: [FullVacuumOrderAudit.md](FullVacuumOrderAudit.md).
 | P913 | Provide interval-certified eigenvalue enclosures and formal model-specific topological stability | OPEN |
 
 Full discussion in [PlanckContinuedFractions.md](PlanckContinuedFractions.md).
+
+
+## POM-10 — no external magnetic field, but conditional dynamics (2026-11-01)
+
+| ID | Claim | State |
+|---|---|---|
+| P1001 | Three-edge Boolean network favors closed triangle in the NEW chirality-favoring toy energy | LEAN conditional exact bound -11/2 versus -21/4; calibration inequality imported as hypothesis |
+| P1002 | Two chiral signs ±4/5 with same minimal energy and octonion witness | ANALYTIC + Python; FULL POM3/8/9 derivation still OPEN |
+| P1003 | Selected geometric Berry phase ±atan(1/2) has irrational φ/π | LEAN applying published Niven theorem under cos(2φ)=3/5; Python checks explicit Bargmann loop |
+| P1004 | One 3-node loop has a positive finite-level spacing | Python exact eigenvalue formula check; NOT a thermodynamic band gap |
+| P1005 | A separately assumed 2D QWZ operator coupled to χ=±4/5 has bulk gap ≥8/5 | LEAN algebraic identity and inequality; general QWZ topology is KNOWN published work |
+| P1006 | Chern ±1 of QWZ when m=±4/5 and remains stable after bounded mass perturbation | Python FHS and KNOWN QWZ theorem; no original topology proof |
+| P1007 | Derive possible vertices, link activation and three-edge coupling from earlier bi-octonion H | OPEN |
+| P1008 | Derive coherent spinors with physical fermionic CAR rather than POSTULATING CP1 | OPEN |
+| P1009 | Derive 2D/3+1 operator, its spatial structure and mass=χ coupling from network | OPEN |
+| P1010 | Derive external EM / Planck action, physical hbar, Maxwell and TEGR | OPEN |
+| P1011 | Show octonions are NECESSARY: model currently works inside a common quaternion subalgebra | FAILED uniqueness test / OPEN for alternate coupling |
+| P1012 | Real time-dependent stability of loops, lifetimes, finite-T phases and full quantum theory | OPEN |
+
+See [SelfGeneratedIrrationalFlux.md](SelfGeneratedIrrationalFlux.md). Do not mistake conditional 3-node dynamical selection for an emergent full 3+1D spacetime.

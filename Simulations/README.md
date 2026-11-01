@@ -154,3 +154,24 @@ has the same Chern and that silver-mean approximants do too.
 The 2D graph, magnetic flux, charge, Fibonacci sector word and
 hopping law are externally set, NOT derived from POM's vacuum.
 Samples are floating-point, not interval-certified exact eigenvalues.
+
+
+## POM-10 — self-generated Berry holonomy (conditional toy)
+
+Run: python Simulations/self_generated_flux_probe.py
+
+The Python check takes POM-3 bi-octonion local ground-state
+representatives from one common quaternion subalgebra. It enumerates
+all 8 possible 3-edge Boolean graphs; checks an exact rational
+energy witness; computes two opposite χ=±4/5 chiral configurations;
+tests gauge invariance of the triangular spinor Bargmann invariant
+(2±i)/5 with irrational phase ±atan(1/2); calculates the exact
+FINITE triangle eigenvalues and their positive spacing; tests a
+separate ASSUMED 2D QWZ bulk response with Chern ±1 and band gap
+≥8/5, including a bounded mass perturbation. No external U(1)
+magnetic flux is inserted.
+
+Numerical QWZ Chern does NOT prove that the 3-node network generates
+a 2D lattice, that the phase is physical Maxwell magnetic flux, or
+that real fermionic particles exist. Spinor coherent-state
+quantization and QWZ kinetic terms remain external hypotheses.
