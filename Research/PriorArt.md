@@ -167,3 +167,8 @@ and the physical 2D/3+1D kinetic operators, rather than having them
 inserted by hand? The toy three-edge inequalities and their exact
 octonion witnesses are model-specific; prior Berry/Chern theorems are
 cited, not reproduced.
+
+
+## POM-11 — Weyl perturbation theorem as cited prior work
+
+The general Weyl eigenvalue inequality for Hermitian operators is classical published linear algebra; POM-11 does not attempt to reprove it. The POM-specific contribution is exact diagonalization of the previously chosen 3-node chiral loop, a rational lower bound on its minimum level spacing, and the algebraic implication for every perturbation of a prescribed operator norm. See Theory/ExactLoopSpectrum.md. The characteristic polynomial is independently computed on exact Gaussian rational entries using Python Fraction; Mathlib is used for root inequalities. Niven's theorem and the model QWZ topology also remain published prior art rather than claimed novelties.

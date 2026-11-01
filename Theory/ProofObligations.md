@@ -197,3 +197,17 @@ Full discussion in [PlanckContinuedFractions.md](PlanckContinuedFractions.md).
 | P1012 | Real time-dependent stability of loops, lifetimes, finite-T phases and full quantum theory | OPEN |
 
 See [SelfGeneratedIrrationalFlux.md](SelfGeneratedIrrationalFlux.md). Do not mistake conditional 3-node dynamical selection for an emergent full 3+1D spacetime.
+
+
+## POM-11 — finite loop spectral certificate
+
+| ID | Result or obligation | Status |
+|---|---|---|
+| P1101 | Gaussian-rational Hermitian triangle Wilson invariant and charpoly | WYM exact Fraction Python, symbolic cross-check |
+| P1102 | Polynomial factorization, roots and level spacing >47/100 | LEAN |
+| P1103 | Conditional stability margin >7/100 given eigenvalue shifts <=1/5 | LEAN, using published Weyl inequality for operator perturbations |
+| P1104 | 80 U(1) node rephasings, 160 Hermitian perturbations | NUM; not a proof of generic topological bands |
+| P1105 | Fully formal Lean Matrix.det theorem for concrete 3x3 matrix | OPEN (exact polynomial checked independently) |
+| P1106 | Derive spinor graph and QWZ/3+1 kinetic operators from microscopic bi-octonion H | OPEN |
+
+See [ExactLoopSpectrum.md](ExactLoopSpectrum.md) and [SelfGeneratedIrrationalFlux.md](SelfGeneratedIrrationalFlux.md).

@@ -117,3 +117,8 @@ NOT formally reproven; a concrete octonion witness is tested
 independently in Python. The irrational angle follows by invoking
 the ALREADY EXISTING mathlib Niven theorem, not re-formalizing it.
 No physical electromagnetic field or fermion Hilbert space is derived.
+
+
+## POM-11 — LoopSpectrum proof scope
+
+LoopSpectrum.lean proves the factorization and exact roots of the POM-specific cubic, the exact lower level spacing and its conditional perturbative margin. Gaussian-rational matrix invariants establishing the cubic as the triangle charpoly are calculated independently in Simulations/exact_loop_spectrum.py. No new proof of Weyl's general theorem or any real QFT gap is claimed.
