@@ -8,3 +8,4 @@ import POM1.SpectralLink
 import POM1.SpontaneousOrdering
 import POM1.FullVacuumCounterexample
 import POM1.FibonacciFluxLinks
+import POM1.SelfGeneratedFlux
