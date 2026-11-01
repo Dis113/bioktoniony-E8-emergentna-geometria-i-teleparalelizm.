@@ -84,6 +84,26 @@ def berry_loop(vectors):
     return B, float(np.angle(B)), z
 
 
+def triangle_loop_spectrum(z):
+    """Finite graph: all three edges carry state-derived complex overlaps.
+
+    This has level spacings but NOT a 2D bulk topological band gap.
+    For the explicit chiral witness the exact three eigenvalues are
+    -1 and (5 ± sqrt(105))/10.
+    """
+    H = np.zeros((3, 3), dtype=complex)
+    for i,j in ((0,1),(1,2),(2,0)):
+        H[i,j] = np.vdot(z[i],z[j])
+        H[j,i] = np.conj(H[i,j])
+    eigenvalues=np.linalg.eigvalsh(H)
+    exact=np.array([-1,(5-np.sqrt(105))/10,(5+np.sqrt(105))/10])
+    assert np.allclose(eigenvalues,exact,atol=1e-12)
+    local_gap=float(np.min(np.diff(eigenvalues)))
+    assert np.isclose(local_gap,(15-np.sqrt(105))/10)
+    assert local_gap > .47
+    return eigenvalues,local_gap
+
+
 def qwz(kx, ky, mass):
     """Given 2D QWZ spectral RESPONSE: no external Peierls/B field."""
     return (np.sin(kx)*PAULI[0] + np.sin(ky)*PAULI[1] +
@@ -158,11 +178,12 @@ def run():
             gz=[z*np.exp(1j*a) for z,a in zip(zs,angles)]
             observed=np.vdot(gz[0],gz[1])*np.vdot(gz[1],gz[2])*np.vdot(gz[2],gz[0])
             assert np.isclose(observed,B)
+        finite_levels, finite_gap = triangle_loop_spectrum(zs)
         top, gap=chern_number(chi)
         top2,gap2=chern_number(chi+sign*.2)
         assert top==top2==sign
         assert gap>=1.6-1e-10 and gap2>=1.2-1e-10
-        states.append((sign,c,chi,B,phase,top,gap,gap2))
+        states.append((sign,c,chi,B,phase,finite_gap,top,gap,gap2))
 
     # Exactly rational energy witness. There is no input rational flux.
     from fractions import Fraction as F
@@ -174,6 +195,11 @@ def run():
     pitch=-12*c+5*(2*c*c-1)
     assert pitch == -F(43,5)
 
+    # A vanishing chirality mass leaves a QWZ Dirac point at (0, pi).
+    assert np.allclose(np.linalg.eigvalsh(qwz(0,np.pi,0)),[0,0],atol=1e-12)
+    # This establishes the gap is not produced by the graph's positive
+    # adjacency weights alone; a specified chiral response is required.
+
     # Pure site U(1) phases give trivial holonomy; CP1 spinors do not.
     phases=rng.uniform(0,2*np.pi,3)
     z=np.exp(1j*phases)
@@ -184,10 +210,11 @@ def run():
           " vs best open graph -21/4; robust preference 1/4.")
     print("POM-10: J1=12,J2=5 spiral pitch cos(theta)=3/5,"
           " theta/pi=",math.acos(float(c))/math.pi)
-    for sign,c,chi,B,phase,top,gap,gap2 in states:
+    for sign,c,chi,B,phase,finite_gap,top,gap,gap2 in states:
         print(" POM-10 chirality",sign,"chi=",chi,
               "Bargmann=",B,"flux/2pi=",phase/(2*math.pi),
-              "Chern=",top,"gap=",gap,"perturbed gap=",gap2)
+              "finite-3-level gap=",finite_gap,
+              "Chern=",top,"2D band gap=",gap,"perturbed gap=",gap2)
     print("POM-10: no external Peierls magnetic field was used.")
     print("LIMIT: 3 potential nodes, chirality interaction, CP1 spinors,"
           " QWZ 2D kinetic operator, and exchange coefficients are inputs.")
