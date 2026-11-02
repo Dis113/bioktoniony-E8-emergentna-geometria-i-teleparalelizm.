@@ -226,3 +226,25 @@ See [ExactLoopSpectrum.md](ExactLoopSpectrum.md) and [SelfGeneratedIrrationalFlu
 | REV07 | Jeden mikroskopowy hamiltonian i emergentne 3+1, CAR, Maxwell, TEGR | OPEN |
 
 Audyt: [Research/CorrectionsAfterPeerReview2026.md](../Research/CorrectionsAfterPeerReview2026.md).
+
+
+## POM-12 — literatura jako fundament, a nie nowość ogólnych twierdzeń
+
+| ID | Zadanie | Stan |
+|---|---|---|
+| P1201 | Harvey–Lawson IV.1.6: phi² + assoc²/4 = det Gram | LIT; znane twierdzenie, **nie** powielamy |
+| P1202 | Krawędziowo bramkowane E=mu*edge_count-g*closed*R, E(empty)=0 | LEAN + Python, nowy postulat |
+| P1203 | Oktonionowy świadek (e1,e2,e4), R=1, minimum na 3 węzłach -1/4 | LEAN warunkowy + NUM; Cayley–Dickson |
+| P1204 | Identyczna kontrola wspólnej H: R=0 i minimum 0 | LEAN + NUM |
+| P1205 | Warunek g>3mu i margines stabilności gałęzi <1/8 | LEAN przy jawnych hipotezach |
+| P1206 | Zależność E od pierwszej osi u_i (problem centralnego U1) | NEG; **zastąpione** preferowanym POM-12b |
+| P1207 | Q(H1,H2,H3) — suma 27 składowych, bezramkowa kontrakcja projektorów | ANALITYCZNIE znana niezmienniczość tensora, NUM 500 zmian baz |
+| P1208 | WYM sum=48, Q=4/9, próbna energia O=-5/36 i H min=0 | WYM Python, LEAN implikacja; globalne O minimum nieustalone |
+| P1209 | Wersja bazowa centralnego U1 POM-3 | NUM 100 lokalnych rotacji |
+| P1210 | Ujemny goły asocjator na pełnych amplitudach daje -t^6, V3 tylko +t^4 | ANALITYCZNE NO-GO; pełnoamplitudowy stabilny H OPEN |
+| P1211 | Niezależna lokalna G2-koneksja i transport włókien | OPEN; Grigorian 2017/2021 to literatura |
+| P1212 | Powiększenie grafu, ograniczenie stopnia, termodynamika | OPEN; ryzyko nadmiernej liczby trójkątów |
+| P1213 | Samodzielne wyprowadzenie fizycznych CAR, wzbudzeń, Maxwell, TEGR, 3+1 | OPEN |
+| P1214 | Pełny dowód Lean równoważności sumy 27 składowych i kontrakcji tensorowej | OPEN, Python test PASS |
+
+Zob. [HarveyLawsonLocalOctonionicPhase.md](HarveyLawsonLocalOctonionicPhase.md).

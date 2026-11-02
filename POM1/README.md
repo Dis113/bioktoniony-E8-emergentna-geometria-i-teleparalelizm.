@@ -122,3 +122,10 @@ No physical electromagnetic field or fermion Hilbert space is derived.
 ## POM-11 — LoopSpectrum proof scope
 
 LoopSpectrum.lean proves the factorization and exact roots of the POM-specific cubic, the exact lower level spacing and its conditional perturbative margin. Gaussian-rational matrix invariants establishing the cubic as the triangle charpoly are calculated independently in Simulations/exact_loop_spectrum.py. No new proof of Weyl's general theorem or any real QFT gap is claimed.
+
+
+## POM-12 — ścisłe warunkowe porównanie grafu z O i H
+
+HarveyLawsonLoopSelection.lean przyjmuje jako **hipotezę** 0<=R<=1, gdzie R=||[u,v,w]||²/4. Ta nierówność jest konsekwencją już opublikowanego twierdzenia Harveya–Lawsona IV.1.6 (1982). Moduł dowodzi modelowych wyników: zero przy pustym grafie, minimum -1/4 dla jawnego świadka w O i brak ujemnej energii w tej samej H, progu g>3mu i marginu perturbacji.
+
+SectorInvariantLoop.lean dotyczy **preferowanego** funkcjonału z 27 trójek bazy każdej lokalnej H_i, niezależnego od wewnętrznej ramy. Jego wejściowe Q=4/9 pochodzi z niezależnego dokładnego rachunku Cayleya–Dicksona w Pythonie; Lean dowodzi konsekwencji energii -5/36, separacji H/O i marginu stabilności. Nie ma jeszcze pełnego formalnego dowodu bezpośredniej kontrakcji tensora 7^4, ani lokalnej G2-koneksji.

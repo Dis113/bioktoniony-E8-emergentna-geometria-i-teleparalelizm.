@@ -231,3 +231,16 @@ POM-11 removes the need for the separately postulated QWZ 2D operator when verif
 - [Simulations/exact_loop_spectrum.py](Simulations/exact_loop_spectrum.py) — exact Gaussian-rational matrix invariants, local gauge tests, perturbation samples
 
 The result remains a finite graph spacing, NOT an electron, a 2D topological band or TEGR.
+
+
+## POM-12 — literatura Harvey–Lawson i rzeczywisty test oktonionów (robocze)
+
+Wcześniejsze POM-10 miało ukryte sprzężenie tła nawet przy pustym grafie. POM-12 jest świadomie NOWYM, małym modelem krawędziowo bramkowanym. Korzysta z **już znanej** tożsamości kalibracyjnej Harveya–Lawsona (Acta Math. 1982), bez ponownego dowodzenia jej. Wstępny model używa jednej osi z każdej komórki i jest zależny od wyboru ramy; **preferowana wersja POM-12b** używa całych projektorów kwaternionowych i jest niezależna od lokalnych zmian bazy w tych sektorach.
+
+- [Theory/HarveyLawsonLocalOctonionicPhase.md](Theory/HarveyLawsonLocalOctonionicPhase.md): definicja modelu, ścisłe porównanie H/O, wersja tensorowo-projektorowa, literatura i ograniczenia.
+- [POM1/HarveyLawsonLoopSelection.lean](POM1/HarveyLawsonLoopSelection.lean): modelowa faza -1/4 kontra 0 przy stałej orientacji i jawnie założonym ograniczeniu Harveya–Lawsona.
+- [POM1/SectorInvariantLoop.lean](POM1/SectorInvariantLoop.lean): preferowana wersja bazowo niezależna; dla dokładnego świadka Q=4/9 ma energię -5/36, a dla trzech sektorów we wspólnej H minimum 0.
+- [Simulations/octonion_only_graph_probe.py](Simulations/octonion_only_graph_probe.py), [Simulations/sector_invariant_loop_probe.py](Simulations/sector_invariant_loop_probe.py): kontrole Cayleya–Dicksona, POM-3, ram O3, faz U1, tensorowej kontrakcji i niestabilnej naiwnej pełnoamplitudowej energii.
+- [Research/PriorArt.md](Research/PriorArt.md): Harvey–Lawson, Grigorian, Quantum Graphity i Levin–Wen jako znane wyniki, których nie dublujemy.
+
+**Zakres:** trzy potencjalne komórki i nowe założone sprzężenie, nie wyprowadzony mikroskopowy H, nie efektywny fizyczny operator Diraca, fermiony, fotony lub TEGR. Należy osobno rozwiązać amplitudy, lokalne G2 i limit dużych grafów.
