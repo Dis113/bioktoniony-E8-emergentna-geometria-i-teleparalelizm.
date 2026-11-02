@@ -11,3 +11,5 @@ import POM1.FibonacciFluxLinks
 import POM1.SelfGeneratedFlux
 import POM1.LoopSpectrum
 import POM1.GraphLocalityAudit
+import POM1.HarveyLawsonLoopSelection
+import POM1.SectorInvariantLoop

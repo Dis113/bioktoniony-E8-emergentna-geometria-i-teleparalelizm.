@@ -182,3 +182,15 @@ quantization and QWZ kinetic terms remain external hypotheses.
 Run: python Simulations/exact_loop_spectrum.py
 
 Verifies the exact Gaussian-rational 3-cycle Wilson invariant B=(2+i)/5 and characteristic polynomial (lambda+1)(lambda^2-lambda-4/5). The exact smallest level spacing (15-sqrt(105))/10 exceeds 0.47. Eighty independent node gauge rephasings preserve Wilson phase and eigenvalues; 160 Hermitian perturbations of norm 0.2 respect the known Weyl margin >0.07. This does NOT construct a bulk gap in 2D/3D.
+
+
+## POM-12 — dwie kontrolowane wersje energii z asocjatorem
+
+Uruchom z katalogu repozytorium:
+
+    python Simulations/octonion_only_graph_probe.py
+    python Simulations/sector_invariant_loop_probe.py
+
+Pierwszy skrypt porównuje 8 możliwych grafów na 3 potencjalnych węzłach, sprawdza dokładny świadek oktonionowy e1,e2,e4 i kwaternionowy e1,e2,e3, 2500 ortonormalnych losowych trójek, testy fazy V3 i ostrzeżenie o nieograniczonej od dołu **naiwnej** pełnoamplitudowej energii przy ujemnym gołym asocjatorze.
+
+Drugi sprawdza PREFEROWANY bazowo niezależny model: trzy sektory H_A,H_A,H_C, dokładną sumę 48 norm całkowitych => Q=4/9, zgodność z bezramkową kontrakcją projektorów, 500 niezależnych transformacji baz O3 oraz 100 lokalnych rotacji centralnego U1 POM-3. Daje ścisły próbny poziom E=-5/36 w O, wobec minimum 0 dla wspólnej H. Nie wyprowadzamy fizycznej lokalnej G2-kowariancji ani topologicznej luki pasmowej.

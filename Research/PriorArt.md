@@ -182,3 +182,20 @@ The general Weyl eigenvalue inequality for Hermitian operators is classical publ
 - **Preprinty 2026:** pokrewne konstrukcje Giesela ([SSRN 7193998](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7193998), [SSRN 7600498](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7600498)) nie zostały przez nas zweryfikowane jako publikacje recenzowane. Są źródłami priorytetowymi do porównania idei, a nie dowodem identyczności wzorów.
 
 Dalsze sprostowania: [CorrectionsAfterPeerReview2026.md](CorrectionsAfterPeerReview2026.md).
+
+
+## POM-12 — bezpośrednie wyniki literatury i dokładna granica nowości (2 XI 2026)
+
+| Wynik literaturowy, który JUŻ ISTNIEJE | Źródło recenzowane | Co pozostaje nowym pytaniem POM |
+|---|---|---|
+| Dokładna kalibracyjna tożsamość dla normy asocjatora i trójformy G2 | Harvey–Lawson, *Acta Math.* 148 (1982), 47–157, **Theorem IV.1.6**, DOI [10.1007/BF02392726](https://doi.org/10.1007/BF02392726) | Czy w zadanej energii krawędziowej aktywność pętli wykazuje ścisłą separację O/H? |
+| Oktoniony, automorfizmy G2 i podalgebry H | Baez, *Bull. AMS* 39 (2002), DOI [10.1090/S0273-0979-01-00934-X](https://doi.org/10.1090/S0273-0979-01-00934-X) | Jak dobrać energetyczny funkcjonał trzech dynamicznych sektorów? |
+| Wiązki oktonionowe, koneksje, torzja G2 i operator Diraca | Grigorian, *Adv. Math.* 308 (2017), 142–207, DOI [10.1016/j.aim.2016.12.003](https://doi.org/10.1016/j.aim.2016.12.003) | Czy da się sprzęgnąć wybrane grafy z właściwym lokalnym transportem? Torzja G2 **nie jest automatycznie TEGR**. |
+| Niełączne pętle, struktury cechowania i połączenia | Grigorian, *Adv. Math.* 393 (2021) 108078, DOI [10.1016/j.aim.2021.108078](https://doi.org/10.1016/j.aim.2021.108078) | Wyprowadzenie zgodnej z algebrą koneksji na dynamicznym grafie |
+| Dynamiczne krawędzie i emergentna lokalność | Konopka–Markopoulou–Severini, *Phys. Rev. D* 77 (2008) 104029, DOI [10.1103/PhysRevD.77.104029](https://doi.org/10.1103/PhysRevD.77.104029) | Czy asocjatorowa interakcja wybiera niskowymiarowe grafy, a nie gęste pętle? |
+| Role termodynamiki, stopnia węzła i materii w graphity | Konopka, *Phys. Rev. D* 78 (2008) 044032, DOI [10.1103/PhysRevD.78.044032](https://doi.org/10.1103/PhysRevD.78.044032) | Duży N, ograniczenie walencji i skala lokalności |
+| Wzbudzenia fermionowe i cechowania z string-net | Levin–Wen, *Rev. Mod. Phys.* 77 (2005) 871, DOI [10.1103/RevModPhys.77.871](https://doi.org/10.1103/RevModPhys.77.871) | Nadal nie ma fermionowego CAR, fizycznego fotonu i kwantowego działania POM |
+
+**Nowość warunkowa POM-12:** dokładny krawędziowo bramkowany funkcjonał, który ma osobne minima w przypadku O i H dla tych samych parametrów; bardziej konsekwentna wersja korzysta z bezramkowej kontrakcji projektorów i ma własny wymierny świadek Q=4/9. Nie jest to nowy ogólny dowód z geometrii G2 ani fizyczna unifikacja.
+
+**Ważny problem:** sam górny koszt liczby krawędzi jest rzędu O(N²), a liczba potencjalnych trójkątów rzędu O(N³). Nie wykazano, że proste rozszerzenie ujemnej premii za każdy trójkąt nie faworyzowałoby gęstych grafów. Potrzebny jest kontrolowany limit dużych grafów i kara za nadmierną walencję — zob. Quantum Graphity.
