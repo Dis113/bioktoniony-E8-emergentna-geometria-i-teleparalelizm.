@@ -1,5 +1,7 @@
 # POM-1 — Próżnia jako Ocean Możliwości
 
+**KOREKTA NAUKOWA 2 XI 2026:** [Audyt recenzencki i sprostowania](Research/CorrectionsAfterPeerReview2026.md). Kluczowe ograniczenia: POM-10 zachowuje oddziaływania przy pustym grafie; lokalne V3 ma symetrię O(7); POM-10 działa we wspólnej podalgebrze H; POM-11 daje tylko lukę skończonej macierzy. Wszystkie modele są alternatywnymi studiami matematycznymi, nie jedną wyprowadzoną teorią fizyczną.
+
 **Bioktoniony · E₈ · emergentna geometria · teleparalelizm**
 
 Repozytorium projektu badawczego POM-1, poświęconego wyłącznie bioktonionom, geometrii E₈, emergencji czasoprzestrzeni i teleparalelizmowi.

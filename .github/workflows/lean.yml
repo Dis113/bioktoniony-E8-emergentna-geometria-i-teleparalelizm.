@@ -93,6 +93,8 @@ jobs:
           #print axioms POM1.loop_upper_eigenvalue_root
           #print axioms POM1.loop_gap_exceeds_47_100
           #print axioms POM1.loop_gap_survives_eigenvalue_perturbation
+          #print axioms POM1.empty_graph_has_residual_interaction
+          #print axioms POM1.empty_graph_not_spin_independent
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -135,3 +137,4 @@ jobs:
           python Simulations/fibonacci_planck_flux.py
           python Simulations/self_generated_flux_probe.py
           python Simulations/exact_loop_spectrum.py
+          python Simulations/scientific_review_regression.py

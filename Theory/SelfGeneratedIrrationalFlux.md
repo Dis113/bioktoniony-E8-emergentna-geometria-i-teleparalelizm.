@@ -1,6 +1,6 @@
 # POM-10 — Czy próżnia sama wybiera niewymierną fazę, pętlę i lukę?
 
-**1 listopada 2026.** Wynik: konstrukcja **warunkowa** z trzema potencjalnymi komórkami, dynamicznym wyborem trzech krawędzi i chiralną orientacją kwaternionową. Pokazuje, że **nie ma matematycznej przeszkody** do jednoczesnego wyboru niewymiernej fazy Berry'ego i zamkniętego obiegu bez zewnętrznego pola EM. Nie jest wyprowadzeniem tego z oryginalnego POM-3/8/9; **2D operator widmowy jest nadal postulowany**.
+**1 listopada 2026.** Wynik: konstrukcja **warunkowa** z trzema potencjalnymi komórkami, warunkowym wyborem aktywacji trzech krawędzi przy istniejących już oddziaływaniach spinów i chiralną orientacją kwaternionową. Pokazuje, że **nie ma matematycznej przeszkody** do jednoczesnego wyboru niewymiernej fazy Berry'ego i zamkniętego obiegu bez zewnętrznego pola EM. Nie jest wyprowadzeniem lokalnego grafu z nieoddziałujących węzłów ani wynikiem oryginalnego POM-3/8/9; **2D operator widmowy jest nadal postulowany**.
 
 ## 0. Czego nie powielamy
 
@@ -233,3 +233,14 @@ nie potwierdzona teoria fundamentalnej próżni.
 ## POM-11 correction: exact spectral certificate for this SAME triangle
 
 [ExactLoopSpectrum.md](ExactLoopSpectrum.md) now provides an independent exact Gaussian-rational calculation of the Hermitian 3-node triangle charpoly, and formal Lean polynomial-root and lower-gap inequalities. The exact spacing >0.47 survives Hermitian perturbations of norm <=0.2 with margin >0.07 (conditional on the classical Weyl theorem). This is a stronger result than the earlier numerical finite-spectrum test, but it is STILL a finite-loop level spacing, not a 2D bulk Chern gap or physical electron.
+
+
+## Korekta K1 po recenzji naukowej (2 listopada 2026)
+
+W historycznym E_10 składniki a²+b²+c²-6c-3χ² nie są mnożone przez binarne zmienne krawędzi. **Nawet przy a12=a23=a31=0 występują więc oddziaływania między trzema stanami**. Przykładowo stany (e1,e2,e1) i (e1,e2,-e1), przy wyłączonych krawędziach, mają energie odpowiednio **-5** i **+7**. To ścisły modelowo-specyficzny kontrprzykład dla interpretacji „wyprowadzono lokalną sieć z pustego, nieoddziałującego grafu”.
+
+Wszystkie historyczne nierówności selekcji trójkąta pozostają poprawne **dla dokładnie podanej energii**, ale ich interpretacja jest węższa: model wybiera zajętość krawędzi w obecności zadanego, nielokalnego sprzężenia tła. Przedefiniowanie E_10 jako sumy *tylko* aktywnych interakcji wymaga nowej analizy minimum.
+
+Ponadto chiralny świadek jest w jednej H, a **dokładna niewymierność** fazy z Nivena nie jest sama przez się stabilna na dowolne małe zmiany parametrów. Bibliografia kalibracji: Harvey–Lawson, *Acta Math.* 148 (1982) 47–157, DOI [10.1007/BF02392726](https://doi.org/10.1007/BF02392726).
+
+Zob. [pełne korekty](../Research/CorrectionsAfterPeerReview2026.md) i [formalny audyt pustego grafu](../POM1/GraphLocalityAudit.lean).

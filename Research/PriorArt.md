@@ -1,6 +1,6 @@
 # POM-1 — mapa recenzowanej literatury i zasada niedublowania wyników
 
-**Stan przeglądu: 30 października 2026.** Źródła poniżej to rzeczywiste artykuły w recenzowanych czasopismach. Uznajemy ich wyniki w podanym zakresie; POM-1 musi wykazać dodatkowy związek z konkretną dynamiką bioktonionów.
+**Stan przeglądu rozszerzony: 2 listopada 2026.** Podstawowa literatura obejmuje prace recenzowane; pokrewne rękopisy SSRN są osobno oznaczone jako **nierecenzowane preprinty**. Uznajemy ich wyniki w podanym zakresie; POM-1 musi wykazać dodatkowy związek z konkretną dynamiką bioktonionów.
 
 | Już opisane w literaturze | Recenzowana praca | Czego NIE dowodzimy ponownie | Otwarta część POM-1 |
 |---|---|---|---|
@@ -172,3 +172,13 @@ cited, not reproduced.
 ## POM-11 — Weyl perturbation theorem as cited prior work
 
 The general Weyl eigenvalue inequality for Hermitian operators is classical published linear algebra; POM-11 does not attempt to reprove it. The POM-specific contribution is exact diagonalization of the previously chosen 3-node chiral loop, a rational lower bound on its minimum level spacing, and the algebraic implication for every perturbation of a prescribed operator norm. See Theory/ExactLoopSpectrum.md. The characteristic polynomial is independently computed on exact Gaussian rational entries using Python Fraction; Mathlib is used for root inequalities. Niven's theorem and the model QWZ topology also remain published prior art rather than claimed novelties.
+
+
+## Aktualizacja bibliograficzna po recenzji (2 listopada 2026)
+
+- **Źródło kalibracji G2:** R. Harvey, H. B. Lawson, *Calibrated Geometries*, *Acta Mathematica* 148 (1982), 47–157, DOI [10.1007/BF02392726](https://doi.org/10.1007/BF02392726). Wcześniej przytoczony Aslan–Trinca (DOI 10.1007/s00220-024-05052-0) opisuje szczególne rozmaitości G2, lecz nie jest pierwotnym, bezpośrednim źródłem użytej ogólnej nierówności kalibracyjnej.
+- **Klasa pól O(N)×O(2):** M. Reehorst, S. Rychkov, B. Sirois, B. C. van Rees, *SciPost Phys.* 18 (2025) 060, DOI [10.21468/SciPostPhys.18.2.060](https://doi.org/10.21468/SciPostPhys.18.2.060). Jest pokrewnym punktem odniesienia, NIE twierdzeniem o dokładnym potencjale V3.
+- **Dynamiczne grafy:** Konopka, Markopoulou, Severini (2008), DOI [10.1103/PhysRevD.77.104029](https://doi.org/10.1103/PhysRevD.77.104029). Ich model rozważa dynamiczne krawędzie i emergentną lokalność; POM-10 nie posiada jeszcze właściwej, w pełni krawędziowo lokalnej dynamiki.
+- **Preprinty 2026:** pokrewne konstrukcje Giesela ([SSRN 7193998](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7193998), [SSRN 7600498](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7600498)) nie zostały przez nas zweryfikowane jako publikacje recenzowane. Są źródłami priorytetowymi do porównania idei, a nie dowodem identyczności wzorów.
+
+Dalsze sprostowania: [CorrectionsAfterPeerReview2026.md](CorrectionsAfterPeerReview2026.md).

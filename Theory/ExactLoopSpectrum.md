@@ -61,3 +61,8 @@ Luka skończona nie jest jednak luką topologiczną w nieskończonym materiale. 
 Zdefiniować jedną mikroskopową energię bioktonionową, z której wynikają trójkątny koszt chiralny, dozwolone pętle i operator propagacji; wykazać topologię i prawidłowe widmo przy powiększaniu grafu; dopiero potem budować fermiony, bozony oraz grawitację.
 
 Znane twierdzenia Nivena, Weyla, Artina i Flato–Fronsdala są wykorzystywane i cytowane, nie dublowane.
+
+
+## Sprostowanie zakresu po recenzji (2 listopada 2026)
+
+Charpoly konkretnej 3×3 macierzy zostało ustalone dokładnym rachunkiem wymiernym w Pythonie; Lean dowodzi własności *zdefiniowanej* kubiki, nie ma jeszcze bezpośredniego twierdzenia Lean dotyczącego Matrix.det tej macierzy. Wzmocniona luka pozostaje **skończonym odstępem poziomów**, nie dowodzi topologii w granicy dużej sieci i nie czyni pełnych oktonionów koniecznymi. POM-10, z którego wzięto pętlę, zawiera wciąż ukryte oddziaływania przy wszystkich wyłączonych krawędziach (szczegóły: [korekta K1](../Research/CorrectionsAfterPeerReview2026.md)).
