@@ -248,3 +248,23 @@ Audyt: [Research/CorrectionsAfterPeerReview2026.md](../Research/CorrectionsAfter
 | P1214 | Pełny dowód Lean równoważności sumy 27 składowych i kontrakcji tensorowej | OPEN, Python test PASS |
 
 Zob. [HarveyLawsonLocalOctonionicPhase.md](HarveyLawsonLocalOctonionicPhase.md).
+
+
+## POM-13 — od ograniczonych amplitud do pełnej przestrzeni R^48
+
+| ID | Rezultat / bramka | Status |
+|---|---|---|
+| P1301 | Gładki soft tensor R(Psi) także przy Ψ=0 i Δ=0 | ANALITYCZNIE + PYTHON |
+| P1302 | R PSD i tr R<=3 dla dowolnej amplitudy | LEAN scalar trace + analiza PSD |
+| P1303 | Na każdym minimum V3 zachodzi R=P_ImH | ANALITYCZNE, Python witness |
+| P1304 | Niezależne centralne lokalne U1 dla potencjału | ANALITYCZNE, NUM 150+100 testów |
+| P1305 | 0<=Q(R1,R2,R3)<=1 | ANALITYCZNE z LIT Harvey–Lawson + spektralna dekompozycja PSD; full Lean OPEN |
+| P1306 | Pełne E13 z V3, nowym loop reward jest ciągłe, gładkie i koercywne | ANALITYCZNE z POM3 lower bound i bounded Q; full Lean OPEN |
+| P1307 | Pełne grafy niekompletne: E>=0; global bound E>=-5/4 | LEAN model-specific |
+| P1308 | Dopuszczalny stan O: Q=4/9 i E=-5/36 | Python witness, LEAN implikacja; globalny O minimum OPEN |
+| P1309 | Jedna wspólna H: globalne E>=0 i osiągalne 0 | LEAN model-specific + algebra Artina |
+| P1310 | W każdym globalnym minimum po stronie O wszystkie 3 krawędzie aktywne | ANALITYCZNE + LEAN negative-implies-triangle |
+| P1311 | Wyprowadzić znak loop reward i jego wielkość ze starszego H | OPEN — wciąż nowy postulat |
+| P1312 | Lokalna G2-koneksja, duże grafy, CAR, 3+1, Maxwell, TEGR | OPEN |
+
+Szczegóły: [SmoothFullAmplitudeVacuum.md](SmoothFullAmplitudeVacuum.md).

@@ -129,3 +129,21 @@ LoopSpectrum.lean proves the factorization and exact roots of the POM-specific c
 HarveyLawsonLoopSelection.lean przyjmuje jako **hipotezę** 0<=R<=1, gdzie R=||[u,v,w]||²/4. Ta nierówność jest konsekwencją już opublikowanego twierdzenia Harveya–Lawsona IV.1.6 (1982). Moduł dowodzi modelowych wyników: zero przy pustym grafie, minimum -1/4 dla jawnego świadka w O i brak ujemnej energii w tej samej H, progu g>3mu i marginu perturbacji.
 
 SectorInvariantLoop.lean dotyczy **preferowanego** funkcjonału z 27 trójek bazy każdej lokalnej H_i, niezależnego od wewnętrznej ramy. Jego wejściowe Q=4/9 pochodzi z niezależnego dokładnego rachunku Cayleya–Dicksona w Pythonie; Lean dowodzi konsekwencji energii -5/36, separacji H/O i marginu stabilności. Nie ma jeszcze pełnego formalnego dowodu bezpośredniej kontrakcji tensora 7^4, ani lokalnej G2-koneksji.
+
+
+## POM-13 — smooth full-amplitude bridge (conditional model)
+
+SmoothFullAmplitudeLoop.lean reuses the previously PROVED POM-3 onsite
+lower bound and known Harvey--Lawson associator inequality.
+The new exact scalar lemma gives tr(R)<=3 for the smooth rational
+soft-sector tensor R(Psi), with R=P_ImH at every ordered POM-3 vacuum.
+The new finite model-level Lean lemmas prove nonnegative energy of
+all incomplete graphs, a uniform E>=-5/4 bound, a negative O trial
+E=-5/36, exact nonnegative shared-quaternion control, and the
+necessity of a full 3-cycle at any negative-energy global minimum.
+
+The tensor inequality Q<=1 and coercivity over R^48 are proved in
+theory prose from published calibration, linear algebra and the
+preexisting POM-3 polynomial bound, not fully formalized in Lean.
+No sorry/admit placeholders appear. Assumed 3 nodes, reward sign
+and independent local G2 connections remain OPEN.

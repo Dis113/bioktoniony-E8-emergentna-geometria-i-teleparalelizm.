@@ -176,3 +176,24 @@ preferowanym **kandydatem dalszego modelu**, bo nie
 opiera się na arbitralnej pierwszej osi. Nadal
 pozostaje warunkowym modelem trzech węzłów,
 a nie potwierdzoną teorią fizyki.
+
+
+## Aktualizacja POM-13: pełne amplitudy bez zapadania energii
+
+[POM-13](SmoothFullAmplitudeVacuum.md) usuwa ograniczenie obecnej
+sekcji do ustalonych minimów V3 przez gładką, dodatnią macierz
+R(Psi), zdefiniowaną na wszystkich 16 realnych składowych.
+Jej ślad nie przekracza 3, a na minium V3 jest dokładnie
+projektorem na wybraną imaginarną podalgebrę H.
+
+Tensorowa energia Q z asocjatora pozostaje ograniczona 0<=Q<=1,
+także przy Ψ=0 lub Δ=0; wobec tego nowa energia z pełnym V3
+jest koercywna. Dla pełnego modelu trzech węzłów
+oktonionowy świadek nadal daje E=-5/36<0,
+a kontrola we wspólnej H osiąga minimum 0.
+Wszystkie globalne minimizatory O muszą zatem mieć
+zamknięty trójkąt w tym ograniczonym zespole dostępnych grafów.
+
+To **nowy hamiltonian warunkowy**, nie naprawa oryginalnego
+POM-10 bez zmiany założeń ani fundamentalne wyprowadzenie
+kinetyki, przestrzeni 3+1, elektromagnetyzmu lub TEGR.

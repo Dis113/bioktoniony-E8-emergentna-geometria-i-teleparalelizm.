@@ -244,3 +244,33 @@ Wcześniejsze POM-10 miało ukryte sprzężenie tła nawet przy pustym grafie. P
 - [Research/PriorArt.md](Research/PriorArt.md): Harvey–Lawson, Grigorian, Quantum Graphity i Levin–Wen jako znane wyniki, których nie dublujemy.
 
 **Zakres:** trzy potencjalne komórki i nowe założone sprzężenie, nie wyprowadzony mikroskopowy H, nie efektywny fizyczny operator Diraca, fermiony, fotony lub TEGR. Należy osobno rozwiązać amplitudy, lokalne G2 i limit dużych grafów.
+
+
+## POM-13 — pełne amplitudy i gładkie oddziaływanie sektorów (robocze)
+
+POM-13 odpowiada na najważniejsze otwarte zadanie POM-12: przy
+nieograniczonych amplitudach pola ujemna NIEZNORMALIZOWANA kara
+asocjatora prowadziła do energii ujemnie nieograniczonej.
+Proponujemy nowy, gładki tensor R(Psi) na całej 16-real-wymiarowej
+przestrzeni bioktonionów, który na minimach POM-3 staje się
+rzeczywistym projektorem na Im H_Psi.
+
+Znana nierówność Harveya–Lawsona i kontrola śladu R<=3 dają
+0<=Q(Psi1,Psi2,Psi3)<=1. Energia z trzech lokalnych potencjałów
+POM-3 oraz krawędziowo bramkowanej premii -2Q jest koercywna
+i ma globalne minimum na całej R^48. Dokładny świadek O:
+Q=4/9, E=-5/36; w jednej wspólnej C⊗H globalne minimum =0.
+Każde globalne minimum O wymaga zamknięcia wszystkich trzech
+dopuszczonych krawędzi, ponieważ grafy niepełne mają E>=0.
+
+- [Theory/SmoothFullAmplitudeVacuum.md](Theory/SmoothFullAmplitudeVacuum.md) — pełny model, konstrukcja, dowód, literatura i zastrzeżenia
+- [POM1/SmoothFullAmplitudeLoop.lean](POM1/SmoothFullAmplitudeLoop.lean) — certyfikat ograniczenia śladu, dodatniości starego V3 i konsekwencji dla energii grafu
+- [Simulations/smooth_full_amplitude_loop.py](Simulations/smooth_full_amplitude_loop.py) — dowolne amplitudy, degeneracje, lokalne fazy U1, kontrola wspólnej H, skale t→∞
+
+**NIE jest to nowa ogólna tożsamość G2 ani dowód fizycznej
+grawitacji.** Harvey–Lawson (1982), Knarr–Stroppel (2025) i
+Grigorian (2017) to znana literatura, a Giesel (SSRN 7600498,
+2026, NIERECENZOWANY preprint) analizował wcześniej inne
+znormalizowane funkcjonały asocjatora. Nowe sprzężenie grafowe
+nadal jest postulatem; nie otrzymano lokalnego transportu G2,
+fermionów, fotonów ani TEGR.
