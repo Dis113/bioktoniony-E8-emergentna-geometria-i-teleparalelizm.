@@ -75,3 +75,78 @@ Wobec tego POM-12 jest na razie teorią zadaną **na ustalonej sferze kierunków
 - Nie twierdzimy, że trójwęzłowy graf generuje wynik spektralny POM-11. Ten operator nadal jest osobnym założeniem i wymaga połączenia z POM-12.
 
 **Najuczciwszy cel potencjalnego artykułu:** *Edge-gated associator interactions on finite graphs: a conditional octonion–quaternion ground-state separation.* To jest skoncentrowane i testowalne twierdzenie o modelu, a nie dowód unifikacji fundamentalnej fizyki.
+
+
+## 8. Wersja POM-12b: naprawa zależności od wybranej ramy
+
+Wcześniejszy E12 wybiera szczególną pierwszą oś u_i=Im(x_i)/|Im(x_i)|.
+Pod lokalnym środkowym U(1) POM-3 mieszają się Im(x_i) i Im(y_i),
+więc wynik **zależy** od tego wyboru wewnętrznej ramy.
+
+Preferowaną, bardziej fizycznie konsekwentną kandydatką jest
+następująca funkcja **trzech całych sektorów**, a nie trzech osi:
+
+\[
+\boxed{
+Q(\mathbb H_1,\mathbb H_2,\mathbb H_3)=
+\frac{1}{108}\sum_{r,s,t=1}^{3}
+\|[v_{1r},v_{2s},v_{3t}]\|^{2},
+}
+\]
+gdzie dla każdego i trójka (v_i1,v_i2,v_i3)
+jest dowolną ortonormalną bazą Im(H_i).
+
+Jest to kontrakcja normy tensora trójliniowego. Dzięki
+ortogonalnej niezmienniczości kontrakcji **nie zależy**
+od niezależnej zmiany bazy O(3) każdego ustalonego
+sektora. Ponieważ U(1) POM-3 obraca jedynie generatory
+wewnątrz ustalonej podalgebry H_i, Q zachowuje także
+tę swobodę wyboru ramy. Nie jest to natomiast
+niezależna lokalna **cechowa** G2-kowariancja węzłów;
+do tego potrzeba transportu identyfikującego
+różne przestrzenie oktonionowe.
+
+Harvey–Lawson gwarantuje, że każdy składnik
+\|[v_1,v_2,v_3]\|² ≤4, a zatem 0≤Q≤1.
+
+**Nowy dokładny świadek z iloczynu Cayleya–Dicksona:**
+\[
+\mathbb H_1=\mathbb H_2=\mathrm{span}\{1,e_1,e_2,e_3\},
+\quad
+\mathbb H_3=\mathrm{span}\{1,e_1,e_4,e_5\}.
+\]
+Rachunek 27 norm kwadratowych na liczbach całkowitych daje
+\[
+\sum_{r,s,t}\|[v_{1r},v_{2s},v_{3t}]\|^2=48,
+\quad \boxed{Q=48/108=4/9}.
+\]
+
+Dla lepiej określonej energii
+\[
+E_{\rm inv}=\mu\sum a_{ij}
+-g\,a_{12}a_{23}a_{31}\,Q,
+\quad \mu=1/4,\ g=2,
+\]
+stan próbny ma **dokładnie** E=3/4−8/9=−5/36.
+Przy wszystkich H_i zawartych w jednej H mamy Q=0 i
+minimum E=0 na pustym grafie.
+Stąd **globalne minimum w O jest co najwyżej −5/36,
+a minimum kontrolne w H wynosi dokładnie 0**.
+Nie wykazano, że −5/36 jest globalnym minimum O,
+bo nie zoptymalizowano Q nad wszystkimi trójkami sektorów.
+
+Kontrola wykonana:
+- dokładny rachunek 48 w Python (bazowe współczynniki całkowite),
+- 500 niezależnych przekształceń baz O(3) z błędem mniejszym niż 3×10⁻¹³,
+- 100 niezależnych lokalnych rotacji U(1) POM-3,
+- twierdzenia Lean z jawnym, dokładnym **wejściowym** Q=4/9
+  i wynikającą z niego ścisłą nierównością energii.
+
+Pliki: POM1/SectorInvariantLoop.lean i
+Simulations/sector_invariant_loop_probe.py.
+
+**Ważny status publikacyjny:** to POM-12b jest
+preferowanym **kandydatem dalszego modelu**, bo nie
+opiera się na arbitralnej pierwszej osi. Nadal
+pozostaje warunkowym modelem trzech węzłów,
+a nie potwierdzoną teorią fizyki.
