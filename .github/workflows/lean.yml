@@ -95,6 +95,13 @@ jobs:
           #print axioms POM1.loop_gap_survives_eigenvalue_perturbation
           #print axioms POM1.empty_graph_has_residual_interaction
           #print axioms POM1.empty_graph_not_spin_independent
+          #print axioms POM1.empty_graph_exactly_local
+          #print axioms POM1.full_octonionic_witness_energy
+          #print axioms POM1.incomplete_graph_nonnegative
+          #print axioms POM1.all_graphs_have_lower_bound
+          #print axioms POM1.quaternionic_graph_nonnegative
+          #print axioms POM1.nonassociative_triangle_threshold
+          #print axioms POM1.octonionic_graph_robust_to_branch_errors
           EOF
           lake env lean POM1AxiomAudit.lean 2>&1 | tee POM1AxiomAudit.log
           if grep -q 'sorryAx' POM1AxiomAudit.log; then
@@ -138,3 +145,4 @@ jobs:
           python Simulations/self_generated_flux_probe.py
           python Simulations/exact_loop_spectrum.py
           python Simulations/scientific_review_regression.py
+          python Simulations/octonion_only_graph_probe.py
