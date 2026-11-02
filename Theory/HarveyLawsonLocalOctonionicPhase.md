@@ -145,6 +145,32 @@ Kontrola wykonana:
 Pliki: POM1/SectorInvariantLoop.lean i
 Simulations/sector_invariant_loop_probe.py.
 
+### Sformułowanie bez wyboru bazy
+
+Niech \(T_{abc}^{\ \ d}\) będzie tensorem
+asocjatora Cayleya–Dicksona na \(\mathrm{Im}\mathbb O\simeq\mathbb R^7\),
+a \(\Pi_i\in M_7(\mathbb R)\) projekcją ortogonalną
+na \(\mathrm{Im}\mathbb H_i\). Wtedy tę samą funkcję
+można zapisać bez żadnych arbitralnych ramek:
+
+\[
+Q(\Pi_1,\Pi_2,\Pi_3)=\frac{1}{108}
+T_{abc}^{\ \ d}\,T_{efg}^{\ \ d}\,
+(\Pi_1)_{ae}(\Pi_2)_{bf}(\Pi_3)_{cg},
+\]
+z sumowaniem po powtarzających się indeksach.
+To standardowa kontrakcja normy tensora na trzech
+podprzestrzeniach, a nie nowe ogólne twierdzenie
+algebry. Implementacja numeryczna sprawdza niezależnie
+zgodność tej formuły z 27-składnikową sumą i dokładnym
+\(Q=4/9\).
+
+Ta forma pozwala kierować dalszy model POM
+przez *projektory rzeczywiście wybranych sektorów*
+bez wskazywania wyróżnionego spinora czy pierwszej osi.
+Pozostaje pytanie o lokalny transport między
+niezależnymi włóknami oktonionowymi.
+
 **Ważny status publikacyjny:** to POM-12b jest
 preferowanym **kandydatem dalszego modelu**, bo nie
 opiera się na arbitralnej pierwszej osi. Nadal
