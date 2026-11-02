@@ -211,3 +211,18 @@ See [SelfGeneratedIrrationalFlux.md](SelfGeneratedIrrationalFlux.md). Do not mis
 | P1106 | Derive spinor graph and QWZ/3+1 kinetic operators from microscopic bi-octonion H | OPEN |
 
 See [ExactLoopSpectrum.md](ExactLoopSpectrum.md) and [SelfGeneratedIrrationalFlux.md](SelfGeneratedIrrationalFlux.md).
+
+
+## Korekty po recenzji — obowiązki krytyczne (2 listopada 2026)
+
+| ID | Obowiązek | Status |
+|---|---|---|
+| REV01 | Wykluczyć oddziaływania między węzłami, gdy wszystkie krawędzie są wyłączone | **FAIL w historycznym POM-10**: różnica energii 12; Lean + Python |
+| REV02 | Odróżnić lokalną symetrię V3 = O(7) od automorfizmów pełnego O przy γ>0 | CHECKED w Python, dodatkowy zapis matematyczny |
+| REV03 | Pokazać specyficzną konieczność oktonionów przez ablację H kontra O | OPEN; chiralny świadek POM-10 leży w H |
+| REV04 | Ustalić globalne minimum pełnej przestrzeni POM-8 zamiast jednego świadka E<-12 | OPEN |
+| REV05 | Stabilność niewymierności kąta przy kontrolowanych perturbacjach | OPEN; sama niewymierność nie jest własnością otwartą |
+| REV06 | Bezpośredni certyfikat Lean Matrix.det konkretnego H_triangle | OPEN |
+| REV07 | Jeden mikroskopowy hamiltonian i emergentne 3+1, CAR, Maxwell, TEGR | OPEN |
+
+Audyt: [Research/CorrectionsAfterPeerReview2026.md](../Research/CorrectionsAfterPeerReview2026.md).

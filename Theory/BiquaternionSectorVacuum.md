@@ -141,3 +141,12 @@ E8 pozostaje kandydatem do organizacji dyskretnych stanów lub struktur reprezen
 [sector_motion_probe.py](../Simulations/sector_motion_probe.py) realizuje **nowy** hamiltonian sieci z potencjałem V3, dodatnim sprzężeniem sąsiednim K i karą za asocjator z gamma>0. Startuje z pięciu różnych sektorów generowanych przez u,v, nie z narzuconego pola tetrad. 50 kroków metody symplektycznej leapfrog pokazuje zmianę ortogonalnych projektorów na lokalne kwaternionowe podalgebry. W sprawdzonym biegu: odległości Frobeniusa projektorów po ewolucji wynosiły około 0.035–0.058, a względny dryf energii około 3.05×10⁻⁹; gradient zweryfikowano przez różnice centralne.
 
 **Interpretacja ograniczona:** jest to ruch *wewnętrznego sektora* przy założonym grafie i zewnętrznym parametrze aktualizacji. Nie daje jeszcze fizycznej prędkości c, czasu własnego, metryki propagacji ani torzji. Liczby są wynikami deterministycznego testu, nie pomiarami fizycznymi.
+
+
+## Korekta interpretacji symetrii (2 listopada 2026)
+
+Sam potencjał V3 zależy od norm, iloczynu skalarnego i wyznacznika Grama dwóch wektorów u,v∈R7. Dlatego jest niezmienniczy przy wspólnym O(7), **szerszym od G2**, a także przy zmianie ramy dwóch kolumn O(2). W jego minimum nie jest niezbędne mnożenie oktonionowe. To wariant znanego mechanizmu pola dwuwektorowego.
+
+Po wprowadzeniu członu asocjatora do **pełnego** hamiltonianu wyższa symetria O(7) nie musi przetrwać. Na przykład (e1,e2,e3) i ortogonalnie powiązana trójka (e1,e2,e4) różnią się normą asocjatora. Nie należy więc przypisywać O(7) całemu modelowi z γ>0.
+
+Pokrewna recenzowana literatura: Reehorst i in., *SciPost Phys.* 18 (2025) 060, DOI [10.21468/SciPostPhys.18.2.060](https://doi.org/10.21468/SciPostPhys.18.2.060); ich praca bada klasę O(N)×O(2), nie identyczny V3. Test: [scientific_review_regression.py](../Simulations/scientific_review_regression.py).
