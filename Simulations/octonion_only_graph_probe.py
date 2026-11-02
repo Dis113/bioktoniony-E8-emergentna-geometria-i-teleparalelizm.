@@ -79,7 +79,7 @@ def exact_witness_tests():
     assert np.allclose(eh, [0,.25,.25,.5,.25,.5,.5,.75])
     assert min(eo)==-.25 and min(eh)==0.
     assert all(graph_energy((0,0,0),*U)==0 for U in (O,H))
-    return graph_bits,eo,eh
+    return psi,graph_bits,eo,eh
 
 
 def calibration_and_locality_trials(n=2500,seed=12026):
@@ -109,10 +109,26 @@ def robustness_trials(n=2000,seed=12027):
         assert -.25+d_closed<0+d_open
 
 
+def unsafe_unscaled_extension(states, t):
+    """Shows why simply appending a -g * raw-associator^2 to V3 fails:
+    the cubic associator produces negative t^6 while V3 is quartic.
+    This is a DIAGNOSTIC, not the actual normalized POM-12 energy.
+    """
+    scaled=[t*p for p in states]
+    onsite=sum(vacuum_potential(p) for p in scaled)
+    raw=[p[:8] for p in scaled]
+    nonassoc=associator(*raw)
+    return onsite+3*MU-GAIN*float(nonassoc@nonassoc)/4
+
+
 def main():
-    bits,eo,eh=exact_witness_tests()
+    states,bits,eo,eh=exact_witness_tests()
     err=calibration_and_locality_trials()
     robustness_trials()
+    unsafe=[unsafe_unscaled_extension(states,t) for t in (1,2,4,8,16)]
+    assert unsafe[-1]<-100000 and unsafe[-1]<unsafe[-2]
+    print("POM-12 WARNING: unscaled negative cubic-associator reward")
+    print("  makes full-amplitude energy unbounded below (sample):",unsafe)
     print("POM-12: exact local octonionic graph vs quaternion control PASS")
     print("  graph bits:",bits)
     print("  octonion energies:",eo.tolist())
