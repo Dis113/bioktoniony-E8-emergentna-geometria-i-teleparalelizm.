@@ -46,6 +46,23 @@ def basis_invariant_assoc(FA,FB,FC):
     return total/108
 
 
+def direct_projector_formula(FA,FB,FC):
+    """Same Q, but with no choice of internal sector bases in the formula:
+    Q = (1/108) T_abcd T_efgd P1_ae P2_bf P3_cg,
+    T the Cayley-Dickson associator tensor on imaginary octonions.
+    """
+    basis=np.eye(8)
+    T=np.empty((7,7,7,7),dtype=float)
+    for a in range(7):
+        for b in range(7):
+            for cc in range(7):
+                T[a,b,cc,:]=associator(
+                    basis[a+1],basis[b+1],basis[cc+1])[1:]
+    Ps=[F[1:,:]@F[1:,:].T for F in (FA,FB,FC)]
+    return float(np.einsum(
+        'abcd,efgd,ae,bf,cg->',T,T,*Ps))/108
+
+
 def real_orthogonal_3(rng):
     Q,_=np.linalg.qr(rng.normal(size=(3,3)))
     return Q
@@ -57,6 +74,7 @@ def main():
     C=local_frame(ground_state(E[4],E[5]))
     q=basis_invariant_assoc(A,B,C)
     assert np.isclose(q,4/9,atol=1e-13)
+    assert np.isclose(direct_projector_formula(A,B,C),q,atol=1e-13)
 
     # EXACT integer-valued triple products and sum of 27 squared norms.
     integer_sum=0
@@ -104,6 +122,7 @@ def main():
     print("POM-12b PASS: exact integer associator tensor sum:",integer_sum)
     print("POM-12b exact 3-sector Q=4/9; O-loop E=-5/36, H-ground E=0")
     print("POM-12b 500 independent basis changes max |delta Q|:",frame_max)
+    print("POM-12b direct associator-tensor x projectors contraction PASS")
     print("POM-12b 100 independent local POM3 U1 rotations PASS")
     print("LIMIT: no independent ambient G2 gauge covariance, no hbar/SM/TEGR")
 
