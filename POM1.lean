@@ -13,3 +13,4 @@ import POM1.LoopSpectrum
 import POM1.GraphLocalityAudit
 import POM1.HarveyLawsonLoopSelection
 import POM1.SectorInvariantLoop
+import POM1.SmoothFullAmplitudeLoop

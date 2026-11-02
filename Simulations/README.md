@@ -194,3 +194,21 @@ Uruchom z katalogu repozytorium:
 Pierwszy skrypt porównuje 8 możliwych grafów na 3 potencjalnych węzłach, sprawdza dokładny świadek oktonionowy e1,e2,e4 i kwaternionowy e1,e2,e3, 2500 ortonormalnych losowych trójek, testy fazy V3 i ostrzeżenie o nieograniczonej od dołu **naiwnej** pełnoamplitudowej energii przy ujemnym gołym asocjatorze.
 
 Drugi sprawdza PREFEROWANY bazowo niezależny model: trzy sektory H_A,H_A,H_C, dokładną sumę 48 norm całkowitych => Q=4/9, zgodność z bezramkową kontrakcją projektorów, 500 niezależnych transformacji baz O3 oraz 100 lokalnych rotacji centralnego U1 POM-3. Daje ścisły próbny poziom E=-5/36 w O, wobec minimum 0 dla wspólnej H. Nie wyprowadzamy fizycznej lokalnej G2-kowariancji ani topologicznej luki pasmowej.
+
+
+## POM-13 — arbitrary real 16-component fields and smooth regulator
+
+    python Simulations/smooth_full_amplitude_loop.py
+
+The program computes the REAL Cayley--Dickson associator tensor
+and a globally smooth soft-sector matrix for each site, even when
+the Gram area is zero and POM-3 has no unique quaternion projector.
+The contracted reward Q is bounded by a published Harvey--Lawson
+inequality. Tests: 150 random full-amplitude configurations including
+exact zeros and dependent generators, 100 independent local central
+U1 rotations of the ground-state witness, 40 arbitrary shared-H
+controls, an exact Q=4/9 octonionic witness with E=-5/36, and
+positive runaway-cost checks at large amplitudes.
+
+This is a reproducible sanity check, not proof of dynamical gauge
+fields, spacetime dimensionality or the SM.

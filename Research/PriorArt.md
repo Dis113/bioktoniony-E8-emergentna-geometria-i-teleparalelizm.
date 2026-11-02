@@ -199,3 +199,45 @@ Dalsze sprostowania: [CorrectionsAfterPeerReview2026.md](CorrectionsAfterPeerRev
 **Nowość warunkowa POM-12:** dokładny krawędziowo bramkowany funkcjonał, który ma osobne minima w przypadku O i H dla tych samych parametrów; bardziej konsekwentna wersja korzysta z bezramkowej kontrakcji projektorów i ma własny wymierny świadek Q=4/9. Nie jest to nowy ogólny dowód z geometrii G2 ani fizyczna unifikacja.
 
 **Ważny problem:** sam górny koszt liczby krawędzi jest rzędu O(N²), a liczba potencjalnych trójkątów rzędu O(N³). Nie wykazano, że proste rozszerzenie ujemnej premii za każdy trójkąt nie faworyzowałoby gęstych grafów. Potrzebny jest kontrolowany limit dużych grafów i kara za nadmierną walencję — zob. Quantum Graphity.
+
+
+## POM-13 — literatura konieczna dla stabilizacji pełnych amplitud
+
+1. **Harvey i Lawson, *Calibrated Geometries*, Acta Mathematica 148
+   (1982) 47–157, Theorem IV.1.6**, DOI
+   [10.1007/BF02392726](https://doi.org/10.1007/BF02392726).
+   Ich tożsamość asocjatora daje normowe ograniczenie
+   \|\![u,v,w]\|\!² <=4\|u\|²\|v\|²\|w\|². Nie jest to odkrycie POM.
+2. **Knarr i Stroppel, *Subalgebras of octonion algebras*,
+   Journal of Algebra 664 (2025) 42–74**, DOI
+   [10.1016/j.jalgebra.2024.10.004](https://doi.org/10.1016/j.jalgebra.2024.10.004).
+   Wcześniejsza klasyfikacja podalgebr, w tym kwaternionowych.
+3. **Grigorian, *G₂-structures and octonion bundles*,
+   Advances in Mathematics 308 (2017) 142–207**, DOI
+   [10.1016/j.aim.2016.12.003](https://doi.org/10.1016/j.aim.2016.12.003).
+   Koneksja oktonionowa i Dirac; torzja G2 nie jest automatycznie TEGR.
+4. **Reehorst, Rychkov, Sirois, van Rees, *Bootstrapping frustrated magnets*,
+   SciPost Physics 18, 060 (2025)**, DOI
+   [10.21468/SciPostPhys.18.2.060](https://doi.org/10.21468/SciPostPhys.18.2.060).
+   Już znana klasa modeli O(N)×O(2) pokrewna lokalnemu V3.
+5. **Konopka–Markopoulou–Severini, *Quantum graphity*,
+   Physical Review D 77 (2008) 104029**, DOI
+   [10.1103/PhysRevD.77.104029](https://doi.org/10.1103/PhysRevD.77.104029).
+   Dynamiczne grafy, low-dimensional locality; nadal brak ich
+   odpowiednika dla dużych grafów POM.
+6. **R. Giesel (2026), *Emergent Associativity and Three Spectral Flavor
+   Channels from a Maximally Non-Associative Octonionic Vacuum*,
+   SSRN preprint 7600498**,
+   [rękopis](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7600498),
+   posted 12 October 2026. **Bez potwierdzonej recenzji czasopisma.**
+   Analizuje własne znormalizowane funkcjonały asocjatora.
+   Ogranicza roszczenia do pierwszeństwa samej idei
+   normalizowania niełączności; nie oznacza, że konkretna
+   macierz R(Psi) i nasz krawędziowy hamiltonian są identyczne.
+
+**Nowy POM-13:** konkretny, gładki *soft sector* R(Psi)
+zgodny z POM-3 przy każdym minimum i nieosobliwy dla
+degeneracji, plus na nowo zdefiniowany pełnoamplitudowy
+hamiltonian, który rozdziela O od jednej wspólnej H.
+Nie jest to dowód unikalności O względem modeli wektorowych,
+ani fundamentalne wyprowadzenie parametrów 1/4 i 2.
